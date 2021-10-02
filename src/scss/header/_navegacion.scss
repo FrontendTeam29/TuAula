@@ -1,0 +1,21 @@
+@use '../base/variables' as v;
+
+.nav__principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    i{
+        font-size: 2rem;
+        background-color: v.$primario;
+        color: v.$blanco;
+        margin-right: 1rem;
+        padding: 1rem;
+        border-radius: 50%;
+
+        &:hover{
+            background-color: v.$secundario;
+        }
+    }
+}
+
