@@ -23,8 +23,16 @@
     width: 25%;
 }
 
+.w-70{
+    width: 70%;
+}
+
 .w-5{
     width: 5%;
+}
+
+.w-10{
+    width: 10%;
 }
 
 .centrar{
@@ -45,4 +53,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: v.$separacion;
+}
+
+.sinborde{
+    border-bottom: 0;
 }

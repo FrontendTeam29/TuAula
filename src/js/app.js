@@ -14,4 +14,7 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
   }
   
-  document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen").click();
+
+//Custom Select
+
