@@ -15,10 +15,34 @@
     padding: 0 2rem;
 }
 
+.mb-5{
+    margin-bottom: v.$separacion;
+}
+
 .w-25{
     width: 25%;
 }
 
 .w-5{
     width: 5%;
+}
+
+.centrar{
+    display: block;
+    margin: 0 auto;
+}
+
+.btn{
+    padding: 1rem 10rem;
+    border: none;
+    background-color: v.$primario;
+    color: v.$blanco;
+    border-radius: 20px;
+    margin: 5rem 0;
+}
+
+.btn-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
