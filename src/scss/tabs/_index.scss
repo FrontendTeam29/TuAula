@@ -343,3 +343,14 @@ input:checked + .slider:before {
     color: v.$blanco;
     border-radius: 15px;
 }
+
+
+/////@at-root
+.custom-select select{
+    color: v.$blanco;
+    background-color: v.$primario;
+    border: none;
+    width: 200px;
+    text-align: center;
+    
+}
