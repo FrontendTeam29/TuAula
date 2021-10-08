@@ -3,7 +3,6 @@
 
 .tab {
     float: left;
-    border: 1px solid #ccc;
     background-color: v.$blanco;
     width: 20%;
     height: 300px;
@@ -11,6 +10,7 @@
     .tab__title{
         display: flex;
         justify-content: center;
+        border-right: 1px solid v.$grisClaro;
         
         .tab__text{
             text-transform: uppercase;
@@ -22,6 +22,7 @@
 
     .tablinks{
         border-top: 1px solid v.$grisClaro;
+        border-right: 1px solid v.$grisClaro;
     }
 
     .tablinks__box{
@@ -84,6 +85,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        column-gap: 5rem;
         
         &:nth-child(1){
             border-bottom: 3px solid v.$primario;
@@ -97,20 +99,21 @@
 
         .roles__text{
             text-align: center;
+            border: none;
         }
 
         .roles__text--blue{
             background-color: v.$primario;
             color: v.$blanco;
             border-radius: 20px;
-            padding: 1rem 0;
+            padding: 0.47rem 0;
         }
 
         .roles__text--gray{
             background-color: v.$grisClaro;
             color: v.$negro;
             border-radius: 20px;
-            padding: 1rem 0;
+            padding: 0.47rem 0;
         }
     }
 
@@ -264,7 +267,7 @@ input:checked + .slider:before {
     align-items: center;
     padding-bottom: 2rem;
     border-bottom: 3px solid v.$primario;
-    gap: 2rem;
+    gap: 1rem;
 
     
 }
@@ -278,6 +281,7 @@ input:checked + .slider:before {
         text-align: center;
         color: v.$primario;
         font-weight: bold;
+        font-size: 2.5rem;
     }
 }
 
@@ -298,6 +302,7 @@ input:checked + .slider:before {
         color: v.$blanco;
         padding: 0.5rem 6rem;
         border-radius: 15px;
+        font-size: 2rem;
     }
 
     .cali__ul--itemG{
@@ -327,8 +332,6 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: v.$separacion 0;
-    padding-bottom: v.$separacion;
     border-bottom: 3px solid v.$primario;
 }
 
@@ -336,10 +339,10 @@ input:checked + .slider:before {
 
 #myBar {
     width: 75%;
-    height: 25px;
+    height: 30px;
     background-color: v.$primario;
     text-align: center; /* To center it horizontally (if you want) */
-    line-height: 25px; /* To center it vertically */
+    line-height: 30px; /* To center it vertically */
     color: v.$blanco;
     border-radius: 15px;
 }
@@ -347,10 +350,14 @@ input:checked + .slider:before {
 
 /////@at-root
 .custom-select select{
+    margin: 2rem 0;
+    padding: 0.5rem 3rem;
     color: v.$blanco;
     background-color: v.$primario;
     border: none;
-    width: 200px;
-    text-align: center;
-    
+    width: 300px;
+    text-align: center;    
 }
+
+
+
