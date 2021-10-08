@@ -16,5 +16,12 @@ function openCity(evt, cityName) {
   
 document.getElementById("defaultOpen").click();
 
-//Custom Select
+//Funcionamiento Nav
 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

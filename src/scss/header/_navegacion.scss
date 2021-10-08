@@ -1,18 +1,42 @@
 @use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .nav__principal{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+    flex-direction: column;
+
+    @include m.telefono{
+        flex-direction: column;
+    }
+
+    @include m.tablet{
+        flex-direction: row;
+    }
+
+    @include m.desktop{
+        flex-direction: row;
+    }
+
+    .logo{
+        max-width: 100%;
+    }
+
 
     i{
-        font-size: 2rem;
+        font-size: 1.2rem;
         background-color: v.$primario;
         color: v.$blanco;
         margin-right: 1rem;
-        padding: 1.3rem;
+        padding: 0.8rem;
         border-radius: 50%;
+
+        @include m.desktop{
+            font-size: 2rem;
+            padding: 1.3rem;
+        }
 
         &:hover{
             background-color: v.$secundario;
