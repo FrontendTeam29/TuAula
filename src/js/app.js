@@ -13,7 +13,8 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
-  
+
+
 document.getElementById("defaultOpen").click();
 
 //Funcionamiento Nav
@@ -25,3 +26,4 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+

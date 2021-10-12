@@ -1,0 +1,29 @@
+@use '../base/variables' as v;
+
+.site__footer{
+    background-color: v.$primario;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    .footer__nav{
+        max-width: 120rem;
+        margin: 0 auto;
+
+        a{
+            color: v.$blanco;
+            cursor: pointer;
+            font-size: 2rem;
+            margin-right: 1rem;
+
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+
+        i{
+            font-size: 3rem;
+        }
+
+    }
+}

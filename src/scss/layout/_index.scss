@@ -1,0 +1,221 @@
+@use '../base/variables' as v;
+
+.main__contenedor{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
+    .main__aside{
+        padding: 2rem;
+        border-right: 0.1rem solid v.$grisClaro;
+    }    
+}
+
+.main__profile{
+    display: flex;
+    justify-content: space-evenly;
+
+    & .profile__image--round{
+        max-width: 50px;
+    }
+
+    .profile__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile__text p{
+        margin: 0;
+    }
+
+    .text__name{
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+
+    .text__pro{
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+}
+
+// Aside Nav
+
+.main__nav{
+    margin-top: 2rem;
+    padding: 0.1rem 2rem;
+
+    .nav__aside a, .dropdown-btn {
+        padding: 0.5rem 0.6rem;
+        text-decoration: none;
+        font-size: 20px;
+        color: v.$primario;
+        display: flex;
+        justify-content: left;
+        padding-left: 5rem;
+        align-items: center;
+        border: 0.25rem solid v.$primario;
+        
+        width:100%;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .dropdown-btn{
+        background-color: v.$primario;
+        color: v.$blanco;
+        border-radius: 0.25rem;
+
+        &:hover{
+            background-color: v.$blanco;
+            color: v.$primario;
+        }
+    }
+
+    .dropdown-btn i{
+        margin-right: 1rem;
+    }
+
+    .nav__aside a{
+        border: none;
+        border-left: 0.25rem solid v.$primario;
+        border-right: 0.25rem solid v.$primario;
+        border-radius: none;
+        display: block;
+        padding-left: v.$separacion;
+        text-align: left;
+
+        &:hover{
+            background-color: v.$primario;
+            color: v.$blanco;
+        }
+
+        &:last-child{
+            border-bottom: 0.25rem solid v.$primario;
+            border-radius: 0.25rem;
+        }
+    }
+
+    .active {
+        background-color: v.$blanco;
+        color: v.$primario;
+    }
+    
+    .dropdown-container {
+        display: none;
+        background-color: v.$blanco;
+    }
+    
+    .fa-book {
+        float: left;
+        padding-left: 10px;
+    }
+}
+
+.main__contenido{
+    background-color: v.$grisClaro;
+    .contain{
+        max-width: 90%;
+        margin: v.$separacion auto;
+        background-color: v.$blanco;
+        border-radius: 1rem;
+    }
+
+    .contain__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+
+        .btn__verde{
+            background-color: v.$verdeAuxiliar;
+            border-radius: unset;
+            padding: 1.2rem 1.5rem;
+            border-top-right-radius: 1rem;
+        }
+
+        .main__profile--pub{
+            gap: 1rem;
+        }
+    }
+
+    .contain__body img{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .body__text{
+        max-width: 90%;
+        margin: 0 auto;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        font-weight: lighter;
+        padding-bottom: v.$separacion;
+    }
+}
+
+.main__aside{
+    padding: 2rem;  
+
+    .aside__actions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .btn__actions{
+        border-radius: 0;
+        width: 100%;
+        margin: 1rem auto;
+        display: block;
+        text-align: left;
+        border-radius: 1rem;
+        cursor: pointer;
+
+        i{
+            margin-right: 1rem;
+            font-size: 2rem;
+        }
+    }
+
+    
+}
+
+//Calender
+
+
+
+.aside__calender{
+    ol{
+        list-style: none;
+        padding: 0;
+    }
+
+    .calender__title{
+        background-color: v.$primario;
+        color: v.$blanco;
+        text-transform: uppercase;
+        padding: 0 3rem;
+    }
+
+    .calender__items{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .day{
+        color: v.$primario;
+    }
+
+    .first-day{
+        grid-column-start: 3;
+    }
+}
+
+
+
+  
