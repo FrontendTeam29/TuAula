@@ -347,14 +347,17 @@ input:checked + .slider:before {
     padding-bottom: 2rem;
     border-bottom: 3px solid v.$primario;
     gap: 1rem;
-
-    
 }
 
 .cali__contain{
     display: flex;
     justify-content: space-around;
-    align-items: center;    
+    align-items: center;
+    flex-direction: column;    
+
+    @include m.tablet{
+        flex-direction: row;
+    }
 
     .cali__title{
         text-align: center;
@@ -379,7 +382,7 @@ input:checked + .slider:before {
         text-align: center;
         background-color: v.$primario;
         color: v.$blanco;
-        padding: 0.5rem 6rem;
+        padding: 0.5rem 4rem;
         border-radius: 15px;
         font-size: 2rem;
     }
@@ -430,12 +433,16 @@ input:checked + .slider:before {
 /////@at-root
 .custom-select select{
     margin: 2rem 0;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 2rem;
     color: v.$blanco;
     background-color: v.$primario;
     border: none;
-    width: 300px;
-    text-align: center;    
+    max-width: 100%;
+    text-align: center; 
+    
+    @include m.tablet{
+        padding: 0.5rem 3rem;
+    }
 }
 
 
