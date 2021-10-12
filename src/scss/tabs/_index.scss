@@ -349,6 +349,10 @@ input:checked + .slider:before {
     gap: 1rem;
 }
 
+.cali--admin{
+    border: 0;
+}
+
 .cali__contain{
     display: flex;
     justify-content: space-around;
@@ -417,6 +421,10 @@ input:checked + .slider:before {
     border-bottom: 3px solid v.$primario;
 }
 
+.periodos__container--info{
+    border: 0;
+}
+
 // Progress Bar
 
 #myBar {
@@ -439,10 +447,156 @@ input:checked + .slider:before {
     border: none;
     max-width: 100%;
     text-align: center; 
+
+    option{
+        text-align: center;
+        background-color: v.$blanco;
+        color: v.$primario;
+    }
     
     @include m.tablet{
         padding: 0.5rem 3rem;
     }
 }
+
+//Admin Users
+
+.adminus__users{
+    padding-top: v.$separacion;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include m.tablet{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.users__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+
+    
+    img{
+        border: 0.2rem solid v.$primario;
+        border-radius: 1rem;
+    }
+
+    .item__name{
+        font-size: 1.5rem;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .item__name span{
+        display: block;
+    }
+
+    @include m.tablet{
+        img{
+            border: 0.2rem solid v.$primario;
+            border-radius: 1rem;
+        }
+
+        .item__name{
+            font-size: 1.8rem;
+        } 
+    }
+}
+
+
+//Pagination
+
+.adminus__flex{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 2rem;
+}
+
+.adminus__pag{
+
+    grid-column: 2 / 3;
+    display: block;
+    margin: 0 auto;
+
+    a {
+        color: v.$negro;
+        float: left;
+        padding: 0.8rem 1.2rem;
+        text-decoration: none;
+        background-color: v.$grisOscuro;
+        transition: background-color .3s;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-right: 1rem;
+    
+        &.active{
+            background-color: v.$primario;
+            color: v.$blanco;
+        }
+    
+        &:hover:not(.active){
+            background-color: v.$primario;
+            color: v.$blanco;
+        }
+    }
+}
+
+.btn__nueva{
+    grid-column: 3 / 4;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+//Information
+
+.perfil{
+    padding: v.$separacion v.$separacion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: v.$separacion;
+    border-bottom: 0.1rem solid v.$grisClaro;
+
+    .perfil__text{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-content: center;
+        gap: 2rem;
+
+        .text__input{
+            margin-top: 0.7rem;
+            display: block;
+            border: 0.1rem solid v.$primario;
+            border-radius: 1rem;
+            padding: 0.35rem 1.5rem
+        }
+    } 
+}
+
+//Inputs Checkbox
+
+input[type=radio]{
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.flexbox__info{
+    padding-bottom: 2.5rem;
+    border-bottom: 0.1rem solid v.$grisClaro;
+}
+
+
+
+  
 
 

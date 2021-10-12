@@ -15,6 +15,10 @@
     padding: 0 2rem;
 }
 
+.m-0{
+    margin: 0;
+}
+
 .mb-5{
     margin-bottom: v.$separacion;
 }
@@ -81,3 +85,8 @@
     text-align: center;
     width: 45px;
 }
+
+.text__bold{
+    font-weight: bold;
+}
+
