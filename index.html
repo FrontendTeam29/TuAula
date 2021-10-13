@@ -48,20 +48,21 @@
         <button class="tablinks" onclick="openCity(event, 'adminus')"><i class="fas fa-users tablinks__box"></i>Administrar Usuarios</button>
     </div>
 
+    <!--.Nav Mobile-->
 
     <div class="tab">
         <div class="tab__title">
             <a class="tab__text">Parametrizar</a>
         </div>
         <div class="menu" onclick="openNav()"><i class="fas fa-bars"></i><p>Menu</p></div>
-        <button class="tablinks tablinks__flex defaultOpen" onclick="openCity(event, 'roles')" id="defaultOpen"><i class="fas fa-suitcase tablinks__box"></i><span>Roles</span></button>
-        <button class="tablinks" onclick="openCity(event, 'niveles')"><i class="fas fa-file tablinks__box"></i>Niveles</button>
-        <button class="tablinks" onclick="openCity(event, 'dimensiones')"><i class="fas fa-pager tablinks__box"></i>Dimensiones</button>
-        <button class="tablinks" onclick="openCity(event, 'grupos')"><i class="fas fa-folder-open tablinks__box"></i>Grupos</button>
-        <button class="tablinks" onclick="openCity(event, 'calificaciones')"><i class="fas fa-file-alt tablinks__box"></i>Calificaciones</button>
-        <button class="tablinks" onclick="openCity(event, 'periodos')"><i class="fas fa-clipboard-list tablinks__box"></i>Periodos</button>
-        <button class="tablinks" onclick="openCity(event, 'parcelador')"><i class="fas fa-pencil-alt tablinks__box"></i>Parcelador</button>
-        <button class="tablinks tablinks__flex" onclick="openCity(event, 'adminus')"><i class="fas fa-users tablinks__box"></i>Administrar Usuarios</button>
+        <button class="tablinks tablinks__flex defaultOpen" onclick="openCity(event, 'roles')" onmousedown="noActiveNav()" id="defaultOpen"><i class="fas fa-suitcase tablinks__box"></i><span class="text__black">Roles</span></button>
+        <button class="tablinks" onclick="openCity(event, 'niveles')" onmousedown="noActiveNav()"><i class="fas fa-file tablinks__box"></i><span class="text__black">Niveles</span></button>
+        <button class="tablinks" onclick="openCity(event, 'dimensiones')" onmousedown="noActiveNav()"><i class="fas fa-pager tablinks__box"></i><span class="text__black">Dimensiones</span></button>
+        <button class="tablinks" onclick="openCity(event, 'grupos')" onmousedown="noActiveNav()"><i class="fas fa-folder-open tablinks__box"></i><span class="text__black">Grupos</span></button>
+        <button class="tablinks" onclick="openCity(event, 'calificaciones')" onmousedown="noActiveNav()"><i class="fas fa-file-alt tablinks__box"></i><span class="text__black">Calificaciones</span></button>
+        <button class="tablinks" onclick="openCity(event, 'periodos')" onmousedown="noActiveNav()"><i class="fas fa-clipboard-list tablinks__box"></i><span class="text__black">Periodos</span></button>
+        <button class="tablinks" onclick="openCity(event, 'parcelador')" onmousedown="noActiveNav()"><i class="fas fa-pencil-alt tablinks__box"></i><span class="text__black">Parcelador</span></button>
+        <button class="tablinks tablinks__flex" id="tablink-admin" onclick="openCity(event, 'adminus')" onmousedown="noActiveNav()"><i class="fas fa-users tablinks__box"></i><span class="text__black">Administrar Usuarios</span></button>
     </div>
 
     <!--TAB ROLES-->
@@ -938,7 +939,7 @@
 
             <div class="adminus__btn">
                 <div class="btn__flex">
-                    <button class="btn btn__nueva" onclick="openCity(event, 'nuevasol')">Nuevas solicitudes</button>
+                    <button class="btn btn__nueva text-adminus" onclick="openCity(event, 'nuevasol')" onmousedown="activeNav()" >Nuevas solicitudes</button>
                 </div>
                 
             </div>

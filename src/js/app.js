@@ -12,7 +12,7 @@ function openCity(evt, cityName) {
     }
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
-  }
+}
 
 
 document.getElementById("defaultOpen").click();
@@ -26,4 +26,19 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+//Clase active para el menu cuando selecciona el boton nuevas solicitudes
+function activeNav(){
+  if(document.querySelector(".text-adminus")){
+    document.querySelector("#tablink-admin").className = "active";
+  }
+}
+
+function noActiveNav(){
+  if(document.querySelector(".text-adminus")){
+    document.querySelector("#tablink-admin").classList.remove("active");
+  }
+}
+
+
 

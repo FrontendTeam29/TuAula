@@ -51,7 +51,6 @@
         @include m.desktop{
             font-size: 1.7rem;
         }
-
     }
 
     .tablinks__box{
@@ -81,7 +80,7 @@
     button {
         display: none;
         background-color: inherit;
-        color: v.$negro;
+        color: v.$primario;
         padding: 22px 16px;
         width: 100%;
         border: none;
@@ -90,34 +89,39 @@
         cursor: pointer;
         transition: 0.3s;
 
+
         @include m.desktop{
             display: block;
         }
 
-        i{ 
-            font-size: 2rem;
-            padding: 0 v.$separacion;
-            color: v.$primario;  
+        .text__black{
+            color: v.$negro;
         }
-
+   
         &:hover,
         &:active{
             background-color: v.$primario;
             color: v.$blanco;
-        }        
-        
-    }
+        }
 
-    
+        .fas{
+            font-size: 2rem;
+            padding: 0 v.$separacion;   
+        }        
+    }    
 }
+
+
   
 
-.tab button.active
- {
+.tab button.active{
     background-color: v.$primario;
-    color: v.$blanco;
-}
+    color: v.$blanco !important;
 
+    .text__black{
+        color: white;
+    }
+}
 
 .tabcontent {
 
@@ -287,56 +291,6 @@ input:checked + .slider:before {
     display: none; /*hide original SELECT element: */
 }
   
-.select-selected {
-    background-color: DodgerBlue;
-}
-  
-  /* Style the arrow inside the select element: */
-.select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-}
-  
-  /* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
-}
-  
-  /* style the items (options), including the selected item: */
-.select-items div,.select-selected {
-    color: #ffffff;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-    cursor: pointer;
-}
-  
-  /* Style items (options): */
-.select-items {
-    position: absolute;
-    background-color: DodgerBlue;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-}
-  
-  /* Hide the items when the select box is closed: */
-.select-hide {
-    display: none;
-}
-  
-.select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
 
 //Calificaciones
 
@@ -410,10 +364,6 @@ input:checked + .slider:before {
     color: v.$primario;
 }
 
-
-//Select Custom
-
-
 .periodos__container{
     display: flex;
     justify-content: center;
@@ -437,8 +387,8 @@ input:checked + .slider:before {
     border-radius: 15px;
 }
 
+//Select Custom
 
-/////@at-root
 .custom-select select{
     margin: 2rem 0;
     padding: 0.5rem 2rem;
@@ -446,10 +396,8 @@ input:checked + .slider:before {
     background-color: v.$primario;
     border: none;
     max-width: 100%;
-    text-align: center; 
 
     option{
-        text-align: center;
         background-color: v.$blanco;
         color: v.$primario;
     }
