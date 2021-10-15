@@ -1,4 +1,5 @@
 @use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .main__contenedor{
     display: grid;
@@ -139,6 +140,10 @@
         }
     }
 
+    .contain__header--pub{
+        border-bottom: 0.25rem solid v.$primario;
+    }
+
     .contain__body img{
         max-width: 100%;
         margin: 0 auto;
@@ -213,6 +218,84 @@
 
     .first-day{
         grid-column-start: 3;
+    }
+}
+
+//Entradas
+
+//Entrada Matematica 1
+
+.header__name{
+    color: v.$primario;
+    font-weight: bold;
+}
+
+.header__subname{
+    color: v.$grisOscuro;
+    font-weight: lighter;
+}
+
+.body__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+
+    .text__select{
+        font-weight: bold;
+    }
+
+    .btn--action{
+        padding: 1rem 3rem;
+    }
+}
+
+.body__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include m.tablet{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item__photo--body{
+        width: 25rem;
+        border: 0.25rem solid v.$primario;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+}
+
+.contain__body{
+
+    .body__info{
+
+        padding: v.$separacion;
+        border-bottom: 0.25rem solid v.$primario;
+
+        div{
+            margin-bottom: v.$separacion;
+        }
+
+        span{
+            font-weight: bold;
+        }
+    
+        .input__body{
+            max-width: 85%;
+            width: 50rem;
+            padding: 0.5rem 3rem;
+            border-radius: 2.5rem;
+            background-color: v.$grisClaro;
+        }
+    }    
+
+    .btn--agregar{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0.5rem 3rem;
+        background-color: v.$primario;
     }
 }
 

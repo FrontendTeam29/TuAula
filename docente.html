@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- CDN CSS-->
     <link rel="stylesheet" href="build/css/app.css">
-    <title>Tu Aula - Page One</title>
+    <title>Tu Aula - Docente</title>
 </head>
 <body>
 
@@ -49,11 +49,19 @@
 
             <div class="main__nav">
                 <div class="nav__aside">
+                    <button class="dropdown-btn" onclick="openTab(event, 'home1')" id="defaultOpen">
+                        <i class="fas fa-book"></i>Inicio
+                    </button>   
+                </div>
+            </div>
+
+            <div class="main__nav">
+                <div class="nav__aside">
                     <button class="dropdown-btn">
                         <i class="fas fa-book"></i>Mis Asignaturas
                     </button>   
                     <div class="dropdown-container">
-                        <a href="#">Matematica 1</a>
+                        <a href="#" onclick="openTab(event, 'home2')">Matematica 1</a>
                         <a href="#">Comunicacion 1</a>
                         <a href="#">Ciencias 1</a>
                         <a href="#">Arte 1</a>
@@ -125,7 +133,8 @@
 
         </aside><!--Left Aside-->
 
-        <div class="main__contenido">
+
+        <div class="main__contenido" id="home1">
             <div class="contain">
                 <div class="contain__header">
                     <div class="main__profile main__profile--pub">
@@ -182,10 +191,246 @@
             </div><!--Contenido Publicacion-->
         </div><!--Main Content-->
 
+        <!--.Entrada Matematica 1-->
+        <div class="main__contenido" id="home2">
+            <div class="contain">
+                <div class="contain__header contain__header--pub">
+                    <p class="header__name">Matemática I</p>
+                    <p class="header__subname"><span>Temas</span></p>
+                </div><!--Contenedor Columna Principal-->
+
+                <div class="contain__body">
+                    <div class="body__nav">
+                        <div>
+                            <div class="custom-select">
+                                <span class="text__select">Ordenador por:</span>
+                                <select id="selectMe" >
+                                    <option value="option1">Más reciente</option>
+                                    <option value="option1">Opcion Uno</option>
+                                    <option value="option2">Opcion Dos</option>
+                                    <option value="option3">Opcion Tres</option>
+                                </select>
+                            </div>
+                        </div><!--Select-->
+
+                        <div>
+                            <a class="btn btn--action" href="#" onclick="openTab(event, 'home3')">Crear tema</a>
+                        </div><!--Btn-->
+                    </div><!--Body Nav-->
+
+                    <div class="body__content">
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center" id="tema1">Tema 1</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Tema 2</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Tema 3</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Tema 4</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Tema 5</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Tema 6</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Tema 7</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Tema 8</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Tema 9</p>
+                        </div><!--Item Grid-->
+                    </div>
+
+                    <div class="adminus__flex">
+                        <div class="adminus__pag py-2">
+                            <a class="active" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Contenido Publicacion-->
+
+            
+        </div><!--Main Content-->
+        <!--.Entrada Matematica 1-->
+
+        <!--.Crear Tema-->
+        <div class="main__contenido" id="home3">
+            <div class="contain">
+                <div class="contain__header contain__header--pub">
+                    <p class="header__name" id="ct">Crear Tema </p>
+                    <a class="btn btn--action m-0" href="#"><i class="fas fa-arrow-left"></i>Regresar</a>
+                </div><!--Contenedor Columna Principal-->
+
+                <div class="contain__body">
+                    <div class="body__info" id="initial">
+
+                        <div class="info__title">
+                            <span>Titulo:</span>
+                            <input type="text" placeholder="Texto" class="input__body" id="input__body">
+                        </div>
+
+                        <div>
+                            <div>
+                                
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+    
+                                <span>Habilitar cartelera de avisos</span>
+                            </div><!--ToggleButton-->
+                        </div>
+
+                        <div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+    
+                                <span>Habilitar calendario</span>
+                            </div><!--ToggleButton-->
+                        </div>
+                    </div> <!--Info Crear Tema-->
+
+                    <div class="contenedor btn-center">
+                        <button class="btn btn__actualizar" id="btnTema" onclick="crearTema()">Agregar otro tema</button>
+                    </div>
+
+                    <div class="contenedor btn-center">
+                        <button class="btn btn__actualizar" id="crearTema" onclick="cambiarNombre()">Crear</button>
+                    </div>
+
+                    
+
+                   
+                </div>
+            </div><!--Contenido Publicacion-->
+
+            
+        </div><!--Main Content-->
+        <!--.Crear Tema-->
+
+        <!--.Actividad-->
+        <div class="main__contenido" id="home4">
+            <div class="contain">
+                <div class="contain__header contain__header--pub">
+                    <p class="header__name">Suma y Resta I</p>
+                    <p class="header__subname"><span>Temas</span></p>
+                </div><!--Contenedor Columna Principal-->
+
+                <div class="contain__body">
+                    <div class="body__nav">
+                        <div>
+                            <div class="custom-select">
+                                <span class="text__select">Ordenador por:</span>
+                                <select id="selectMe" >
+                                    <option value="option1">Más reciente</option>
+                                    <option value="option1">Opcion Uno</option>
+                                    <option value="option2">Opcion Dos</option>
+                                    <option value="option3">Opcion Tres</option>
+                                </select>
+                            </div>
+                        </div><!--Select-->
+
+                        <div>
+                            <a class="btn btn--action" href="#" onclick="openTab(event, 'home3')">Crear Actividad</a>
+                        </div><!--Btn-->
+                    </div><!--Body Nav-->
+
+                    <div class="body__content">
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 1</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 2</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 3</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 4</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 5</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 6</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 7</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 8</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 9</p>
+                        </div><!--Item Grid-->
+                    </div>
+
+                    <div class="adminus__flex">
+                        <div class="adminus__pag py-2">
+                            <a class="active" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Contenido Publicacion-->
+
+            
+        </div><!--Main Content-->
+        <!--.Actividad-->
+
         <aside class="main__aside">
             <div class="aside__actions">
                 <div class="aside__button">
-                    <button class="btn btn__actions"><i class="fas fa-plus-circle"></i>Crear Tema</button>
+                    <button class="btn btn__actions" onclick="openTab(event, 'home3')"><i class="fas fa-plus-circle"></i>Crear Tema</button>
                     <button class="btn btn__actions"><i class="fas fa-plus-circle"></i>Crear Actividad</button>
                     <button class="btn btn__actions"><i class="fas fa-plus-circle"></i>Crear Actividad</button>
                 </div>
@@ -194,7 +439,6 @@
                     <div>
                         <h3 class="calender__title">Septiembre</h3>
                         <ol class="calender__items">
-
                             <li class="day">D</li>
                             <li class="day">L</li>
                             <li class="day">M</li>
@@ -239,6 +483,8 @@
             </div>
         </aside><!--Right Aside-->   
     </div>
+
+
 
     <footer class="site__footer">
         <div class="footer__nav">
