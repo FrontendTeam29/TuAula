@@ -8,10 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- CDN Editor-->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <!-- CDN Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- CDN CSS-->
     <link rel="stylesheet" href="build/css/app.css">
+
     <title>Tu Aula - Docente</title>
 </head>
 <body>
@@ -296,9 +299,8 @@
                             <input type="text" placeholder="Texto" class="input__body" id="input__body">
                         </div>
 
-                        <div>
-                            <div>
-                                
+                        <div class="info__switch">
+                            <div>   
                                 <label class="switch">
                                     <input type="checkbox" checked>
                                     <span class="slider round"></span>
@@ -308,7 +310,7 @@
                             </div><!--ToggleButton-->
                         </div>
 
-                        <div>
+                        <div class="info__switch">
                             <div>
                                 <label class="switch">
                                     <input type="checkbox" checked>
@@ -338,7 +340,7 @@
         </div><!--Main Content-->
         <!--.Crear Tema-->
 
-        <!--.Actividad-->
+        <!--Actividad-->
         <div class="main__contenido" id="home4">
             <div class="contain">
                 <div class="contain__header contain__header--pub">
@@ -427,11 +429,190 @@
         </div><!--Main Content-->
         <!--.Actividad-->
 
+        <!--Crear Actividad-->
+        <div class="main__contenido" id="home5">
+            <div class="contain">
+                <div class="contain__header contain__header--pub">
+                    <p class="header__name">Crear Actividad</p>
+                </div><!--Contenedor Columna Principal-->
+
+                <div class="contain__body">
+
+                    <div class="nav__breadcumb">
+                        <p class="item__br">Nivel Academico</p>
+                        <p class="item__br">Nombre Asignatura</p>
+                        <p class="item__br">Dimension</p>
+                        <p class="item__br">Nombre del Tema</p>
+                    </div>
+
+                    <div class="body__info body__info--act">
+                        <div class="info__title">
+                            <span>Titulo:</span>
+                            <input type="text" placeholder="Texto" class="input__body" id="input__body">
+                        </div>
+
+                        <div class="body__editor">
+                            <span class="editor__txt">Descripcion de la actividad:</span>
+                            <div class="editor__borde">
+                                <div id="editor" class="editor__box">
+                                    <p>Escribir...</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="body__editor">
+                            <span class="editor__txt">Actividad motivacional:</span>
+                            <div>
+                                <textarea class="editor__txtarea">Escribir</textarea>
+                            </div>
+                        </div>
+
+                        <div class="body__editor">
+                            <span class="editor__txt">Desarrollo de la actividad:</span>
+                            <div>
+                                <textarea class="editor__txtarea">Escribir</textarea>
+                            </div>
+                        </div>
+
+                        <div class="body__editor">
+                            <div class="body__links">
+                                <div class="links">
+                                    <input type="text" class="input__body input__body--links" placeholder="Link de la clase">
+                                </div>
+
+                                <div class="links">
+                                    <input type="text" class="input__body input__body--links" placeholder="Link de la grabacion">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info__title">
+                            <span>Tipo de actividad:</span>
+                            <span class="btn__actividad"><input type="checkbox">En clase</span>
+                            <span class="btn__actividad"><input type="checkbox">Didáctica</span>
+                            <span class="btn__actividad"><input type="checkbox">En casa</span>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="back">
+                                <button class="btn__actions"><i class="fas fa-undo"></i>Regresar</button>
+                            </div>
+
+                            <div class="next">
+                                <button class="btn__actions">Siguiente</button>
+                            </div>
+                        </div>
+                        
+  
+                    </div>
+
+                    
+                    
+
+                    <div class="adminus__flex">
+                        
+                    </div>
+                </div>
+            </div><!--Contenido Publicacion-->
+
+            
+        </div><!--Main Content-->
+        <!--.Crear Actividad-->
+
+        <!--Nombre de la Actividad-->
+        <div class="main__contenido" id="home6">
+            <div class="contain">
+                <div class="contain__header contain__header--pub">
+                    <p class="header__name">Crear Actividad</p>
+                </div><!--Contenedor Columna Principal-->
+
+                <div class="contain__body">
+                    <div class="body__nav">
+                        <div>
+                            <div class="custom-select">
+                                <span class="text__select">Ordenador por:</span>
+                                <select id="selectMe" >
+                                    <option value="option1">Más reciente</option>
+                                    <option value="option1">Opcion Uno</option>
+                                    <option value="option2">Opcion Dos</option>
+                                    <option value="option3">Opcion Tres</option>
+                                </select>
+                            </div>
+                        </div><!--Select-->
+
+                        <div>
+                            <a class="btn btn--action" href="#" onclick="openTab(event, 'home3')">Crear Actividad</a>
+                        </div><!--Btn-->
+                    </div><!--Body Nav-->
+
+                    <div class="body__content">
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 1</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 2</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 3</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 4</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 5</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 6</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 7</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 8</p>
+                        </div><!--Item Grid-->
+
+                        <div class="content__item">
+                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                            <p class="text-center">Actividad 9</p>
+                        </div><!--Item Grid-->
+                    </div>
+
+                    <div class="adminus__flex">
+                        <div class="adminus__pag py-2">
+                            <a class="active" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Contenido Publicacion-->
+
+            
+        </div><!--Main Content-->
+        <!--.Nombre de la Actividad-->
+
         <aside class="main__aside">
             <div class="aside__actions">
                 <div class="aside__button">
                     <button class="btn btn__actions" onclick="openTab(event, 'home3')"><i class="fas fa-plus-circle"></i>Crear Tema</button>
-                    <button class="btn btn__actions"><i class="fas fa-plus-circle"></i>Crear Actividad</button>
+                    <button class="btn btn__actions" onclick="openTab(event, 'home5')"><i class="fas fa-plus-circle"></i>Crear Actividad</button>
                     <button class="btn btn__actions"><i class="fas fa-plus-circle"></i>Crear Actividad</button>
                 </div>
 
@@ -508,5 +689,19 @@
     <script src="src/js/app.js"></script>
     <script src="src/js/appquery.js"></script>
     <script src="src/js/nav.js"></script>
+
+    <!--Editor-->
+
+     <!-- Include the Quill library -->
+     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>  
+
+    <!-- Initialize Quill editor -->
+    <script>
+        var quill = new Quill('#editor', {
+        theme: 'snow'
+        });
+    </script>
+
+   
 </body>
 </html>

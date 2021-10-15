@@ -16,6 +16,7 @@ $(document).ready(function () {
     });
 });
 
+
 //Cambio de color a las caras
 
 $('#far1').click(function(){

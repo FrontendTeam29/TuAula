@@ -273,8 +273,8 @@
         padding: v.$separacion;
         border-bottom: 0.25rem solid v.$primario;
 
-        div{
-            margin-bottom: v.$separacion;
+        .info__switch{
+            margin-top: v.$separacion;
         }
 
         span{
@@ -288,7 +288,21 @@
             border-radius: 2.5rem;
             background-color: v.$grisClaro;
         }
-    }    
+
+        .input__body--links{
+            margin-top: 2rem;
+            border: 0;
+        }
+    }
+
+    .info__title{
+        margin: 4rem 0;
+    }
+    
+    .body__info--act{
+        padding: 1rem v.$separacion;
+        border: 0;
+    }
 
     .btn--agregar{
         display: block;
@@ -299,6 +313,89 @@
     }
 }
 
+//Entrada Crear Actividad
+
+.nav__breadcumb{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem v.$separacion;
+
+    .item__br{
+        background-color: v.$primario;
+        color: v.$blanco;
+        padding: 0.5rem 3rem;
+        text-align: center;
+        border-radius: 1rem;
+
+        &:nth-child(4){
+            grid-column: 1 / 4;
+            margin: 0;
+        }
+    }
+}
+
+//Editor
+
+.editor__txt{
+    display: block;
+    margin: v.$separacion 0;
+}
+
+.editor__borde{
+    border: 0.3rem solid v.$primario !important;
+    border-radius: 1rem
+}
+
+.editor__txtarea{
+    width: 100%;
+    background-color: v.$grisClaro;
+    border-radius: 1rem;
+    height: 10rem;
+    padding: 2rem;
+}
+
+.body__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .links{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.info__title{
+    .btn__actividad{
+        padding: 0.5rem 5rem;
+        background-color: v.$primario;
+        color: v.$blanco;
+        border-radius: 2rem;
+        cursor: pointer;
+
+        &:hover{
+            background-color: v.$blanco;
+            color: v.$negro;
+        }
+    }
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+
+    .btn__actions{
+        border: 0;
+        background-color: v.$primario;
+        color: v.$blanco;
+        padding: 1rem 3rem;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+}
 
 
   
