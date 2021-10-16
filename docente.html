@@ -500,19 +500,11 @@
                             </div>
 
                             <div class="next">
-                                <button class="btn__actions">Siguiente</button>
+                                <button class="btn__actions" onclick="openTab(event, 'home6')">Siguiente</button>
                             </div>
-                        </div>
-                        
-  
+                        </div>                
                     </div>
 
-                    
-                    
-
-                    <div class="adminus__flex">
-                        
-                    </div>
                 </div>
             </div><!--Contenido Publicacion-->
 
@@ -524,82 +516,59 @@
         <div class="main__contenido" id="home6">
             <div class="contain">
                 <div class="contain__header contain__header--pub">
-                    <p class="header__name">Crear Actividad</p>
+                    <p class="header__name">Nombre de la Actividad</p>
                 </div><!--Contenedor Columna Principal-->
 
                 <div class="contain__body">
-                    <div class="body__nav">
-                        <div>
-                            <div class="custom-select">
-                                <span class="text__select">Ordenador por:</span>
-                                <select id="selectMe" >
-                                    <option value="option1">Más reciente</option>
-                                    <option value="option1">Opcion Uno</option>
-                                    <option value="option2">Opcion Dos</option>
-                                    <option value="option3">Opcion Tres</option>
-                                </select>
+                    <div class="body__info body__info--act">
+
+                        <div class="body__editor">
+                            <span class="editor__txt">Actividad en Clase:</span>
+                            <div class="editor__borde">
+                                <div id="editor2" class="editor__box">
+                                    <p>Escribir...</p>
+                                </div>
                             </div>
-                        </div><!--Select-->
-
-                        <div>
-                            <a class="btn btn--action" href="#" onclick="openTab(event, 'home3')">Crear Actividad</a>
-                        </div><!--Btn-->
-                    </div><!--Body Nav-->
-
-                    <div class="body__content">
-                        <div class="content__item">
-                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
-                            <p class="text-center">Actividad 1</p>
-                        </div><!--Item Grid-->
-
-                        <div class="content__item">
-                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
-                            <p class="text-center">Actividad 2</p>
-                        </div><!--Item Grid-->
-
-                        <div class="content__item">
-                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
-                            <p class="text-center">Actividad 3</p>
-                        </div><!--Item Grid-->
-
-                        <div class="content__item">
-                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
-                            <p class="text-center">Actividad 4</p>
-                        </div><!--Item Grid-->
-
-                        <div class="content__item">
-                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
-                            <p class="text-center">Actividad 5</p>
-                        </div><!--Item Grid-->
-
-                        <div class="content__item">
-                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
-                            <p class="text-center">Actividad 6</p>
-                        </div><!--Item Grid-->
-
-                        <div class="content__item">
-                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
-                            <p class="text-center">Actividad 7</p>
-                        </div><!--Item Grid-->
-
-                        <div class="content__item">
-                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
-                            <p class="text-center">Actividad 8</p>
-                        </div><!--Item Grid-->
-
-                        <div class="content__item">
-                            <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
-                            <p class="text-center">Actividad 9</p>
-                        </div><!--Item Grid-->
-                    </div>
-
-                    <div class="adminus__flex">
-                        <div class="adminus__pag py-2">
-                            <a class="active" href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
+                            
                         </div>
+
+                        <div class="body__radios">
+                            <input type="radio">Carpeta
+                            <input type="radio">Cuaderno
+                            <div class="buttons">
+                                <a href="#" class="btn__actions">Buscar en la plataforma</a> 
+                            </div>
+                        </div>
+
+                        <div class="body__activities">
+                            <div class="body__content">
+                                <div class="content__item">
+                                    <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                                    <p class="text-center" id="tema1">Tema 1</p>
+                                </div><!--Item Grid-->
+
+                                <div class="content__item">
+                                    <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                                    <p class="text-center" id="tema1">Tema 1</p>
+                                </div><!--Item Grid-->
+
+                                <div class="content__item">
+                                    <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                                    <p class="text-center" id="tema1">Tema 1</p>
+                                </div><!--Item Grid-->
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="back">
+                                <button class="btn__actions" onclick="openTab(event, 'home6')"><i class="fas fa-undo"></i>Regresar</button>
+                            </div>
+
+                            <div class="next">
+                                <button class="btn__actions" onclick="openTab(event, 'home7')">Siguiente</button>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div><!--Contenido Publicacion-->
@@ -607,6 +576,225 @@
             
         </div><!--Main Content-->
         <!--.Nombre de la Actividad-->
+
+        <!--Actividad Didactica-->
+        <div class="main__contenido" id="home7">
+            <div class="contain">
+                <div class="contain__header contain__header--pub">
+                    <p class="header__name">Nombre de la Actividad</p>
+                </div><!--Contenedor Columna Principal-->
+
+                <div class="contain__body">
+                    <div class="body__info body__info--act">
+
+                        <div class="body__editor">
+                            <span class="editor__txt">Actividad Didáctica:</span>
+                            <div>
+                                <textarea class="editor__txtarea" placeholder="Descripción de la actividad"></textarea>
+                            </div>
+                            
+                        </div>
+
+                        <h4 class="text-center">Juegos recomendados</h4>
+
+                        <div class="body__activities">
+
+
+
+                            <div class="body__content">
+                                <div class="content__item">
+                                    <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                                    <p class="text-center" id="tema1">Actividad 1</p>
+                                </div><!--Item Grid-->
+
+                                <div class="content__item">
+                                    <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                                    <p class="text-center" id="tema1">Actividad 2</p>
+                                </div><!--Item Grid-->
+
+                                <div class="content__item">
+                                    <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                                    <p class="text-center" id="tema1">Actividad 3</p>
+                                </div><!--Item Grid-->
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="back">
+                                <button class="btn__actions" onclick="openTab(event, 'home7')"><i class="fas fa-undo"></i>Regresar</button>
+                            </div>
+
+                            <div class="next">
+                                <button class="btn__actions" onclick="openTab(event, 'home8')">Siguiente</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div><!--Contenido Publicacion-->
+
+            
+        </div><!--Main Content-->
+        <!--.Actividad Didactica-->
+
+        <!--Actividad Casa-->
+        <div class="main__contenido" id="home8">
+            <div class="contain">
+                <div class="contain__header contain__header--pub">
+                    <p class="header__name">Nombre de la Actividad</p>
+                </div><!--Contenedor Columna Principal-->
+
+                <div class="contain__body">
+                    <div class="body__info body__info--act">
+
+                        <div class="body__editor">
+                            <span class="editor__txt">Actividad en Casa:</span>
+                            <div>
+                                <textarea class="editor__txtarea" placeholder="Descripción de la actividad"></textarea>
+                            </div>
+                            
+                        </div>
+
+                        <div class="body__radios">
+                            <input type="radio">Carpeta
+                            <input type="radio">Cuaderno
+                            <div class="buttons">
+                                <a href="#" class="btn__actions">Buscar en la plataforma</a> 
+                            </div>
+                        </div>
+
+
+                        <div class="body__activities">
+                            <div class="body__content">
+                                <div class="content__item">
+                                    <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                                    <p class="text-center" id="tema1">Actividad 1</p>
+                                </div><!--Item Grid-->
+
+                                <div class="content__item">
+                                    <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                                    <p class="text-center" id="tema1">Actividad 2</p>
+                                </div><!--Item Grid-->
+
+                                <div class="content__item">
+                                    <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                                    <p class="text-center" id="tema1">Actividad 3</p>
+                                </div><!--Item Grid-->
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="back">
+                                <button class="btn__actions" onclick="openTab(event, 'home8')"><i class="fas fa-undo"></i>Regresar</button>
+                            </div>
+
+                            <div class="next">
+                                <button class="btn__actions" onclick="openTab(event, 'home9')">Siguiente</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div><!--Contenido Publicacion-->
+
+            
+        </div><!--Main Content-->
+        <!--.Actividad Casa-->
+
+        <!--Config Final-->
+        <div class="main__contenido" id="home9">
+            <div class="contain">
+                <div class="contain__header contain__header--pub">
+                    <p class="header__name">Nombre de la Actividad</p>
+                </div><!--Contenedor Columna Principal-->
+
+                <div class="contain__body">
+                    <div class="body__info body__info--act">
+
+                        <div class="body__switch">
+                            <div class="info__switch">
+                                <div>   
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+        
+                                    <span>Actividad calificable</span>
+                                </div><!--ToggleButton-->
+                            </div>
+    
+                            <div class="info__switch">
+                                <div>   
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+        
+                                    <span>Habilitar subir evidencias</span>
+                                </div><!--ToggleButton-->
+                            </div>
+                        </div>
+                        
+
+                        
+                        <span class="text__radio text-bold">Habilitar evidencias: </span>
+
+                        <div class="body__radios body__radios--start">
+                            
+                            <input type="radio">Estudiante
+                            <input type="radio">Docente
+                            <input type="radio">Padres de Familia
+                        </div>
+
+
+                        <div class="body__time">
+                            <div class="time__inputs">
+                                <span class="text__time text-bold">Fecha de Inicio:</span>
+                                <input type="date" class="input__body input__body--time">
+                            </div>
+
+                            <div class="time__inputs">
+                                <span class="text__time text-bold">Fecha de Fin:</span>
+                                <input type="date" class="input__body input__body--time">
+                            </div>
+
+                            <div class="time__inputs">
+                                <span class="text__time text-bold">Hora de Inicio:</span>
+                                <input type="time" class="input__body input__body--time">
+                            </div>
+
+                            <div class="time__inputs">
+                                <span class="text__time text-bold">Hora de Fin:</span>
+                                <input type="time" class="input__body input__body--time">
+                            </div>
+                        </div>
+
+                        <div class="adminus__flex">
+
+                            <div class="adminus__btn">
+                                <div class="btn__flex">
+                                    <button class="btn btn__nueva" onclick="openTab(event, 'home8')"><i class="fas fa-arrow-left"></i>Regresar</button>
+                                </div>
+                                
+                            </div>
+
+                            <div class="adminus__btn adminus__pag">
+                                <div class="btn__flex">
+                                    <button class="btn btn__nueva">Guardar</button>
+                                </div>
+                                
+                            </div>
+                
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </div><!--Contenido Publicacion-->
+
+            
+        </div><!--Main Content-->
+        <!--.Config Final-->
 
         <aside class="main__aside">
             <div class="aside__actions">
@@ -697,7 +885,11 @@
 
     <!-- Initialize Quill editor -->
     <script>
-        var quill = new Quill('#editor', {
+        let quill = new Quill('#editor', {
+        theme: 'snow'
+        });
+
+        let quill2 = new Quill('#editor2', {
         theme: 'snow'
         });
     </script>

@@ -2,8 +2,13 @@
 @use '../base/mixins' as m;
 
 .main__contenedor{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    display: flex;
+    flex-direction: column;
+
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
 
     .main__aside{
         padding: 2rem;
@@ -273,6 +278,10 @@
         padding: v.$separacion;
         border-bottom: 0.25rem solid v.$primario;
 
+        .body__switch{
+            margin-bottom: v.$separacion;
+        }
+
         .info__switch{
             margin-top: v.$separacion;
         }
@@ -292,6 +301,11 @@
         .input__body--links{
             margin-top: 2rem;
             border: 0;
+        }
+
+        .input__body--time{
+            width: 20rem;
+            padding: 0.5rem 2rem;
         }
     }
 
@@ -349,6 +363,13 @@
     border-radius: 1rem
 }
 
+.editor__box{
+    max-width: 88.5rem;
+    @include m.tablet{
+        max-width: 100rem;
+    }
+}
+
 .editor__txtarea{
     width: 100%;
     background-color: v.$grisClaro;
@@ -394,6 +415,54 @@
         padding: 1rem 3rem;
         border-radius: 1rem;
         cursor: pointer;
+    }
+}
+
+//Name Activity
+
+.body__info{
+
+    .body__radios{
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .body__radios--start{
+        justify-content: flex-start;
+    }
+
+    .body__activities{
+        background-color: v.$grisClaro;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin-bottom: v.$separacion;
+    }
+}
+
+// Config Final
+
+.body__time{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: v.$separacion;
+
+    .time__inputs{
+        margin-bottom: 2rem;
+    }
+
+    .text__time{
+        display: inline-block;
+        width: 15rem;
+    }
+
+    input[type="time"],
+    input[type="date"]{
+        width: 20rem;
     }
 }
 

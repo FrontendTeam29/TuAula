@@ -68,9 +68,8 @@ function crearTema(){
                           <input type="text" placeholder="Texto" class="input__body">
                       </div>
 
-                      <div>
-                          <div>
-                              
+                      <div class="info__switch">
+                          <div> 
                               <label class="switch">
                                   <input type="checkbox" checked>
                                   <span class="slider round"></span>
@@ -80,7 +79,7 @@ function crearTema(){
                           </div><!--ToggleButton-->
                       </div>
 
-                      <div>
+                      <div class="info__switch">
                           <div>
                               <label class="switch">
                                   <input type="checkbox" checked>
