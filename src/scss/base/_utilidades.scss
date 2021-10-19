@@ -100,3 +100,10 @@
     color: v.$primario;
 }
 
+    
+.primary-nohollow{
+    background-color: v.$primario !important;
+    border: 1px solid v.$blanco !important;
+    color: v.$blanco !important;
+}
+

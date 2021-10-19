@@ -83,5 +83,21 @@ $('#far16').click(function(){
   $("#far16").toggleClass("blue");
 });
 
+// Cambiar el color a los btn
+
+$(document).ready(function() {
+  $( ".js-click-class" ).click(function() {
+    $( ".js-click-class" ).toggleClass("primary-nohollow");
+  });
+
+  $( ".js-click-didac" ).click(function() {
+    $( ".js-click-didac" ).toggleClass("primary-nohollow");
+  });
+
+  $( ".js-click-home" ).click(function() {
+    $( ".js-click-home" ).toggleClass("primary-nohollow");
+  });
+});
+
 
 

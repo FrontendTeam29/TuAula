@@ -325,7 +325,7 @@
         }
     
         .input__body{
-            max-width: 90%;
+            width: 100%;
             padding: 0.5rem 3rem;
             border-radius: 2.5rem;
             background-color: v.$grisClaro;
@@ -426,6 +426,7 @@
     flex-direction: column;
 
     @include m.desktop{
+        justify-content: space-between;
         flex-direction: row;
     }
 
@@ -439,16 +440,12 @@
     .btn__actividad{
         display: block;
         padding: 0.5rem 1rem;
-        background-color: v.$primario;
-        color: v.$blanco;
+        background-color: v.$blanco;
+        border: 1px solid v.$primario;
+        color: v.$negro;
         border-radius: 2rem;
         cursor: pointer;
         margin-bottom: 1rem;
-
-        &:hover{
-            background-color: v.$blanco;
-            color: v.$negro;
-        }
 
         @include m.desktop{
             display: inline;
