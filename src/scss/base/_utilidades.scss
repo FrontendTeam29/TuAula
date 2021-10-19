@@ -1,4 +1,6 @@
 @use 'variables' as v;
+@use 'mixins' as m;
+
 .text-center{
     text-align: center;
 }
@@ -45,12 +47,16 @@
 }
 
 .btn{
-    padding: 1rem 10rem;
+    padding: 1rem 3rem;
     border: none;
     background-color: v.$primario;
     color: v.$blanco;
     border-radius: 20px;
     margin: 5rem 0;
+
+    @include m.tablet{
+        padding: 1rem 10rem;
+    }
 }
 
 .btn__actualizar{

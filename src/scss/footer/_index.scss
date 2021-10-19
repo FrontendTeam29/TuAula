@@ -1,10 +1,16 @@
 @use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .site__footer{
     background-color: v.$primario;
     padding: 3rem 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+
+    @include m.tablet{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     .footer__nav{
         max-width: 120rem;

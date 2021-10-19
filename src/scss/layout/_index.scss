@@ -5,12 +5,13 @@
     display: flex;
     flex-direction: column;
 
-    @include m.tablet{
+    @include m.desktop{
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
     }
 
     .main__aside{
+        display: none;
         padding: 2rem;
         border-right: 0.1rem solid v.$grisClaro;
 
@@ -119,7 +120,7 @@
         display: none;
         background-color: v.$blanco;
     }
-        
+
     .fa-book {
         float: left;
         padding-left: 10px;
@@ -249,17 +250,33 @@
 }
 
 .body__nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 3rem;
+    display: block;
+    margin: 0 auto;
+    padding: 3rem;
+
+    @include m.tablet{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1rem 3rem;
+    }
 
     .text__select{
         font-weight: bold;
     }
 
     .btn--action{
-        padding: 1rem 3rem;
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 1rem;
+
+        @include m.tablet{
+            display: unset;
+            text-align: unset;
+            font-size: 1.5rem;
+            padding: 1rem 3rem;
+        }
     }
 }
 
@@ -267,15 +284,24 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    @include m.tablet{
+    @include m.desktop{
         grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
 
     .item__photo--body{
-        width: 25rem;
+        width: 15rem;
         border: 0.25rem solid v.$primario;
         border-radius: 1rem;
         cursor: pointer;
+
+        @include m.tablet{
+            width: 20rem;
+        }
+
+        @include m.desktop{
+            width: 25rem;
+        }
     }
 }
 
@@ -299,8 +325,7 @@
         }
     
         .input__body{
-            max-width: 85%;
-            width: 50rem;
+            max-width: 90%;
             padding: 0.5rem 3rem;
             border-radius: 2.5rem;
             background-color: v.$grisClaro;
@@ -338,12 +363,20 @@
 //Entrada Crear Actividad
 
 .nav__breadcumb{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
-    padding: 2rem v.$separacion;
+    flex-direction: column;
+    padding: 2rem;
+
+    @include m.desktop{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 2rem v.$separacion;
+    }
 
     .item__br{
         background-color: v.$primario;
@@ -390,6 +423,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    @include m.desktop{
+        flex-direction: row;
+    }
 
     .links{
         display: flex;
@@ -399,15 +437,22 @@
 
 .info__title{
     .btn__actividad{
-        padding: 0.5rem 5rem;
+        display: block;
+        padding: 0.5rem 1rem;
         background-color: v.$primario;
         color: v.$blanco;
         border-radius: 2rem;
         cursor: pointer;
+        margin-bottom: 1rem;
 
         &:hover{
             background-color: v.$blanco;
             color: v.$negro;
+        }
+
+        @include m.desktop{
+            display: inline;
+            padding: 0.5rem 5rem;
         }
     }
 }
@@ -420,9 +465,15 @@
         border: 0;
         background-color: v.$primario;
         color: v.$blanco;
-        padding: 1rem 3rem;
+        padding: 1rem 2rem;
         border-radius: 1rem;
         cursor: pointer;
+        font-size: 1.1rem;
+
+        @include m.tablet{
+            font-size: 1.5rem;
+            padding: 1rem 3rem;
+        }
     }
 }
 
@@ -453,11 +504,16 @@
 // Config Final
 
 .body__time{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: v.$separacion;
+
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .time__inputs{
         margin-bottom: 2rem;
