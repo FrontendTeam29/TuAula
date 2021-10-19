@@ -32,7 +32,7 @@ function openTab(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-//Funcionamiento Nav
+//Funcionamiento Navs
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -41,6 +41,17 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+//Doble Nav
+
+function openNavRight() {
+  document.getElementById("mySidenavRight").style.width = "250px";
+}
+
+function closeNavRight() {
+  document.getElementById("mySidenavRight").style.width = "0";
+}
+
 
 //Clase active para el menu cuando selecciona el boton nuevas solicitudes
 function activeNav(){

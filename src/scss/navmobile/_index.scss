@@ -16,12 +16,13 @@
     padding-top: 60px;
 
     a {
-        padding: 8px 8px 8px 32px;
+        padding: 8px 8px 8px 88px;
         text-decoration: none;
         font-size: 25px;
         color: #818181;
         display: block;
         transition: 0.3s;
+        cursor: pointer;
 
         &:hover{
             color: v.$grisClaro;
@@ -59,3 +60,69 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+//Doble Nav
+
+.sidenav__double{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    gap: v.$separacion;
+    i{
+        font-size: 3rem;
+        cursor: pointer;
+        &:hover{
+            color: v.$primario;
+        }
+    }
+
+    @include m.desktop{
+        display: none;
+    }
+}
+
+.sidenav--right{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: v.$blancoOscuro;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover{
+            color: v.$grisClaro;
+        }
+    }
+
+    .tablinks{
+        border: none;
+        color: v.$primario;
+        text-align: left;
+        padding: 2rem 5rem;
+
+        i{
+            margin-right: 1rem;
+        }
+
+        &:hover{
+            background-color: v.$primario;
+            color: v.$blancoOscuro;
+        }
+    }
+}
+

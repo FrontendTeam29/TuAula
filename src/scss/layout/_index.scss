@@ -13,6 +13,14 @@
     .main__aside{
         padding: 2rem;
         border-right: 0.1rem solid v.$grisClaro;
+
+        @include m.telefono{
+            display: none;
+        }
+
+        @include m.desktop{
+            display: block;
+        }
     }    
 }
 
@@ -111,7 +119,7 @@
         display: none;
         background-color: v.$blanco;
     }
-    
+        
     .fa-book {
         float: left;
         padding-left: 10px;
