@@ -6,12 +6,8 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
-    flex-direction: column;
-    padding: 2rem v.$separacion;
-
-    @include m.telefono{
-        flex-direction: column;
-    }
+    flex-direction: row;
+    padding: 2rem 3rem;
 
     @include m.tablet{
         flex-direction: row;
@@ -30,7 +26,7 @@
         font-size: 1.2rem;
         background-color: v.$primario;
         color: v.$blanco;
-        margin-right: 1rem;
+        margin-right: 0.5rem;
         padding: 0.8rem;
         border-radius: 50%;
 
