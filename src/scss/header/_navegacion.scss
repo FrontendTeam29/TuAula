@@ -7,6 +7,7 @@
     align-items: center;
     margin-bottom: 1rem;
     flex-direction: column;
+    padding: 2rem v.$separacion;
 
     @include m.telefono{
         flex-direction: column;
