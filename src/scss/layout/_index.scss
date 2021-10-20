@@ -7,7 +7,7 @@
 
     @include m.desktop{
         display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 4fr;
     }
 
     .main__aside{
@@ -22,12 +22,14 @@
         @include m.desktop{
             display: block;
         }
-    }    
+    }   
+    
 }
 
 .main__profile{
     display: flex;
     justify-content: space-evenly;
+    cursor: pointer;
 
     & .profile__image--round{
         max-width: 50px;
@@ -69,8 +71,7 @@
         justify-content: left;
         padding-left: 5rem;
         align-items: center;
-        border: 0.25rem solid v.$primario;
-        
+        border: 0.25rem solid v.$primario;  
         width:100%;
         text-align: left;
         cursor: pointer;
@@ -99,6 +100,8 @@
         display: block;
         padding-left: v.$separacion;
         text-align: left;
+        font-weight: lighter;
+        
 
         &:hover{
             background-color: v.$primario;
@@ -121,6 +124,7 @@
         background-color: v.$blanco;
     }
 
+
     .fa-book {
         float: left;
         padding-left: 10px;
@@ -140,7 +144,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem;
+        padding: 0.5rem;
+
+        @include m.desktop{
+            padding: 2rem;
+        }
 
         .btn__verde{
             background-color: v.$verdeAuxiliar;
@@ -183,6 +191,8 @@
         justify-content: space-between;
         height: 100%;
     }
+
+
 
     .btn__actions{
         border-radius: 0;
@@ -392,6 +402,12 @@
     }
 }
 
+.nav__breadcumb--selects{
+    select{
+        margin-bottom: 3rem;
+    }
+}
+
 //Editor
 
 .editor__txt{
@@ -525,6 +541,21 @@
     input[type="date"]{
         width: 20rem;
     }
+}
+
+//Boton Flotante
+.btn__father{
+    position: relative;
+}
+.btn__float{
+    background-color: v.$grisClaro;
+    border-radius: 50%;
+    padding: 2rem 2rem 1.5rem 1.8rem;
+    position: absolute;
+    top: -800px;
+    right: 1%;
+    z-index: 1;
+    cursor: pointer;
 }
 
 

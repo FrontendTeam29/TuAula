@@ -299,9 +299,14 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding-bottom: 2rem;
     border-bottom: 3px solid v.$primario;
     gap: 1rem;
+
+    @include m.desktop{
+        flex-direction: row;
+    }
 }
 
 .cali--admin{

@@ -8,13 +8,15 @@
     margin-bottom: 1rem;
     flex-direction: row;
     padding: 2rem 3rem;
+    z-index: 2;
 
     @include m.tablet{
         flex-direction: row;
-    }
+    }   
 
     @include m.desktop{
         flex-direction: row;
+        padding: 2rem 10rem;
     }
 
     .logo{

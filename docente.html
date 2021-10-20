@@ -20,13 +20,13 @@
 <body>
 
     <header>
-        <div class="nav__principal contenedor py-2">
+        <div class="nav__principal py-2">
             <div>
                 <img class="logo" src="img/logo2png.png" alt="Logo Tu Aula">
             </div>
 
             <div>
-                <nav>
+                <nav class="nav__icons">
                     <a href="#" class="nav__principal-icon"><i class="fas fa-search"></i></a>
                     <a href="#" class="nav__principal-icon"><i class="fas fa-plus"></i></a>
                     <a href="#" class="nav__principal-icon"><i class="fas fa-bell"></i></a>
@@ -41,19 +41,87 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <button class="tablinks" onclick="openTab(event, 'home1')"><i class="fas fa-book"></i>Inicio</button>
-        <button class="tablinks" onclick="openTab(event, 'home1')"><i class="fas fa-book"></i>Mis Asignaturas</button>
-        <div class="dropdown-container">
-            <a href="#" onclick="openTab(event, 'home2')">Matematica 1</a>
-            <a href="#">Comunicacion 1</a>
-            <a href="#">Ciencias 1</a>
-            <a href="#">Arte 1</a>
-            <a href="#">Arte 2</a>
-        </div>
-        <button class="tablinks" onclick="openTab(event, 'home1')"><i class="fas fa-apple-alt"></i>Mis actividades</button>
-        <button class="tablinks" onclick="openTab(event, 'home1')"><i class="fas fa-signal"></i>Calificar</button>
-        <button class="tablinks" onclick="openTab(event, 'home1')"><i class="fab fa-adn"></i>Notas</button>
-        <button class="tablinks" onclick="openTab(event, 'home1')"><i class="fab fa-adn"></i>Notas</button>
+        <aside class="main__aside">
+            
+
+            <div class="main__nav">
+                <div class="nav__aside">
+                    <button class="dropdown-btn">
+                        <i class="fas fa-book"></i>Mis Asignaturas
+                    </button>   
+                    <div class="dropdown-container">
+                        <a href="#" onclick="openTab(event, 'home2')">Matematica 1</a>
+                        <a href="#">Comunicacion 1</a>
+                        <a href="#">Ciencias 1</a>
+                        <a href="#">Arte 1</a>
+                        <a href="#">Arte 2</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__nav">
+                <div class="nav__aside">
+                    <button class="dropdown-btn">
+                        <i class="fas fa-apple-alt"></i>Mis Actividades
+                    </button>   
+                    <div class="dropdown-container">
+                        <a href="#">Semana 1</a>
+                        <a href="#">Semana 2</a>
+                        <a href="#">Semana 3</a>
+                        <a href="#">Semana 4</a>
+                        <a href="#">Semana 5</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__nav">
+                <div class="nav__aside">
+                    <button class="dropdown-btn">
+                        <i class="fas fa-signal"></i>Calificar
+                    </button>   
+                    <div class="dropdown-container">
+                        <a href="#">Semana 1</a>
+                        <a href="#">Semana 2</a>
+                        <a href="#">Semana 3</a>
+                        <a href="#">Semana 4</a>
+                        <a href="#">Semana 5</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__nav">
+                <div class="nav__aside">
+                    <button class="dropdown-btn">
+                        <i class="fab fa-adn"></i>Notas
+                    </button>   
+                    <div class="dropdown-container">
+                        <a href="#">Semana 1</a>
+                        <a href="#">Semana 2</a>
+                        <a href="#">Semana 3</a>
+                        <a href="#">Semana 4</a>
+                        <a href="#">Semana 5</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__nav">
+                <div class="nav__aside">
+                    <button class="dropdown-btn">
+                        <i class="fab fa-adn"></i>Notas
+                    </button>   
+                    <div class="dropdown-container">
+                        <a href="#">Semana 1</a>
+                        <a href="#">Semana 2</a>
+                        <a href="#">Semana 3</a>
+                        <a href="#">Semana 4</a>
+                        <a href="#">Semana 5</a>
+                    </div>
+                </div>
+            </div>
+        
+
+        </aside><!--Left Aside-->
+       
     </div>
 
     <!--.Nav Mobile Left-->
@@ -62,16 +130,83 @@
 
     <div id="mySidenavRight" class="sidenav--right">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNavRight()">&times;</a>
-        <button class="tablinks" onclick="openTab(event, 'home3')"><i class="fas fa-plus-circle"></i>Crear Tema</button>
-        <button class="tablinks" onclick="openTab(event, 'home5')"><i class="fas fa-plus-circle"></i>Crear Actividad</button>
-        <button class="tablinks" onclick="openTab(event, 'home5')"><i class="fas fa-plus-circle"></i>Crear Actividad</button>
-    </div>
+        <aside class="main__aside">
+            
+            <div class="aside__actions">
+                
+                <div class="aside__button">
+                    <button class="btn btn__actions" onclick="openTab(event, 'home10')"><i class="fas fa-plus-circle"></i>Crear Tema</button>
+                    <button class="btn btn__actions" onclick="openTab(event, 'home11')"><i class="fas fa-plus-circle"></i>Crear Actividad</button>
+                    <button class="btn btn__actions"><i class="fas fa-plus-circle"></i>Crear Actividad</button>
+                </div>
 
-    <!--.Nav Mobile Right-->
+                <div class="aside__calender">
+                    <div>
+                        <h3 class="calender__title">Septiembre</h3>
+                        <ol class="calender__items">
+                            <li class="day">D</li>
+                            <li class="day">L</li>
+                            <li class="day">M</li>
+                            <li class="day">X</li>
+                            <li class="day">J</li>
+                            <li class="day">V</li>
+                            <li class="day">S</li>
+                            <li class="first-day">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                            <li>30</li>   
+                        </ol>
+                    </div>
+                </div>
+                
+            </div>
+        </aside>
+    </div>     
+    <!--.Nav Mobile Right--> 
+
+    
 
     <div class="contenedor sidenav__double">
-        <div class="menu" onclick="openNav()"><i class="fas fa-align-left"></i></div>
-        <div class="menu" onclick="openNavRight()"><i class="fas fa-align-right"></i></div>
+        <div class="main__profile" onclick="openTab(event, 'home1')">
+            <div class="profile__image">
+                <img class="profile__image--round" src="img/icons/profile.png" alt="Image Profile">
+            </div>
+
+            <div class="profile__text">
+                <p class="text__name">Juan Carlos Perez</p>
+                <p class="text__pro">Docente</p>
+            </div>
+        </div>
+
+        <i class="fas fa-plus" onclick="openNav()"></i>
+        <!--<div class="menu" onclick="openNav()"><i class="fas fa-align-left"></i></div>-->
+        <!--<div class="menu" onclick="openNavRight()"><i class="fas fa-chevron-left"></i>-->
     </div>
     
 
@@ -599,7 +734,7 @@
 
                         <div class="buttons">
                             <div class="back">
-                                <button class="btn__actions" onclick="openTab(event, 'home6')"><i class="fas fa-undo"></i>Regresar</button>
+                                <button class="btn__actions" onclick="openTab(event, 'home5')"><i class="fas fa-undo"></i>Regresar</button>
                             </div>
 
                             <div class="next">
@@ -659,7 +794,7 @@
 
                         <div class="buttons">
                             <div class="back">
-                                <button class="btn__actions" onclick="openTab(event, 'home7')"><i class="fas fa-undo"></i>Regresar</button>
+                                <button class="btn__actions" onclick="openTab(event, 'home6')"><i class="fas fa-undo"></i>Regresar</button>
                             </div>
 
                             <div class="next">
@@ -723,7 +858,7 @@
 
                         <div class="buttons">
                             <div class="back">
-                                <button class="btn__actions" onclick="openTab(event, 'home8')"><i class="fas fa-undo"></i>Regresar</button>
+                                <button class="btn__actions" onclick="openTab(event, 'home7')"><i class="fas fa-undo"></i>Regresar</button>
                             </div>
 
                             <div class="next">
@@ -834,8 +969,181 @@
         </div><!--Main Content-->
         <!--.Config Final-->
 
-        <aside class="main__aside">
+        <!--.Crear Tema2-->
+        <div class="main__contenido" id="home10">
+            <div class="contain">
+                <div class="contain__header contain__header--pub">
+                    <p class="header__name" id="ct">Crear Tema </p>
+                    <a class="btn btn--action m-0" href="#"><i class="fas fa-arrow-left"></i>Regresar</a>
+                </div><!--Contenedor Columna Principal-->
+
+                <div class="contain__body">
+                    <div class="body__info" id="initial">
+
+                        <div class="cali cali__docente py-2">   
+                            <div class="custom-select">
+                                <select id="selectMe" >
+                                    <option value="option1">Seleccionar Nivel</option>
+                                    <option value="option1">Parvulos</option>
+                                    <option value="option2">Jardin</option>
+                                    <option value="option3">Transicion</option>
+                                </select>
+                            </div>
+                            
+                            <div class="custom-select">
+                                <select id="selectMe1">
+                                    <option value="option4">Seccionar Asignatura</option>
+                                    <option value="option4">Escala Numerica</option>
+                                    <option value="option5">Escala Nacional</option>
+                                    <option value="option6">Escala Cualitativa</option>
+                                    <option value="option7">Escala Grafica</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+
+                        <div class="info__title">
+                            <span>Titulo:</span>
+                            <input type="text" placeholder="Texto" class="input__body" id="input__body">
+                        </div>
+
+                        <div class="info__switch">
+                            <div>   
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+    
+                                <span>Habilitar cartelera de avisos</span>
+                            </div><!--ToggleButton-->
+                        </div>
+
+                        <div class="info__switch">
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+    
+                                <span>Habilitar calendario</span>
+                            </div><!--ToggleButton-->
+                        </div>
+                    </div> <!--Info Crear Tema-->
+
+                    <div class="contenedor btn-center">
+                        <button class="btn btn__actualizar" id="btnTema" onclick="crearTema()">Agregar otro tema</button>
+                    </div>
+
+                    <div class="contenedor btn-center">
+                        <button class="btn btn__actualizar" id="crearTema" onclick="cambiarNombre()">Crear</button>
+                    </div>
+
+                    
+
+                   
+                </div>
+            </div><!--Contenido Publicacion-->
+
+            
+        </div><!--Main Content-->
+        <!--.Crear Tema2-->
+
+        <!--Crear Actividad2-->
+        <div class="main__contenido" id="home11">
+            <div class="contain">
+                <div class="contain__header contain__header--pub">
+                    <p class="header__name">Crear Actividad</p>
+                </div><!--Contenedor Columna Principal-->
+
+                <div class="contain__body">
+
+                    <div class="nav__breadcumb nav__breadcumb--selects">
+                        <select class="item__br">
+                            <option value="Nivel Academico">Nivel Academico</option>
+                        </select>
+                        <select class="item__br">
+                            <option value="Nombre Asignatura">Nombre Asignatura</option>
+                        </select>
+                        <select class="item__br">
+                            <option value="Dimension">Dimension</option>
+                        </select>
+                        <select class="item__br">
+                            <option value="Nombre del Tema">Nombre del Tema</option>
+                        </select>
+                    </div>
+
+                    <div class="body__info body__info--act">
+                        <div class="info__title">
+                            <span>Titulo:</span>
+                            <input type="text" placeholder="Texto" class="input__body" id="input__body">
+                        </div>
+
+                        <div class="body__editor">
+                            <span class="editor__txt">Descripcion de la actividad:</span>
+                            <div class="editor__borde">
+                                <div id="editor" class="editor__box">
+                                    <p>Escribir...</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="body__editor">
+                            <span class="editor__txt">Actividad motivacional:</span>
+                            <div>
+                                <textarea class="editor__txtarea">Escribir</textarea>
+                            </div>
+                        </div>
+
+                        <div class="body__editor">
+                            <span class="editor__txt">Desarrollo de la actividad:</span>
+                            <div>
+                                <textarea class="editor__txtarea">Escribir</textarea>
+                            </div>
+                        </div>
+
+                        <div class="body__editor">
+                            <div class="body__links">
+                                <div class="links">
+                                    <input type="text" class="input__body input__body--links" placeholder="Link de la clase">
+                                </div>
+
+                                <div class="links">
+                                    <input type="text" class="input__body input__body--links" placeholder="Link de la grabacion">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info__title">
+                            <span>Tipo de actividad:</span>
+                            <span class="btn__actividad js-click-class">En clase</span>
+                            <span class="btn__actividad js-click-didac">Didáctica</span>
+                            <span class="btn__actividad js-click-home">En casa</span>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="back">
+                                <button class="btn__actions"><i class="fas fa-undo"></i>Regresar</button>
+                            </div>
+
+                            <div class="next">
+                                <button class="btn__actions" onclick="openTab(event, 'home6')">Siguiente</button>
+                            </div>
+                        </div>                
+                    </div>
+
+                </div>
+            </div><!--Contenido Publicacion-->
+
+            
+        </div><!--Main Content-->
+        <!--.Crear Actividad2-->
+
+        
+        <!--<aside class="main__aside" id="mySidenavRight">
+            
             <div class="aside__actions">
+                
                 <div class="aside__button">
                     <button class="btn btn__actions" onclick="openTab(event, 'home3')"><i class="fas fa-plus-circle"></i>Crear Tema</button>
                     <button class="btn btn__actions" onclick="openTab(event, 'home5')"><i class="fas fa-plus-circle"></i>Crear Actividad</button>
@@ -888,10 +1196,13 @@
                 </div>
                 
             </div>
-        </aside><!--Right Aside-->   
+        </aside>--><!--Right Aside--> 
     </div>
 
-
+    <div class="btn__father">
+        <div class="menu btn__float" onclick="openNavRight()"><i class="fas fa-chevron-left"></i>
+    </div>
+    
 
     <footer class="site__footer">
         <div class="footer__nav">

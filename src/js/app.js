@@ -32,10 +32,12 @@ function openTab(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
+
+
 //Funcionamiento Navs
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "400px";
 }
 
 function closeNav() {
@@ -45,11 +47,36 @@ function closeNav() {
 //Doble Nav
 
 function openNavRight() {
-  document.getElementById("mySidenavRight").style.width = "250px";
+  document.getElementById("mySidenavRight").style.width = "300px";
+  document.getElementsByClassName("main__contenido")[0].style.marginRight = "300px";
+  document.getElementsByClassName("main__contenido")[1].style.marginRight = "300px";
+  document.getElementsByClassName("main__contenido")[2].style.marginRight = "300px";
+  document.getElementsByClassName("main__contenido")[3].style.marginRight = "300px";
+  document.getElementsByClassName("main__contenido")[4].style.marginRight = "300px";
+  document.getElementsByClassName("main__contenido")[5].style.marginRight = "300px";
+  document.getElementsByClassName("main__contenido")[6].style.marginRight = "300px";
+  document.getElementsByClassName("main__contenido")[7].style.marginRight = "300px";
+  document.getElementsByClassName("main__contenido")[8].style.marginRight = "300px";
+  document.getElementsByClassName("main__contenido")[9].style.marginRight = "300px";
+  document.getElementsByClassName("main__contenido")[10].style.marginRight = "300px";
+  document.getElementsByClassName("main__contenido")[11].style.marginRight = "300px";
 }
 
 function closeNavRight() {
   document.getElementById("mySidenavRight").style.width = "0";
+  document.getElementsByClassName("main__contenido")[0].style.marginRight = "0";
+  document.getElementsByClassName("main__contenido")[1].style.marginRight = "0";
+  document.getElementsByClassName("main__contenido")[2].style.marginRight = "0";
+  document.getElementsByClassName("main__contenido")[3].style.marginRight = "0";
+  document.getElementsByClassName("main__contenido")[4].style.marginRight = "0";
+  document.getElementsByClassName("main__contenido")[5].style.marginRight = "0";
+  document.getElementsByClassName("main__contenido")[6].style.marginRight = "0";
+  document.getElementsByClassName("main__contenido")[7].style.marginRight = "0";
+  document.getElementsByClassName("main__contenido")[8].style.marginRight = "0";
+  document.getElementsByClassName("main__contenido")[9].style.marginRight = "0";
+  document.getElementsByClassName("main__contenido")[10].style.marginRight = "0";
+  document.getElementsByClassName("main__contenido")[11].style.marginRight = "0";
+
 }
 
 
