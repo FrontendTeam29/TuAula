@@ -133,11 +133,12 @@
     border-left: none;
     overflow-x: scroll;
     font-size: 1rem;
+    padding: 0px 12px;
     
 
     @include m.desktop{
         float: left;
-        padding: 0px 12px;
+        padding: 0px 15px;
         width: 60%;
         height: 300px;
         overflow-x: unset;
@@ -469,6 +470,7 @@ input:checked + .slider:before {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     padding-top: 2rem;
 }
 
@@ -499,6 +501,18 @@ input:checked + .slider:before {
             background-color: v.$primario;
             color: v.$blanco;
         }
+    }
+}
+
+.adminus__btn{
+    margin-top: 2rem;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+
+    @include m.tablet{
+        margin-top: unset;
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
     }
 }
 

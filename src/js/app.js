@@ -36,8 +36,13 @@ function openTab(evt, cityName) {
 
 //Funcionamiento Navs
 
+function openNavIndex(){
+  document.getElementById("mySidenav").style.width = "330px";
+} 
+
 function openNav() {
-  document.getElementById("mySidenav").style.width = "400px";
+  document.getElementById("mySidenav").style.width = "330px";
+  document.getElementById("mySidenav").style.top = "290px";
 }
 
 function closeNav() {
@@ -48,7 +53,8 @@ function closeNav() {
 
 function openNavRight() {
   document.getElementById("mySidenavRight").style.width = "300px";
-  document.getElementsByClassName("main__contenido")[0].style.marginRight = "300px";
+  document.getElementById("mySidenavRight").style.top = "130px";
+  /*document.getElementsByClassName("main__contenido")[0].style.marginRight = "300px";
   document.getElementsByClassName("main__contenido")[1].style.marginRight = "300px";
   document.getElementsByClassName("main__contenido")[2].style.marginRight = "300px";
   document.getElementsByClassName("main__contenido")[3].style.marginRight = "300px";
@@ -59,7 +65,7 @@ function openNavRight() {
   document.getElementsByClassName("main__contenido")[8].style.marginRight = "300px";
   document.getElementsByClassName("main__contenido")[9].style.marginRight = "300px";
   document.getElementsByClassName("main__contenido")[10].style.marginRight = "300px";
-  document.getElementsByClassName("main__contenido")[11].style.marginRight = "300px";
+  document.getElementsByClassName("main__contenido")[11].style.marginRight = "300px";*/
 }
 
 function closeNavRight() {

@@ -7,7 +7,7 @@
 
     @include m.desktop{
         display: grid;
-        grid-template-columns: 1fr 4fr;
+        grid-template-columns: 1fr 4fr ;
     }
 
     .main__aside{
@@ -552,7 +552,7 @@
     border-radius: 50%;
     padding: 2rem 2rem 1.5rem 1.8rem;
     position: absolute;
-    top: -800px;
+    top: -1000px;
     right: 1%;
     z-index: 1;
     cursor: pointer;
