@@ -616,12 +616,16 @@
 .btn__float{
     background-color: v.$grisClaro;
     border-radius: 50%;
+    border: 0.1rem solid v.$grisOscuro;
     padding: 2rem 2rem 1.5rem 1.8rem;
     top: 50vh;
     right: 1%;
     z-index: 1;
     cursor: pointer;
     position: fixed;
+    -webkit-box-shadow: -1px 1px 16px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 16px -4px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 16px -4px rgba(0,0,0,0.75);
 }
 
 

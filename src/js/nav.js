@@ -14,3 +14,15 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
+//Funcionamiento A Active Aside
+
+let a = document.querySelectorAll('.enlace');
+let j;
+
+
+for (i = 0; i < a.length; i++) {
+  a[i].addEventListener("click", function() {
+    this.classList.toggle("active__nohollow");
+});
+}
