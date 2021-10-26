@@ -37,24 +37,44 @@
     <!--.Nav Mobile-->
 
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <button class="tablinks" onclick="openCity(event, 'roles')"><i class="fas fa-suitcase tablinks__box"></i>Roles</button>
-        <button class="tablinks" onclick="openCity(event, 'niveles')"><i class="fas fa-file tablinks__box"></i>Niveles</button>
-        <button class="tablinks" onclick="openCity(event, 'dimensiones')"><i class="fas fa-pager tablinks__box"></i>Dimensiones</button>
-        <button class="tablinks" onclick="openCity(event, 'grupos')"><i class="fas fa-folder-open tablinks__box"></i>Grupos</button>
-        <button class="tablinks" onclick="openCity(event, 'calificaciones')"><i class="fas fa-file-alt tablinks__box"></i>Calificaciones</button>
-        <button class="tablinks" onclick="openCity(event, 'periodos')"><i class="fas fa-clipboard-list tablinks__box"></i>Periodos</button>
-        <button class="tablinks" onclick="openCity(event, 'parcelador')"><i class="fas fa-pencil-alt tablinks__box"></i>Parcelador</button>
-        <button class="tablinks" onclick="openCity(event, 'adminus')"><i class="fas fa-users tablinks__box"></i>Administrar Usuarios</button>
+        <div class="sidenav__title">
+            <a class="title__aside">Parametrizar</a>
+        </div>
+        <button class="tablinks tablinks--par" onclick="openCity(event, 'roles')"><i class="fas fa-suitcase tablinks__box"></i><span>Roles</span></button>
+        <button class="tablinks tablinks--par" onclick="openCity(event, 'niveles')"><i class="fas fa-file tablinks__box"></i><span>Niveles</span></button>
+        <button class="tablinks tablinks--par" onclick="openCity(event, 'dimensiones')"><i class="fas fa-pager tablinks__box"></i><span>Dimensiones</span></button>
+        <button class="tablinks tablinks--par" onclick="openCity(event, 'grupos')"><i class="fas fa-folder-open tablinks__box"></i><span>Grupos</span></button>
+        <button class="tablinks tablinks--par" onclick="openCity(event, 'calificaciones')"><i class="fas fa-file-alt tablinks__box"></i><span>Calificaciones</span></button>
+        <button class="tablinks tablinks--par" onclick="openCity(event, 'periodos')"><i class="fas fa-clipboard-list tablinks__box"></i><span>Periodos</span></button>
+        <button class="tablinks tablinks--par" onclick="openCity(event, 'parcelador')"><i class="fas fa-pencil-alt tablinks__box"></i><span>Parcelador</span></button>
+        <button class="tablinks tablinks--par" onclick="openCity(event, 'adminus')"><i class="fas fa-users tablinks__box"></i><span>Administrar Usuarios</span></button>
     </div>
 
     <!--.Nav Mobile-->
+
+    <div class="contenedor sidenav__double">
+        <div class="main__profile" onclick="openTab(event, 'home1')">
+            <div class="profile__image">
+                <img class="profile__image--round" src="img/icons/profile.png" alt="Image Profile">
+            </div>
+
+            <div class="profile__text">
+                <p class="text__name">Juan Carlos Perez</p>
+                <p class="text__pro">Docente</p>
+            </div>
+        </div>
+
+        <!--onclick="openNav()"-->
+
+        <i class="fas fa-plus" id="plus"></i>
+        <!--<div class="menu" onclick="openNav()"><i class="fas fa-align-left"></i></div>-->
+        <!--<div class="menu" onclick="openNavRight()"><i class="fas fa-chevron-left"></i>-->
+    </div>
 
     <div class="tab">
         <div class="tab__title">
             <a class="tab__text">Parametrizar</a>
         </div>
-        <div class="menu" onclick="openNavIndex()"><i class="fas fa-bars"></i><p>Menu</p></div>
         <button class="tablinks tablinks__flex defaultOpen" onclick="openCity(event, 'roles')" onmousedown="noActiveNav()" id="defaultOpen"><i class="fas fa-suitcase tablinks__box"></i><span class="text__black">Roles</span></button>
         <button class="tablinks" onclick="openCity(event, 'niveles')" onmousedown="noActiveNav()"><i class="fas fa-file tablinks__box"></i><span class="text__black">Niveles</span></button>
         <button class="tablinks" onclick="openCity(event, 'dimensiones')" onmousedown="noActiveNav()"><i class="fas fa-pager tablinks__box"></i><span class="text__black">Dimensiones</span></button>
@@ -71,105 +91,105 @@
         <div class="roles__grid">
             <div class="roles__head--flex">
                 <p class="roles__title w-25 px-2">Nombre de la plataforma</p>
-                <p class="roles__title w-25 px-2">Funciones de la plataforma</p>
                 <p class="roles__title w-25 px-2">Equivalencia en la institucion</p>
-                <p class="w-5 px-2"></p>
+                <p class="w-5 px-2 roles__dnone" ></p>
+                <p class="roles__title w-25 px-2 roles__dnone">Funciones de la plataforma</p>
             </div>
 
-            <div class="roles__head--flex">
-                <p class="roles__text roles__text--blue w-25 px-2">Super Administrador</p>
-                <p class="roles__text w-25 px-2">Parametrizacion y asignacion de roles</p>
+            <div class="roles__body--flex">
+                <p class="roles__text roles__text--blue w-25 px-2   ">Super Administrador</p>
                 <input type="text" placeholder="Administrador" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
-                      </label>
+                    </label>
                 </div><!--ToggleButton-->
+                <p class="roles__text w-25 px-2">Parametrizacion y asignacion de roles</p>
             </div><!--Item-->
 
-            <div class="roles__head--flex">
+            <div class="roles__body--flex">
                 <p class="roles__text roles__text--blue w-25 px-2">Rector</p>
-                <p class="roles__text w-25 px-2">Visualizacion de avances, dashboard</p>
                 <input type="text" placeholder="Rector" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
-                      </label>
+                    </label>
                 </div><!--ToggleButton-->
+                <p class="roles__text w-25 px-2">Visualizacion de avances, dashboard</p>
             </div><!--Item-->
 
-            <div class="roles__head--flex">
+            <div class="roles__body--flex">
                 <p class="roles__text roles__text--blue w-25 px-2">Administrativo</p>
-                <p class="roles__text w-25 px-2">Vincular usuarios</p>
                 <input type="text" placeholder="Administrativo" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
-                      </label>
+                    </label>
                 </div><!--ToggleButton-->
+                <p class="roles__text w-25 px-2">Vincular usuarios</p>
             </div><!--Item-->
 
-            <div class="roles__head--flex">
+            <div class="roles__body--flex">
                 <p class="roles__text roles__text--blue w-25 px-2">Coordinador academico</p>
-                <p class="roles__text w-25 px-2">Parametrizar las parcelaciones y asignaturas</p>
                 <input type="text" placeholder="Coordinador" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
-                      </label>
+                    </label>
                 </div><!--ToggleButton-->
+                <p class="roles__text w-25 px-2">Parametrizar las parcelaciones y asignaturas</p>
             </div><!--Item-->
 
-            <div class="roles__head--flex">
+            <div class="roles__body--flex">
                 <p class="roles__text roles__text--blue w-25 px-2">Docente</p>
-                <p class="roles__text w-25 px-2">Planeacion y desarrollo de las actividades</p>
                 <input type="text" placeholder="Docente" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
-                      </label>
+                    </label>
                 </div><!--ToggleButton-->
+                <p class="roles__text w-25 px-2">Planeacion y desarrollo de las actividades</p>
             </div><!--Item-->
 
-            <div class="roles__head--flex">
+            <div class="roles__body--flex">
                 <p class="roles__text roles__text--blue w-25 px-2">Docente Auxiliar</p>
-                <p class="roles__text w-25 px-2">Desarrollo de las actividades</p>
                 <input type="text" placeholder="Docente Auxiliar" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
-                      </label>
+                    </label>
                 </div><!--ToggleButton-->
+                <p class="roles__text w-25 px-2">Desarrollo de las actividades</p>
             </div><!--Item-->
 
-            <div class="roles__head--flex">
+            <div class="roles__body--flex">
                 <p class="roles__text roles__text--blue w-25 px-2">Padre de Familia</p>
-                <p class="roles__text w-25 px-2">Seguimiento, ver notas</p>
                 <input type="text" placeholder="Padre de Familia" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
-                      </label>
+                    </label>
                 </div><!--ToggleButton-->
+                <p class="roles__text w-25 px-2">Seguimiento, ver notas</p>
             </div><!--Item-->
 
-            <div class="roles__head--flex">
+            <div class="roles__body--flex">
                 <p class="roles__text roles__text--blue w-25 px-2">Alumno</p>
-                <p class="roles__text w-25 px-2">Desarrollo de tareas extra clase</p>
                 <input type="text" placeholder="Estudiante" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
-                      </label>
+                    </label>
                 </div><!--ToggleButton-->
+                <p class="roles__text w-25 px-2">Desarrollo de tareas extra clase</p>
             </div><!--Item-->
 
         </div>

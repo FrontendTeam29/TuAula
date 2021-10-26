@@ -124,9 +124,7 @@
     }
 }
 
-.tabcontent {
-
-    
+.tabcontent {   
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -152,22 +150,63 @@
 
 .roles__grid{
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr;
+
+    @include m.tablet{
+
+    }
+
+    @include m.desktop{
+        grid-template-columns: 1fr;
+    }
 
     .roles__head--flex{
         display: flex;
         justify-content: center;
         align-items: center;
         column-gap: 5rem;
+
+        .roles__dnone{
+            display: none;
+            @include m.tablet{
+                display: block;
+            }
+        }
         
         &:nth-child(1){
             border-bottom: 3px solid v.$primario;
         }
 
         .roles__title{
-            color: v.$primario;
+            color: lighten(v.$primario, 20%);
             font-weight: bold;
             text-align: center;
+            font-size: 1.6rem;
+
+            @include m.tablet{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .roles__head--flexsb{
+        &:nth-child(1){
+            border-bottom: unset;
+        }
+    }
+
+    .roles__body--flex{
+        display: grid;
+        column-gap: 5rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+
+        @include m.desktop{
+            display: flex;
         }
 
         .roles__text{
@@ -183,7 +222,7 @@
         .roles__text--blue{
             background-color: v.$primario;
             color: v.$blanco;
-            border-radius: 20px;
+            border-radius: 2rem;
             font-size: 1.2rem;
             padding: 0.3rem 0;
 
@@ -198,13 +237,6 @@
             color: v.$negro;
             border-radius: 20px;
             padding: 0.47rem 0;
-
-        }
-    }
-
-    .roles__head--flexsb{
-        &:nth-child(1){
-            border-bottom: unset;
         }
     }
 

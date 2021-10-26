@@ -13,6 +13,17 @@
     background-color: v.$blanco;
     overflow-x: hidden;
     transition: 0.5s;
+    border-right: 1px solid v.$grisClaro;
+
+    .title__aside{
+        text-transform: uppercase;
+        color: v.$primario;
+        font-weight: bold;
+
+        &:hover{
+            color: v.$primario;
+        }
+    }
 
     a {
         padding: 0.8rem 0.8rem 0.8rem 8.8rem;
@@ -44,6 +55,22 @@
         &:hover{
             background-color: v.$primario;
             color: v.$blancoOscuro;
+        }
+    }
+
+    .tablinks--par{
+        color: v.$primario;
+        border-bottom: 1px solid v.$grisClaro;
+
+        &:nth-child(9){
+            border-bottom: none;
+        }
+
+        span{
+            color: v.$negro;
+            &:hover{
+                color: v.$blanco;
+            }
         }
     }
 }
@@ -95,7 +122,8 @@
     }
 
     .text__pro{
-        color: darken(v.$primario, 20%);
+        //color: darken(v.$primario, 20%);
+        color: lighten(v.$primario, 20%);
     }
 }
 
