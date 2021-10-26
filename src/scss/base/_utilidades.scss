@@ -29,6 +29,18 @@
     width: 25%;
 }
 
+.w__25-rwd{
+    width: 100%;
+
+    @include m.tablet{
+        width: 60%;
+    }
+
+    @include m.desktop{
+        width: 25%;
+    }
+}
+
 .w-70{
     width: 70%;
 }

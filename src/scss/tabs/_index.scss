@@ -164,13 +164,18 @@
 
     .roles__head--flex{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         column-gap: 5rem;
 
+        @include m.desktop{
+            justify-content: center;
+        }
+
         .roles__dnone{
             display: none;
-            @include m.tablet{
+            
+            @include m.desktop{
                 display: block;
             }
         }
@@ -199,7 +204,7 @@
 
     .roles__body--flex{
         display: grid;
-        column-gap: 5rem;
+        column-gap: 2rem;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         justify-content: center;
