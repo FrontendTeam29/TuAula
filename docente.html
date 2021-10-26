@@ -17,7 +17,7 @@
 
     <title>Tu Aula - Docente</title>
 </head>
-<body>
+<body id="body">
 
     <header>
         <div class="nav__principal py-2">
@@ -204,20 +204,26 @@
             </div>
         </div>
 
-        <i class="fas fa-plus" onclick="openNav()"></i>
+        <!--onclick="openNav()"-->
+
+        <i class="fas fa-plus" id="plus"></i>
         <!--<div class="menu" onclick="openNav()"><i class="fas fa-align-left"></i></div>-->
         <!--<div class="menu" onclick="openNavRight()"><i class="fas fa-chevron-left"></i>-->
     </div>
     
+    <div class="btn__father">
+        <div class="menu btn__float" onclick="openNavRight()"><i class="fas fa-chevron-left"></i>
+    </div>
 
     <div class="main__contenedor">
+        
         <aside class="main__aside">
-            <div class="main__profile">
+            <div class="main__profile" onclick="openTab(event, 'home1')" id="defaultOpen">
                 <div class="profile__image">
                     <img class="profile__image--round" src="img/icons/profile.png" alt="Image Profile">
                 </div>
 
-                <div class="profile__text">
+                <div class="profile__text" >
                     <p class="text__name">Juan Carlos Perez</p>
                     <p class="text__pro">Docente</p>
                 </div>
@@ -225,9 +231,7 @@
 
             <div class="main__nav">
                 <div class="nav__aside">
-                    <button class="dropdown-btn" onclick="openTab(event, 'home1')" id="defaultOpen">
-                        <i class="fas fa-book"></i>Inicio
-                    </button>   
+ 
                 </div>
             </div>
 
@@ -304,7 +308,7 @@
                         <a href="#">Semana 5</a>
                     </div>
                 </div>
-            </div>
+            </div>  
         
 
         </aside><!--Left Aside-->
@@ -461,7 +465,7 @@
             <div class="contain">
                 <div class="contain__header contain__header--pub">
                     <p class="header__name" id="ct">Crear Tema </p>
-                    <a class="btn btn--action m-0" href="#"><i class="fas fa-arrow-left"></i>Regresar</a>
+                    <a class="btn btn--action m-0" href="#" onclick="openTab(event, 'home2')"><i class="fas fa-arrow-left"></i>Regresar</a>
                 </div><!--Contenedor Columna Principal-->
 
                 <div class="contain__body">
@@ -472,26 +476,28 @@
                             <input type="text" placeholder="Texto" class="input__body" id="input__body">
                         </div>
 
-                        <div class="info__switch">
-                            <div>   
-                                <label class="switch">
-                                    <input type="checkbox" checked>
-                                    <span class="slider round"></span>
-                                </label>
+                        <div class="body__switch">
+                            <div class="info__switch">
+                                <div>   
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+        
+                                    <span>Habilitar cartelera de avisos</span>
+                                </div><!--ToggleButton-->
+                            </div>
     
-                                <span>Habilitar cartelera de avisos</span>
-                            </div><!--ToggleButton-->
-                        </div>
-
-                        <div class="info__switch">
-                            <div>
-                                <label class="switch">
-                                    <input type="checkbox" checked>
-                                    <span class="slider round"></span>
-                                </label>
-    
-                                <span>Habilitar calendario</span>
-                            </div><!--ToggleButton-->
+                            <div class="info__switch">
+                                <div>   
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+        
+                                    <span>Habilitar calendario</span>
+                                </div><!--ToggleButton-->
+                            </div>
                         </div>
                     </div> <!--Info Crear Tema-->
 
@@ -536,7 +542,7 @@
                         </div><!--Select-->
 
                         <div>
-                            <a class="btn btn--action" href="#" onclick="openTab(event, 'home3')">Crear Actividad</a>
+                            <a class="btn btn--action" href="#" onclick="openTab(event, 'home5')">Crear Actividad</a>
                         </div><!--Btn-->
                     </div><!--Body Nav-->
 
@@ -620,7 +626,7 @@
 
                     <div class="body__info body__info--act">
                         <div class="info__title">
-                            <span>Titulo:</span>
+                            <span class="editor__txt">Titulo:</span>
                             <input type="text" placeholder="Texto" class="input__body" id="input__body">
                         </div>
 
@@ -706,8 +712,15 @@
                         </div>
 
                         <div class="body__radios">
-                            <input type="radio">Carpeta
-                            <input type="radio">Cuaderno
+                            <div class="radios__item">
+                                <input class="btn__radios" type="radio" name="activity">
+                                <span>Carpeta</span>
+                            </div>
+
+                            <div class="radios__item">
+                                <input class="btn__radios" type="radio" name="activity"><span>Cuaderno</span>
+                            </div>
+                            
                             <div class="buttons">
                                 <a href="#" class="btn__actions">Buscar en la plataforma</a> 
                             </div>
@@ -717,17 +730,22 @@
                             <div class="body__content">
                                 <div class="content__item">
                                     <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
-                                    <p class="text-center" id="tema1">Tema 1</p>
+                                    <p class="text-center" id="tema1">Actividad 1</p>
                                 </div><!--Item Grid-->
 
                                 <div class="content__item">
                                     <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
-                                    <p class="text-center" id="tema1">Tema 1</p>
+                                    <p class="text-center" id="tema1">Actividad 1</p>
                                 </div><!--Item Grid-->
 
                                 <div class="content__item">
                                     <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
-                                    <p class="text-center" id="tema1">Tema 1</p>
+                                    <p class="text-center" id="tema1">Actividad 1</p>
+                                </div><!--Item Grid-->
+
+                                <div class="content__item">
+                                    <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                                    <p class="text-center" id="tema1">Actividad 1</p>
                                 </div><!--Item Grid-->
                             </div>
                         </div>
@@ -789,6 +807,11 @@
                                     <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
                                     <p class="text-center" id="tema1">Actividad 3</p>
                                 </div><!--Item Grid-->
+
+                                <div class="content__item">
+                                    <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                                    <p class="text-center" id="tema1">Actividad 4</p>
+                                </div><!--Item Grid-->
                             </div>
                         </div>
 
@@ -829,8 +852,15 @@
                         </div>
 
                         <div class="body__radios">
-                            <input type="radio">Carpeta
-                            <input type="radio">Cuaderno
+                            <div class="radios__item">
+                                <input class="btn__radios" type="radio" name="activity">
+                                <span>Carpeta</span>
+                            </div>
+
+                            <div class="radios__item">
+                                <input class="btn__radios" type="radio" name="activity"><span>Cuaderno</span>
+                            </div>
+                            
                             <div class="buttons">
                                 <a href="#" class="btn__actions">Buscar en la plataforma</a> 
                             </div>
@@ -852,6 +882,11 @@
                                 <div class="content__item">
                                     <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
                                     <p class="text-center" id="tema1">Actividad 3</p>
+                                </div><!--Item Grid-->
+
+                                <div class="content__item">
+                                    <img class="item__photo item__photo--body" onclick="openTab(event, 'home4')" src="img/tema1.jpg" alt="Tema Uno">
+                                    <p class="text-center" id="tema1">Actividad 4</p>
                                 </div><!--Item Grid-->
                             </div>
                         </div>
@@ -914,9 +949,22 @@
 
                         <div class="body__radios body__radios--start">
                             
-                            <input type="radio">Estudiante
-                            <input type="radio">Docente
-                            <input type="radio">Padres de Familia
+                            <div class="body__radios">
+                                <div class="radios__item">
+                                    <input class="btn__radios" type="radio" name="activity">
+                                    <span>Estudiante</span>
+                                </div>
+    
+                                <div class="radios__item">
+                                    <input class="btn__radios" type="radio" name="activity">
+                                    <span>Docente</span>
+                                </div>
+                                
+                                <div class="radios__item">
+                                    <input class="btn__radios" type="radio" name="activity">
+                                    <span>Padre de Familia</span>
+                                </div>
+                            </div>
                         </div>
 
 
@@ -942,18 +990,18 @@
                             </div>
                         </div>
 
-                        <div class="adminus__flex">
+                        <div class="btn__flex">
 
-                            <div class="adminus__btn">
-                                <div class="btn__flex">
+                            <div class="flex__return">
+                                <div class="btn__return">
                                     <button class="btn btn__nueva" onclick="openTab(event, 'home8')"><i class="fas fa-arrow-left"></i>Regresar</button>
                                 </div>
                                 
                             </div>
 
-                            <div class="adminus__btn adminus__pag">
-                                <div class="btn__flex">
-                                    <button class="btn btn__nueva">Guardar</button>
+                            <div class="flex__save">
+                                <div class="btn__save">
+                                    <button class="btn btn__nueva">Crear</button>
                                 </div>
                                 
                             </div>
@@ -980,7 +1028,7 @@
                 <div class="contain__body">
                     <div class="body__info" id="initial">
 
-                        <div class="cali cali__docente py-2">   
+                        <div class="cali cali__docente">   
                             <div class="custom-select">
                                 <select id="selectMe" >
                                     <option value="option1">Seleccionar Nivel</option>
@@ -1007,26 +1055,28 @@
                             <input type="text" placeholder="Texto" class="input__body" id="input__body">
                         </div>
 
-                        <div class="info__switch">
-                            <div>   
-                                <label class="switch">
-                                    <input type="checkbox" checked>
-                                    <span class="slider round"></span>
-                                </label>
+                        <div class="body__switch">
+                            <div class="info__switch">
+                                <div>   
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+        
+                                    <span>Habilitar cartelera de avisos</span>
+                                </div><!--ToggleButton-->
+                            </div>
     
-                                <span>Habilitar cartelera de avisos</span>
-                            </div><!--ToggleButton-->
-                        </div>
-
-                        <div class="info__switch">
-                            <div>
-                                <label class="switch">
-                                    <input type="checkbox" checked>
-                                    <span class="slider round"></span>
-                                </label>
-    
-                                <span>Habilitar calendario</span>
-                            </div><!--ToggleButton-->
+                            <div class="info__switch">
+                                <div>   
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+        
+                                    <span>Habilitar calendario</span>
+                                </div><!--ToggleButton-->
+                            </div>
                         </div>
                     </div> <!--Info Crear Tema-->
 
@@ -1199,13 +1249,13 @@
         </aside>--><!--Right Aside--> 
     </div>
 
-    <div class="btn__father">
-        <div class="menu btn__float" onclick="openNavRight()"><i class="fas fa-chevron-left"></i>
-    </div>
+
+
+    
     
 
     <footer class="site__footer">
-        <div class="footer__nav">
+        <div class="footer__nav footer__nav--info">
             <a href="/">Inicio</a>
             <a href="#">Informacion 1</a>
             <a href="#">Informacion 2</a>

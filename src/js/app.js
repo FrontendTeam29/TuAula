@@ -40,9 +40,16 @@ function openNavIndex(){
   document.getElementById("mySidenav").style.width = "330px";
 } 
 
+//Cuando le de click en el btn mas sera un toggle
+
+const btnToggle = document.querySelector('#plus');
+btnToggle.addEventListener('click', function(){
+  document.getElementById("mySidenav").classList.toggle('openNav');
+});
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "330px";
-  document.getElementById("mySidenav").style.top = "290px";
+  document.getElementById("mySidenav").style.top = "220px";
 }
 
 function closeNav() {
@@ -53,7 +60,8 @@ function closeNav() {
 
 function openNavRight() {
   document.getElementById("mySidenavRight").style.width = "300px";
-  document.getElementById("mySidenavRight").style.top = "130px";
+  document.getElementById("mySidenavRight").style.top = "128px";
+
   /*document.getElementsByClassName("main__contenido")[0].style.marginRight = "300px";
   document.getElementsByClassName("main__contenido")[1].style.marginRight = "300px";
   document.getElementsByClassName("main__contenido")[2].style.marginRight = "300px";
@@ -146,6 +154,9 @@ function cambiarNombre(){
   const temaUno = document.querySelector('#tema1');
   temaUno.textContent = inputText;
 }
+
+
+
 
 
 

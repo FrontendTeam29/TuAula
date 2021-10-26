@@ -11,6 +11,14 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    
+    .footer__nav--info{
+        display: none;
+
+        @include m.desktop{
+            display: block;
+        }
+    }
 
     .footer__nav{
         max-width: 120rem;

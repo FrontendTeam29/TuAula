@@ -7,7 +7,7 @@
 
     @include m.desktop{
         display: grid;
-        grid-template-columns: 1fr 4fr ;
+        grid-template-columns: 1fr 4fr;
     }
 
     .main__aside{
@@ -32,7 +32,8 @@
     cursor: pointer;
 
     & .profile__image--round{
-        max-width: 50px;
+        max-width: 6rem;
+        margin-right: 1rem;
     }
 
     .profile__text{
@@ -62,6 +63,10 @@
     margin-top: 2rem;
     padding: 0.1rem 2rem;
 
+    &:nth-child(1){
+        margin-top: 0;
+    }
+
     .nav__aside a, .dropdown-btn {
         padding: 0.5rem 0.6rem;
         text-decoration: none;
@@ -69,7 +74,7 @@
         color: v.$primario;
         display: flex;
         justify-content: left;
-        padding-left: 5rem;
+        padding-left: 3rem;
         align-items: center;
         border: 0.25rem solid v.$primario;  
         width:100%;
@@ -135,7 +140,7 @@
     background-color: v.$grisClaro;
     .contain{
         max-width: 90%;
-        margin: v.$separacion auto;
+        margin: 2rem auto;
         background-color: v.$blanco;
         border-radius: 1rem;
     }
@@ -293,10 +298,12 @@
 .body__content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 3rem;
 
     @include m.desktop{
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
     }
 
     .item__photo--body{
@@ -319,11 +326,21 @@
 
     .body__info{
 
-        padding: v.$separacion;
+        padding: 1rem 3rem;
         border-bottom: 0.25rem solid v.$primario;
 
         .body__switch{
+            display: flex;
+            gap: 2rem;
             margin-bottom: v.$separacion;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            @include m.tablet{
+                flex-direction: row;
+                gap: 1rem;
+            }
         }
 
         .info__switch{
@@ -335,13 +352,21 @@
         }
     
         .input__body{
-            width: 100%;
-            padding: 0.5rem 3rem;
+            width: 80%;
+            padding: 0.8rem 3rem;
+            border: 0;
             border-radius: 2.5rem;
-            background-color: v.$grisClaro;
+            background-color: v.$inputColor;
+
+            &:active,
+            &:focus{
+                border: 0;
+                outline: none;
+            }
         }
 
         .input__body--links{
+            width: 90%;
             margin-top: 2rem;
             border: 0;
         }
@@ -353,7 +378,7 @@
     }
 
     .info__title{
-        margin: 4rem 0;
+        margin: 2rem 0;
     }
     
     .body__info--act{
@@ -377,7 +402,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
+    padding: 0.5rem;
 
     @include m.desktop{
         display: grid;
@@ -385,7 +410,7 @@
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
-        padding: 2rem v.$separacion;
+        padding: 1rem v.$separacion;
     }
 
     .item__br{
@@ -393,7 +418,7 @@
         color: v.$blanco;
         padding: 0.5rem 3rem;
         text-align: center;
-        border-radius: 1rem;
+        margin: 1rem;
 
         &:nth-child(4){
             grid-column: 1 / 4;
@@ -412,7 +437,7 @@
 
 .editor__txt{
     display: block;
-    margin: v.$separacion 0;
+    margin: 1rem 0;
 }
 
 .editor__borde{
@@ -423,7 +448,7 @@
 .editor__box{
     max-width: 88.5rem;
     @include m.tablet{
-        max-width: 100rem;
+        max-width: 125rem;
     }
 }
 
@@ -433,17 +458,22 @@
     border-radius: 1rem;
     height: 10rem;
     padding: 2rem;
+    border: 0;
+
+    &:hover,
+    &:focus{
+        outline: none;
+    }
 }
 
 .body__links{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
 
-    @include m.desktop{
-        justify-content: space-between;
-        flex-direction: row;
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .links{
@@ -499,7 +529,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         gap: 2rem;
+
+        @include m.tablet{
+            flex-direction: row;
+        }
+
+        .radios__item{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        span{
+            font-weight: lighter;
+            display: inline;
+        }
+
     }
 
     .body__radios--start{
@@ -543,6 +590,25 @@
     }
 }
 
+//Config adicional botones crear y regresar
+
+.btn__flex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    @include m.desktop{
+        grid-template-columns: 25% 50% 25%;
+    }
+
+    .flex__return{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+
+
 //Boton Flotante
 .btn__father{
     position: relative;
@@ -551,11 +617,11 @@
     background-color: v.$grisClaro;
     border-radius: 50%;
     padding: 2rem 2rem 1.5rem 1.8rem;
-    position: absolute;
-    top: -1000px;
+    top: 50vh;
     right: 1%;
     z-index: 1;
     cursor: pointer;
+    position: fixed;
 }
 
 
