@@ -45,6 +45,13 @@
     }
 }
 
+.w-35{
+    width: 35%;
+    @include m.desktop{
+        width: 25%;
+    }
+}
+
 .w-70{
     width: 70%;
 }
