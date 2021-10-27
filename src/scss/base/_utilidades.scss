@@ -14,7 +14,11 @@
 }
 
 .px-2{
-    padding: 0 2rem;
+    padding: 0 0;
+
+    @include m.desktop{
+        padding: 0 2rem;
+    }
 }
 
 .m-0{
@@ -37,7 +41,7 @@
     }
 
     @include m.desktop{
-        width: 25%;
+        width: 30%;
     }
 }
 
@@ -65,17 +69,27 @@
     color: v.$blanco;
     border-radius: 20px;
     margin: 5rem 0;
+    font-size: 2rem;
 
     @include m.tablet{
         padding: 1rem 6rem;
     }
+
+    @include m.desktop{
+        font-size: 1.5rem;
+    }
 }
 
 .btn__actualizar{
+    padding: 0.5rem v.$separacion;
     &:hover{
         cursor: pointer;
         background-color: v.$blanco;
         color: v.$primario;
+    }
+
+    @include m.desktop{
+        padding: 1rem 3rem;
     }
 }
 

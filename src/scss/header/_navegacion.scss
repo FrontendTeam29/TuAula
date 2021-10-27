@@ -6,10 +6,11 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding: 2rem 3rem;
+    padding: 2rem 0rem;
     z-index: 2;
 
     @include m.tablet{
+        padding: 2rem 3rem;
         flex-direction: row;
     }   
 
@@ -25,12 +26,16 @@
 
 
     i{
-        font-size: 1.8rem;
+        font-size: 1.51rem;
         background-color: v.$primario;
         color: v.$blanco;
         margin-right: 0.5rem;
         padding: 0.8rem;
         border-radius: 50%;
+
+        @include m.tablet{
+            font-size: 1.7rem;
+        }
 
         @include m.desktop{
             font-size: 2rem;
