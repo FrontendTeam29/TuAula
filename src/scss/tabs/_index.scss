@@ -437,7 +437,6 @@ input:checked + .slider:before {
 /* The container must be positioned relative: */
 .cali__select {
     position: relative;
-    font-family: Arial;
 }
   
 .cali__select select {
@@ -465,6 +464,17 @@ input:checked + .slider:before {
     border: 0;
 }
 
+.cali{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 1.3rem;
+
+    @include m.desktop{
+        font-size: 1.8rem;
+    }
+}
+
 .cali__contain{
     display: flex;
     justify-content: space-around;
@@ -479,7 +489,15 @@ input:checked + .slider:before {
         text-align: center;
         color: v.$primario;
         font-weight: bold;
-        font-size: 2.5rem;
+        font-size: 1.9rem;
+
+        @include m.tablet{
+            font-size: 2rem;
+        }
+
+        @include m.desktop{
+            font-size: 2.5rem;
+        }
     }
 }
 
@@ -491,6 +509,13 @@ input:checked + .slider:before {
     }
 }
 
+.flexbox__faces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
 .cali__ul{
 
 
@@ -498,20 +523,39 @@ input:checked + .slider:before {
         text-align: center;
         background-color: v.$primario;
         color: v.$blanco;
-        padding: 0.5rem 4rem;
+        padding: 0.4rem 5rem;
         border-radius: 15px;
         font-size: 2rem;
+
+        @include m.desktop{
+            padding: 0.5rem 4rem;
+        }
     }
 
     .cali__ul--itemG{
         background-color: v.$grisClaro;
         color: v.$negro;
+
+        span{
+            font-weight: lighter;
+            color: lighten(v.$negro, 50%);
+        }
     }
 
     .far{
         font-size: 2.5rem;
     }
    
+}
+
+.cali__face{
+    display: block;
+    margin: 0 auto;
+
+
+    ul{
+        padding: 0;
+    }
 }
 
 .default{
@@ -549,7 +593,7 @@ input:checked + .slider:before {
 
 .custom-select select{
     margin: 2rem 0;
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
     color: v.$blanco;
     background-color: v.$primario;
     border: none;
@@ -557,13 +601,14 @@ input:checked + .slider:before {
 
     option{
         background-color: v.$blanco;
-        color: v.$primario;
+        color: v.$negro;
     }
     
     @include m.tablet{
-        padding: 0.5rem 3rem;
+        padding: 0.5rem 2rem;
     }
 }
+
 
 //Admin Users
 
