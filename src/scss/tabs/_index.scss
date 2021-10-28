@@ -669,7 +669,7 @@ input:checked + .slider:before {
     img{
         border: 0.2rem solid v.$primario;
         border-radius: 1rem;
-        width: 180px;
+        width: 10rem;
     }
 
     .item__name{
@@ -854,6 +854,11 @@ input:checked + .slider:before {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: column;
+
+        @include m.tablet{
+            flex-direction: row;
+        }
 
         span{
             font-size: 1.5rem;
@@ -867,6 +872,10 @@ input:checked + .slider:before {
         input{
             font-size: 1.2rem;
         }
+    }
+
+    .group__item--final{
+        flex-direction: row;
     }
 
 
