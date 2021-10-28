@@ -71,6 +71,8 @@
         <!--<div class="menu" onclick="openNavRight()"><i class="fas fa-chevron-left"></i>-->
     </div>
 
+
+
     <div class="tab">
         <div class="tab__title">
             <a class="tab__text">Parametrizar</a>
@@ -84,6 +86,7 @@
         <button class="tablinks" onclick="openCity(event, 'parcelador')" onmousedown="noActiveNav()"><i class="fas fa-pencil-alt tablinks__box"></i><span class="text__black">Parcelador</span></button>
         <button class="tablinks tablinks__flex" id="tablink-admin" onclick="openCity(event, 'adminus')" onmousedown="noActiveNav()"><i class="fas fa-users tablinks__box"></i><span class="text__black">Administrar Usuarios</span></button>
     </div>
+
 
     <!--TAB ROLES-->
 
@@ -694,8 +697,10 @@
         </div>
     </div>
 
+    <!--TAB PERIODOS-->
+
     <div id="periodos" class="tabcontent">
-        <div class="periodos__container custom-select py-2">
+        <div class="periodos__container custom-select custom-select--period py-2 ">
             <select id="selectMe" >
                 <option value="option1">Seleccionar Nivel</option>
                 <option value="option1">Parvulos</option>
@@ -708,39 +713,41 @@
             <div class="roles__head--flex roles__head--flexsb">
                 <p class="roles__title w-25 px-2">Periodo</p>
                 <p class="roles__title w-25 px-2">Porcentaje (%)</p>
-                <p class="w-5 px-2"></p>
+                <p class="w-5 px-2 roles__dnone"></p>
             </div>
 
-            <div class="roles__head--flex">
-                <p class="roles__text roles__text--blue w-10 px-2">1</p>
-                <div id="myProgress " class="w-25 px-2">
-                    <div id="myBar">75%</div>
+            <div class="roles__head--flex m-0">
+                <p class="roles__text roles__text--blue roles__text--blueG w-10 px-2">1</p>
+                <div id="myProgress" class="myProgress w-25">
+                    <div id="myBar"></div>
                 </div>
-                <p class="roles__text roles__text--gray w-5 px-2"><input type="text" placeholder="75%" class="roles__text roles__text--gray unset-input"></input></p>
+                <p class="w-5"><input type="text" placeholder="75%" class=" unset-input"></input></p>
             </div><!--Item-->
 
-            <div class="roles__head--flex">
-                <p class="roles__text roles__text--blue w-10 px-2">2</p>
-                <div id="myProgress " class="w-25 px-2">
-                    <div id="myBar">75%</div>
+            <div class="roles__head--flex m-0">
+                <p class="roles__text roles__text--blue roles__text--blueG w-10 px-2">2</p>
+                <div id="myProgress " class="myProgress w-25">
+                    <div id="myBar"></div>
                 </div>
-                <p class="roles__text roles__text--gray w-5 px-2"><input type="text" placeholder="75%" class="roles__text roles__text--gray unset-input"></input></p>
+                <p class="w-5"><input type="text" placeholder="75%" class=" unset-input"></input></p>
             </div><!--Item-->
 
-            <div class="roles__head--flex">
-                <p class="roles__text roles__text--blue w-10 px-2">3</p>
-                <div id="myProgress " class="w-25 px-2">
-                    <div id="myBar">75%</div>
+            <div class="roles__head--flex m-0">
+                <p class="roles__text roles__text--blue roles__text--blueG w-10 px-2">3</p>
+                <div id="myProgress " class="myProgress w-25">
+                    <div id="myBar"></div>
                 </div>
-                <p class="roles__text roles__text--gray w-5 px-2"><input type="text" placeholder="75%" class="roles__text roles__text--gray unset-input"></input></p>
+                <p class="w-5"><input type="text" placeholder="75%" class=" unset-input"></input></p>
             </div><!--Item-->
 
-            <div class="roles__head--flex">
-                <p class="roles__text roles__text--blue w-10 px-2">4</p>
-                <div id="myProgress " class="w-25 px-2">
-                    <div id="myBar">75%</div>
+            <div class="roles__head--flex m-0">
+                <p class="roles__text roles__text--blue roles__text--blueG w-10 px-2">4</p>
+
+                <div id="myProgress" class="myProgress w-25">
+                    <div id="myBar"></div>
                 </div>
-                <p class="roles__text roles__text--gray w-5 px-2"><input type="text" placeholder="75%" class="roles__text roles__text--gray unset-input"></input></p>
+                
+                <p class="w-5"><input type="text" placeholder="75%" class="unset-input"></input></p>
             </div><!--Item-->
 
 
@@ -748,8 +755,8 @@
 
         <div class="flexbox">
             <p>Periodo acumulable:</p>
-            <input class="btn__radios" name="periodo" type="radio">Si
-            <input class="btn__radios" name="periodo" type="radio">No
+            <input class="btn__radios" name="periodo" type="radio"><p class="radios__txt">Si</p>
+            <input class="btn__radios" name="periodo" type="radio"><p class="radios__txt">No</p>
 
         </div>
 
@@ -772,9 +779,9 @@
                 <p class="roles__text roles__text--blue w-25 px-2">Fecha</p>
                 <input type="text" placeholder="Fecha" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
-                    <label class="switch">
+                    <label class="switch switchG">
                         <input type="checkbox" checked>
-                        <span class="slider round"></span>
+                        <span class="slider round sliderG"></span>
                       </label>
                 </div><!--ToggleButton-->
             </div><!--Item-->
@@ -783,9 +790,9 @@
                 <p class="roles__text roles__text--blue w-25 px-2">Proyecto Transversal</p>
                 <input type="text" placeholder="Proyecto Transversal" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
-                    <label class="switch">
+                    <label class="switch switchG">
                         <input type="checkbox" checked>
-                        <span class="slider round"></span>
+                        <span class="slider round sliderG"></span>
                       </label>
                 </div><!--ToggleButton-->
             </div><!--Item-->
@@ -794,9 +801,9 @@
                 <p class="roles__text roles__text--blue w-25 px-2">Dimension</p>
                 <input type="text" placeholder="Dimension" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
-                    <label class="switch">
+                    <label class="switch switchG">
                         <input type="checkbox" checked>
-                        <span class="slider round"></span>
+                        <span class="slider round sliderG"></span>
                       </label>
                 </div><!--ToggleButton-->
             </div><!--Item-->
@@ -805,9 +812,9 @@
                 <p class="roles__text roles__text--blue w-25 px-2">Actividad</p>
                 <input type="text" placeholder="Actividad" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
-                    <label class="switch">
+                    <label class="switch switchG">
                         <input type="checkbox" checked>
-                        <span class="slider round"></span>
+                        <span class="slider round sliderG"></span>
                       </label>
                 </div><!--ToggleButton-->
             </div><!--Item-->
@@ -816,9 +823,9 @@
                 <p class="roles__text roles__text--blue w-25 px-2">Objetivo</p>
                 <input type="text" placeholder="Objetivo" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
-                    <label class="switch">
+                    <label class="switch switchG">
                         <input type="checkbox" checked>
-                        <span class="slider round"></span>
+                        <span class="slider round sliderG"></span>
                       </label>
                 </div><!--ToggleButton-->
             </div><!--Item-->
@@ -827,9 +834,9 @@
                 <p class="roles__text roles__text--blue w-25 px-2">Tema</p>
                 <input type="text" placeholder="Tema" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
-                    <label class="switch">
+                    <label class="switch switchG">
                         <input type="checkbox" checked>
-                        <span class="slider round"></span>
+                        <span class="slider round sliderG"></span>
                       </label>
                 </div><!--ToggleButton-->
             </div><!--Item-->
@@ -838,9 +845,9 @@
                 <p class="roles__text roles__text--blue w-25 px-2">Motivacion</p>
                 <input type="text" placeholder="Motivacion" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
-                    <label class="switch">
+                    <label class="switch switchG">
                         <input type="checkbox" checked>
-                        <span class="slider round"></span>
+                        <span class="slider round sliderG"></span>
                       </label>
                 </div><!--ToggleButton-->
             </div><!--Item-->
@@ -849,9 +856,9 @@
                 <p class="roles__text roles__text--blue w-25 px-2">Desarrollo</p>
                 <input type="text" placeholder="Desarrollo" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
-                    <label class="switch">
+                    <label class="switch switchG">
                         <input type="checkbox" checked>
-                        <span class="slider round"></span>
+                        <span class="slider round sliderG"></span>
                       </label>
                 </div><!--ToggleButton-->
             </div><!--Item-->
@@ -860,9 +867,9 @@
                 <p class="roles__text roles__text--blue w-25 px-2">Recursos</p>
                 <input type="text" placeholder="Recursos" class="roles__text roles__text--gray w-25 px-2"></input>
                 <div class="w-5 px-2">
-                    <label class="switch">
+                    <label class="switch switchG">
                         <input type="checkbox" checked>
-                        <span class="slider round"></span>
+                        <span class="slider round sliderG"></span>
                       </label>
                 </div><!--ToggleButton-->
             </div><!--Item-->
@@ -959,15 +966,20 @@
             </div>
 
             <div class="adminus__btn">
-                <div class="btn__flex">
-                    <button class="btn btn__nueva text-adminus" onclick="openCity(event, 'nuevasol')" onmousedown="activeNav()" >Nuevas solicitudes</button>
-                </div>
-                
+                <button class="btn btn__nueva text-adminus" onclick="openCity(event, 'nuevasol')" onmousedown="activeNav()" >Nuevas solicitudes</button>  
             </div>
         </div>
 
-        <div class="contenedor btn-center">
+        <div class="contenedor">
             <button class="btn btn__actualizar">Actualizar</button>
+        </div>
+
+        <div class="btn__footer">
+            <div class="footer__nav">
+                <a href="/"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </div>
 
@@ -1042,6 +1054,14 @@
         <div class="contenedor btn-center">
             <button class="btn btn__actualizar">Actualizar</button>
         </div>
+
+        <div class="btn__footer">
+            <div class="footer__nav">
+                <a href="/"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
     </div>
 
     <div id="perfil" class="tabcontent">
@@ -1056,40 +1076,39 @@
                     <img class="item__photo" src="img/user1.png" alt="Foto de perfil">
                 </div>
 
-                <div class="perfil__text">
-                    <div class="text__group">
-                        <div>
-                            <span class="text__bold">Nombres: </span>
-                            <input class="text__input" type="text" disabled  value="Pedro Juan">
-                        </div>
+                <div class="text__group i1">
+                    <div class="group__item">
+                        <span class="text__bold">Nombres: </span>
+                        <input class="text__input text__inputv2" type="text" disabled  value="Pedro Juan">
                     </div>
+                </div>
 
-                    <div class="text__group">
-                        <div>
-                            <span class="text__bold">Apellidos: </span>
-                            <input class="text__input" type="text" disabled  value="Rodriguez Perez">
-                        </div>
-                        
+                <div class="text__group i2">
+                    <div class="group__item">
+                        <span class="text__bold">Apellidos: </span>
+                        <input class="text__input text__inputv2" type="text" disabled  value="Rodriguez Perez">
                     </div>
+                    
+                </div>
 
-                    <div class="text__group">
-                        <div>
-                            <span class="text__bold">Telefono: </span>
-                            <input class="text__input" type="text" disabled  value="123 456 7510">
-                        </div>
+                <div class="text__group i3">
+                    <div class="group__item">
+                        <span class="text__bold">Telefono: </span>
+                        <input class="text__input text__inputv2" type="text" disabled  value="123 456 7510">
                     </div>
+                </div>
 
-                    <div class="text__group">
-                        <div>
-                            <span class="text__bold">Correo Electrónico: </span>
-                            <input class="text__input" type="text" disabled  value="pedrorod@gmail.com">
-                        </div>
+                <div class="text__group i4">
+                    <div class="group__item group__item--final">
+                        <span class="text__bold">Correo Electrónico: </span>
+                        <input class="text__input text__inputv2" type="text" disabled  value="pedrorod@gmail.com">
+
                     </div>
                 </div>
             </div>
 
-            <div class="periodos__container periodos__container--info custom-select py-2">
-                <select id="selectMe" >
+            <div class="periodos__container periodos__container--info custom-select custom-select--period py-2">
+                <select id="selectMe">
                     <option value="option1">Seleccionar Rol</option>
                         <option value="option1">Administrador</option>
                         <option value="option2">Rector</option>
@@ -1102,29 +1121,35 @@
                 </select>
             </div>
 
-            <div class="flexbox flexbox__info">
+
+            <div class="flexbox flexbox__radios">
                 <p>Seleccionar Estado:</p>
-                Activo<input name="periodo" type="radio">
-                Inactivo<input name="periodo" type="radio">
-                Pendiente<input name="periodo" type="radio">
+                <input class="btn__radios" name="periodo" type="radio"><p class="radios__txt">Activo</p>
+                <input class="btn__radios" name="periodo" type="radio"><p class="radios__txt">Inactivo</p>
+                <input class="btn__radios" name="periodo" type="radio"><p class="radios__txt">Pendiente</p>
             </div>
         <div>    
         <div class="adminus__flex">
-            <div class="adminus__btn adminus__pag">
-                <div class="btn__flex">
-                    <button class="btn btn__nueva">Guardar</button>
-                </div>
+            <div class="adminus__btn adminus__pag save">
+                <button class="btn save">Guardar</button>
             </div>
 
-            <div class="adminus__btn">
-                <div class="btn__flex">
-                    <button class="btn btn__nueva" onclick="openCity(event, 'adminus')"><i class="fas fa-arrow-left"></i>Regresar</button>
-                </div>
-                
+            <div class="adminus__btn return">
+                <button class="btn return" onclick="openCity(event, 'adminus')"><i class="fas fa-arrow-left"></i>Regresar</button>
             </div>
         </div>
 
+        <div class="btn__footer">
+            <div class="footer__nav">
+                <a href="/"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
     </div>
+
+   
+    
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="src/js/app.js"></script>

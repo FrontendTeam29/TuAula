@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'mixins' as m;
 
 html{
     font-size: 62.5%;
@@ -16,7 +17,11 @@ body{
 
 p{
     color: v.$negro;
-    font-size: 2rem;
+    font-size: 1.5rem;
+
+    @include m.tablet{
+        font-size: 2rem; 
+    }
 }
 
 .contenedor{

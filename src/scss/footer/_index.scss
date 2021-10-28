@@ -41,3 +41,36 @@
 
     }
 }
+
+.btn__footer{
+    background-color: v.$primario;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    @include m.desktop{
+        display: none;
+    }
+
+    .footer__nav{
+        max-width: 120rem;
+        margin: 0 auto;
+
+        a{
+            color: v.$blanco;
+            cursor: pointer;
+            font-size: 2rem;
+            margin-right: 1rem;
+
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+
+        i{
+            font-size: 3rem;
+        }
+
+    }
+}

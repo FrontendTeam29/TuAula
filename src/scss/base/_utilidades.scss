@@ -61,7 +61,11 @@
 }
 
 .w-10{
-    width: 10%;
+    width: 18%;
+
+    @include m.tablet{
+        width: 10%;
+    }
 }
 
 .centrar{
@@ -75,11 +79,12 @@
     background-color: v.$primario;
     color: v.$blanco;
     border-radius: 20px;
-    margin: 5rem 0;
+    margin: 2rem 0;
     font-size: 2rem;
 
     @include m.tablet{
         padding: 1rem 6rem;
+        margin: 5rem 0;
     }
 
     @include m.desktop{
@@ -88,6 +93,9 @@
 }
 
 .btn__actualizar{
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
     padding: 0.5rem v.$separacion;
     &:hover{
         cursor: pointer;
@@ -111,7 +119,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: v.$separacion;
+    gap: v.$separacion; 
+}
+
+.flexbox__radios{
+    flex-direction: column;
+    gap: 0;
 }
 
 .sinborde{
@@ -119,10 +132,23 @@
 }
 
 .unset-input{
-    background-color: unset;
+    background-color: v.$grisClaro;
     border: none;
+    border-radius: 1rem;
     text-align: center;
-    width: 45px;
+    width: 4rem;
+    height: 3rem;
+    font-size: 1.2rem;
+
+    @include m.tablet{
+        font-size: 1.7rem;
+        height: 2.5rem;
+        width: 10rem;
+    }
+
+    @include m.desktop{
+        font-size: 1.8rem;
+    }
 }
 
 .text__bold{
@@ -155,3 +181,11 @@
     color: v.$blanco !important;
 }
 
+.flex__center{
+    justify-content: center;
+    align-items: center;
+}
+
+.z-index{
+    z-index: 1;
+}
