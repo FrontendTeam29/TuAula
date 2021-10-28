@@ -56,11 +56,12 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+
 //Doble Nav
 
 function openNavRight() {
   document.getElementById("mySidenavRight").style.width = "300px";
-  document.getElementById("mySidenavRight").style.top = "128px";
+  //document.getElementById("mySidenavRight").style.top = "128px";
 }
 
 function closeNavRight() {
