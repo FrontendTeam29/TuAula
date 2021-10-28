@@ -125,6 +125,11 @@
 .flexbox__radios{
     flex-direction: column;
     gap: 0;
+
+    @include m.tablet{
+        flex-direction: row;
+        gap: 1rem;
+    }
 }
 
 .sinborde{
