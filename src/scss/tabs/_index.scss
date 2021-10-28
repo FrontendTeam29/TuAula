@@ -715,6 +715,11 @@ input:checked + .slider:before {
         grid-row: 2 / 3;
         display: flex;
         justify-content: center;
+
+        @include m.desktop{
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
     }
     
 }
