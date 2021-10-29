@@ -19,6 +19,7 @@
         text-transform: uppercase;
         color: v.$primario;
         font-weight: bold;
+        border-bottom: 0.3rem solid v.$primario;
 
         &:hover{
             color: v.$primario;
