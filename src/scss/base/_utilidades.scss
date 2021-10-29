@@ -119,7 +119,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: v.$separacion; 
+    gap: v.$separacion;
+    padding: 0rem 0.8rem; 
 }
 
 .flexbox__radios{
@@ -149,6 +150,26 @@
         font-size: 1.7rem;
         height: 2.5rem;
         width: 10rem;
+    }
+
+    @include m.desktop{
+        font-size: 1.8rem;
+    }
+}
+
+.unset-inputv2{
+    background-color: v.$grisClaro;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+    width: 2.8rem;
+    height: 3rem;
+    font-size: 1.3rem;
+
+    @include m.tablet{
+        font-size: 1.7rem;
+        height: 2.5rem;
+        width: 6rem;
     }
 
     @include m.desktop{
