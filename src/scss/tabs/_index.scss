@@ -111,16 +111,16 @@
             padding: 0 v.$separacion;   
         }
         
-        span{
-            color: v.$blanco;
-            &:hover{
-                color:v.$blanco;
-            }
-        }
-    }    
+    } 
+    
 }
 
-
+.text__black{
+    color: v.$blanco;
+    &:hover{
+        color: v.$blanco !important;
+    }
+}
   
 
 .tab button.active{
@@ -128,7 +128,7 @@
     color: v.$blanco !important;
 
     .text__black{
-        color: white;
+        color: v.$blanco;
     }
 }
 
