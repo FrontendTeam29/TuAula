@@ -947,6 +947,53 @@ input:checked + .slider:before {
     }
 }
 
+
+    
+//Perfil Checkbox
+
+.perfil__checkbox{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: v.$separacion;
+
+    p{
+        color: v.$primario;
+        font-weight: bold;
+        @include m.tablet{
+            font-size: 2rem;
+        }
+    }
+
+    .checkbox__roles{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        
+        @include m.tablet{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .rol__check{
+        display: flex;
+
+        .labprofile{
+            width: 100%;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            color: darken(v.$grisOscuro, 25%);
+            font-weight: 700;
+
+            @include m.tablet{
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+
+
 //Inputs Checkbox
 
 input[type=radio]{
