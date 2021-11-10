@@ -47,7 +47,7 @@
             <div class="main__nav">
                 <div class="nav__aside">
                     <button class="dropdown-btn">
-                        <i class="fas fa-book"></i>Mis Asignaturas
+                        <i class="fas fa-book"></i>Mis Asignaturas<i class="fas fa-chevron-down"></i>
                     </button>   
                     <div class="dropdown-container">
                         <a href="#" onclick="openTab(event, 'home2')">Matematica 1</a>
@@ -62,7 +62,7 @@
             <div class="main__nav">
                 <div class="nav__aside">
                     <button class="dropdown-btn">
-                        <i class="fas fa-apple-alt"></i>Mis Actividades
+                        <i class="fas fa-apple-alt"></i>Mis Actividades<i class="fas fa-chevron-down"></i>
                     </button>   
                     <div class="dropdown-container">
                         <a href="#">Semana 1</a>
@@ -77,7 +77,22 @@
             <div class="main__nav">
                 <div class="nav__aside">
                     <button class="dropdown-btn">
-                        <i class="fas fa-signal"></i>Calificar
+                        <i class="fas fa-signal"></i>Calificar<i class="fas fa-chevron-down"></i>
+                    </button>   
+                    <div class="dropdown-container">
+                        <a href="#" onclick="openTab(event, 'home12')">Semana 1</a>
+                        <a href="#">Semana 2</a>
+                        <a href="#">Semana 3</a>
+                        <a href="#">Semana 4</a>
+                        <a href="#">Semana 5</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__nav">
+                <div class="nav__aside">
+                    <button class="dropdown-btn">
+                        <i class="fab fa-adn"></i>Notas<i class="fas fa-chevron-down"></i>
                     </button>   
                     <div class="dropdown-container">
                         <a href="#">Semana 1</a>
@@ -92,22 +107,7 @@
             <div class="main__nav">
                 <div class="nav__aside">
                     <button class="dropdown-btn">
-                        <i class="fab fa-adn"></i>Notas
-                    </button>   
-                    <div class="dropdown-container">
-                        <a href="#">Semana 1</a>
-                        <a href="#">Semana 2</a>
-                        <a href="#">Semana 3</a>
-                        <a href="#">Semana 4</a>
-                        <a href="#">Semana 5</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main__nav">
-                <div class="nav__aside">
-                    <button class="dropdown-btn">
-                        <i class="fab fa-adn"></i>Notas
+                        <i class="fab fa-adn"></i>Notas<i class="fas fa-chevron-down"></i>
                     </button>   
                     <div class="dropdown-container">
                         <a href="#">Semana 1</a>
@@ -206,7 +206,7 @@
 
         <!--onclick="openNav()"-->
 
-        <i class="fas fa-plus" id="plus"></i>
+        <i class="fas fa-bars" id="plus"></i>
         <!--<div class="menu" onclick="openNav()"><i class="fas fa-align-left"></i></div>-->
         <!--<div class="menu" onclick="openNavRight()"><i class="fas fa-chevron-left"></i>-->
     </div>
@@ -266,7 +266,7 @@
                         <i class="fas fa-signal"></i>Calificar
                     </button>   
                     <div class="dropdown-container">
-                        <a href="#">Semana 1</a>
+                        <a href="#" onclick="openTab(event, 'home12')">Semana 1</a>
                         <a href="#">Semana 2</a>
                         <a href="#">Semana 3</a>
                         <a href="#">Semana 4</a>
@@ -319,7 +319,7 @@
         
                         <div class="profile__text">
                             <p class="text__name">Prof. Carlos Rojas</p>
-                            <p class="text__pro">02:30 PM</p>
+                            <p class="text__pro">02:31 PM</p>
                         </div>
                     </div><!--Autor Pub-->
 
@@ -369,12 +369,12 @@
         <!--.Entrada Matematica 1-->
         <div class="main__contenido" id="home2">
             <div class="contain">
-                <div class="contain__header contain__header--pub">
+                <div class="contain__header--center contain__header--pub">
                     <p class="header__name">Matemática I</p>
                     <p class="header__subname"><span>Temas</span></p>
                 </div><!--Contenedor Columna Principal-->
 
-                <div class="contain__body">
+                <div class="contain__body"> 
                     <div class="body__nav">
                         <div>
                             <div class="custom-select">
@@ -628,7 +628,7 @@
                         <div class="body__editor">
                             <span class="editor__txt">Descripcion de la actividad:</span>
                             <div class="editor__borde">
-                                <div id="editor" class="editor__box">
+                                <div id="editor2" class="editor__box">
                                     <p>Escribir...</p>
                                 </div>
                             </div>
@@ -1093,6 +1093,9 @@
         </div><!--Main Content-->
         <!--.Crear Tema2-->
 
+        
+       
+
         <!--Crear Actividad2-->
         <div class="main__contenido" id="home11">
             <div class="contain">
@@ -1183,6 +1186,91 @@
             
         </div><!--Main Content-->
         <!--.Crear Actividad2-->
+
+        <!--.Calificar-->
+        <div class="main__contenido" id="home12">
+            <div class="contain">
+                <div class="contain__header--center contain__header--pub">
+                    <p class="header__name" id="ct">Calificar </p>
+                    
+                </div><!--Contenedor Columna Principal-->
+
+                <div class="contain__body">
+                    <div class="body__info" id="initial">
+
+                        
+
+                        <div class="info__title">
+                            <span>Matemática I</span>                          
+                        </div>
+
+                        <div class="table__calificar">
+                            <div class="table__nombreApellidos table__Title"><span>Nombres y Apellidos</span></div>
+                            <div class="table__actividad table__Title"><span>Actividad</span></div>
+                            <div class="table__nota table__Title"><span>Nota</span></div>
+                            <div class="table__ver table__Title"><span>Ver</span></div>
+                            <div class="table__alumno1"><span>Alumno 01</span></div>
+                            <div class="table__actividad1"><span>Actividad 01</span></div>
+                            <div class="table__nota1"><span>10</span></div>
+                            <div class="table__iconoVer1"><i class="far fa-eye"></i></div>
+                            <div class="table__alumno2"><span>Alumno 02</span></div>
+                            <div class="table__actividad2"><span>Actividad 02</span></div>
+                            <div class="table__nota2"><span>09</span></div>
+                            <div class="table__iconoVer2"><i class="far fa-eye"></i></div>
+                            <div class="table__alumno3"><span>Alumno 03</span></div>
+                            <div class="table__actividad3"><span>Actividad 03</span></div>
+                            <div class="table__nota3"><span>08</span></div>
+                            <div class="table__iconoVer3"><i class="far fa-eye"></i></div>
+                            <div class="table__alumno4"><span>Alumno 04</span></div>
+                            <div class="table__actividad4"><span>Actividad 04</span></div>
+                            <div class="table__nota4"><span>07</span></div>
+                            <div class="table__iconoVer4"><i class="far fa-eye"></i></div>   
+                        </div>
+
+                        <div class="info__title">
+                            <span>Comunicación I</span>
+                            
+                        </div>
+                        <div class="table__calificar">
+                            <div class="table__nombreApellidos table__Title"><span>Nombres y Apellidos</span></div>
+                            <div class="table__actividad table__Title"><span>Actividad</span></div>
+                            <div class="table__nota table__Title"><span>Nota</span></div>
+                            <div class="table__ver table__Title"><span>Ver</span></div>
+                            <div class="table__alumno1"><span>Alumno 01</span></div>
+                            <div class="table__actividad1"><span>Actividad 01</span></div>
+                            <div class="table__nota1"><span>10</span></div>
+                            <div class="table__iconoVer1"><i class="far fa-eye"></i></div>
+                            <div class="table__alumno2"><span>Alumno 02</span></div>
+                            <div class="table__actividad2"><span>Actividad 02</span></div>
+                            <div class="table__nota2"><span>09</span></div>
+                            <div class="table__iconoVer2"><i class="far fa-eye"></i></div>
+                            <div class="table__alumno3"><span>Alumno 03</span></div>
+                            <div class="table__actividad3"><span>Actividad 03</span></div>
+                            <div class="table__nota3"><span>08</span></div>
+                            <div class="table__iconoVer3"><i class="far fa-eye"></i></div>
+                            <div class="table__alumno4"><span>Alumno 04</span></div>
+                            <div class="table__actividad4"><span>Actividad 04</span></div>
+                            <div class="table__nota4"><span>07</span></div>
+                            <div class="table__iconoVer4"><i class="far fa-eye"></i></div>   
+                        </div>
+
+
+                       
+
+                        
+                    </div> <!--Info Calificar-->
+
+                   
+
+                    
+
+                   
+                </div>
+            </div><!--Contenido Calificar-->
+
+            
+        </div><!--Main Content-->
+        <!--.Calificar-->
 
         
         <!--<aside class="main__aside" id="mySidenavRight">

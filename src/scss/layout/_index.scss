@@ -68,12 +68,12 @@
     }
 
     .nav__aside a, .dropdown-btn {
-        padding: 0.5rem 0.6rem;
+        padding: .5rem .6rem  ;
         text-decoration: none;
         font-size: 20px;
         color: v.$primario;
         display: flex;
-        justify-content: left;
+        justify-content: space-between;
         padding-left: 3rem;
         align-items: center;
         border: 0.25rem solid v.$primario;  
@@ -86,6 +86,7 @@
         background-color: v.$primario;
         color: v.$blanco;
         border-radius: 0.25rem;
+        padding-left: 1rem;
 
         &:hover{
             background-color: v.$blanco;
@@ -151,8 +152,11 @@
         align-items: center;
         padding: 0.5rem;
 
-        @include m.desktop{
-            padding: 2rem;
+        
+
+        @include m.desktop{           
+            justify-content: space-between;          
+            padding: 2rem;            
         }
 
         .btn__verde{
@@ -166,9 +170,33 @@
             gap: 1rem;
         }
     }
+    .contain__header--center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+
+        
+
+        @include m.desktop{           
+            justify-content: space-between;          
+            padding: 2rem;            
+        }
+
+        
+    }
 
     .contain__header--pub{
         border-bottom: 0.25rem solid v.$primario;
+    }
+    .contain__header--pub span{
+        display: none;
+        @include m.desktop{
+            padding: 2rem;
+            display: block;
+            
+        }
+       
     }
 
     .contain__body img{
@@ -283,7 +311,7 @@
     .btn--action{
         display: block;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 2rem;
         padding: 1rem;
 
         @include m.tablet{
@@ -307,9 +335,9 @@
     }
 
     .item__photo--body{
-        width: 15rem;
+        width: 18rem;
         border: 0.25rem solid v.$primario;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         cursor: pointer;
 
         @include m.tablet{
@@ -459,6 +487,7 @@
     height: 10rem;
     padding: 2rem;
     border: 0;
+    resize: none;
 
     &:hover,
     &:focus{
@@ -628,5 +657,30 @@
     box-shadow: -1px 1px 16px -4px rgba(0,0,0,0.75);
 }
 
+//Calificar
+.table__calificar{
+    
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 4fr 3fr 1fr 1fr;
+    text-align: center;
 
+    span{
+        font-weight: 500 !important;
+    }
+    
+
+    div{
+        padding: 1rem;
+        border: 1px solid v.$primario;
+        
+       
+    }
+    .table__Title{
+        background-color:v.$primario ;
+        color: v.$blanco ;
+    }
+
+
+}
   

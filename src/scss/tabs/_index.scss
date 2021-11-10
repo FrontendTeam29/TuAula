@@ -654,6 +654,8 @@ input:checked + .slider:before {
     background-color: v.$primario;
     border: none;
     max-width: 100%;
+    
+    
 
     option{
         background-color: v.$blanco;
