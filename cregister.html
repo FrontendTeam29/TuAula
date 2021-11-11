@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN Fuente Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- CDN Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- CDN CSS-->
+    <link rel="stylesheet" href="build/css/app.css">
+    <title>TuAula - Registro</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__grid">
+            <div class="header__logo">
+                <img src="img/logo2png.png">
+            </div>
+
+            <div class="header__enlaces">
+                <a class="header__enlace" href="#">Inicio</a>
+                <a class="header__enlace" href="#">Nosostros</a>
+                <a class="header__enlace" href="#">Servicios</a>
+                <a class="header__enlace header__enlace--btn" href="#">Iniciar Sesión</a>
+                <a class="header__enlace header__enlace--btn" href="#">Registrarse</a>
+                <a class="header__enlace header__enlace--btn" href="#"><i class="fas fa-ellipsis-h"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="registro">
+        <div class="registro__contenedor">
+            <h1 class="registro__titulo">Confirmar registro</h1>
+
+            <form action="" class="form-cregistro">
+                <div class="form-registro__inputs">
+                    <label class="form-registro__label" for="pais">País:</label>
+                    <select class="form-registro__input" id="pais">
+                        <option value="">Seleccionar Pais</option>
+                    </select>
+                </div>
+
+                <div class="form-registro__inputs">
+                    <label class="form-registro__label" for="departamento">Departamento:</label>
+                    <select class="form-registro__input" id="departamento">
+                        <option value="">Seleccionar Departamento</option>
+                    </select>
+                </div>
+
+                <div class="form-registro__inputs">
+                    <label class="form-registro__label" for="municipio">Correo electrónico:</label>
+                    <select class="form-registro__input" id="municipio">
+                        <option value="">Seleccionar Municipio</option>
+                    </select>
+                </div>
+
+                <div class="form-registro__inputs">
+                    <label class="form-registro__label" for="contra">Contraseña:</label>
+                    <input class="form-registro__input" id="contra" type="password" placeholder="Digite su contraseña..." required>
+                </div>
+
+                <div class="form-registro__inputs">
+                    <label class="form-registro__label" for="rcontra">Confirmar contraseña:</label>
+                    <input class="form-registro__input" id="rcontra" type="password" placeholder="Digite su contraseña..." required>
+                </div>
+
+                <div class="form-registro__radios">
+                    <input class="form-registro__radio" id="terminos" type="radio"><label for="terminos">Acepto haber leido los <span><a href="#">Términos y Condiciones</a></span></label>
+                </div>
+
+                <div class="form-registro__btns">
+                    <input class="form-registro__btn" type="submit" value="Confirmar">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site__footer">
+        <div class="footer__nav footer__nav--info">
+            <a href="/">Inicio</a>
+            <a href="#">Informacion 1</a>
+            <a href="#">Informacion 2</a>
+        </div>
+
+        <div class="footer__nav">
+            <a href="/"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
