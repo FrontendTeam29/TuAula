@@ -89,7 +89,7 @@ function noActiveNav(){
 function crearTema(){
   const padre = document.querySelector('#initial');
   let div = document.createElement("DIV");
-  div.innerHTML += `<div class="">
+  div.innerHTML += `<div class="body__info--separador2">
 
                       <div class="info__title">
                           <span>Titulo:</span>
@@ -97,7 +97,7 @@ function crearTema(){
                       </div>
 
                       <div class="info__switch">
-                          <div> 
+                          <div class="info__switch--alinear"> 
                               <label class="switch">
                                   <input type="checkbox" checked>
                                   <span class="slider round"></span>
@@ -108,7 +108,7 @@ function crearTema(){
                       </div>
 
                       <div class="info__switch">
-                          <div>
+                          <div class="info__switch--alinear">
                               <label class="switch">
                                   <input type="checkbox" checked>
                                   <span class="slider round"></span>
