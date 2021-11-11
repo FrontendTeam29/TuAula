@@ -14,6 +14,7 @@
         display: none;
         padding: 2rem;
         border-right: 0.1rem solid v.$grisClaro;
+        width: 33rem;
 
         @include m.telefono{
             display: none;
@@ -140,17 +141,21 @@
 .main__contenido{
     background-color: v.$grisClaro;
     .contain{
-        max-width: 90%;
-        margin: 2rem auto;
+        //max-width: 90%;
+        margin: 2rem;
         background-color: v.$blanco;
         border-radius: 1rem;
     }
-
+   
     .contain__header{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0.5rem;
+
+        
+
+
 
         
 
@@ -180,7 +185,7 @@
 
         @include m.desktop{           
             justify-content: space-between;          
-            padding: 2rem;            
+            padding: 0.1rem 2rem;            
         }
 
         
@@ -192,7 +197,7 @@
     .contain__header--pub span{
         display: none;
         @include m.desktop{
-            padding: 2rem;
+           
             display: block;
             
         }
@@ -359,11 +364,11 @@
 
         .body__switch{
             display: flex;
-            gap: 2rem;
-            margin-bottom: v.$separacion;
+            //gap: 2rem;
+            margin-bottom: 2rem;
             flex-direction: column;
             justify-content: flex-start;
-            align-items: center;
+            //align-items: center;
 
             @include m.tablet{
                 flex-direction: row;
@@ -372,7 +377,7 @@
         }
 
         .info__switch{
-            margin-top: v.$separacion;
+            margin-top: 2rem;
         }
 
         span{
@@ -394,9 +399,9 @@
         }
 
         .input__body--links{
-            width: 90%;
-            margin-top: 2rem;
+            width: 90%;          
             border: 0;
+            flex: 2;
         }
 
         .input__body--time{
@@ -408,9 +413,16 @@
     .info__title{
         margin: 2rem 0;
     }
+
+    .info__title--mod{
+        span{
+            display: inline;
+        }
+
+    }
     
     .body__info--act{
-        padding: 1rem v.$separacion;
+        //padding: 1rem v.$separacion;
         border: 0;
     }
 
@@ -426,11 +438,17 @@
 //Entrada Crear Actividad
 
 .nav__breadcumb{
-    display: flex;
+    /*display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0.5rem;*/
+    display: grid;
+    grid-template-columns: repeat( 2 , 1fr );
+    justify-content: center;
+    align-items: center;
     padding: 0.5rem;
+
 
     @include m.desktop{
         display: grid;
@@ -444,14 +462,22 @@
     .item__br{
         background-color: v.$primario;
         color: v.$blanco;
-        padding: 0.5rem 3rem;
+        padding: 0.5rem 2rem;
         text-align: center;
         margin: 1rem;
+        font-size: 1.2rem;
 
-        &:nth-child(4){
-            grid-column: 1 / 4;
-            margin: 0;
+        @include m.tablet{
+            padding: 0.5rem 3rem;
+            font-size: 1.6rem;
+            &:nth-child(4){
+                grid-column: 1 / 4;
+                margin: 1rem;
+            }
+
         }
+
+        
     }
 }
 
@@ -466,6 +492,7 @@
 .editor__txt{
     display: block;
     margin: 1rem 0;
+    
 }
 
 .editor__borde{
@@ -475,6 +502,7 @@
 
 .editor__box{
     max-width: 88.5rem;
+    min-height: 15rem;
     @include m.tablet{
         max-width: 125rem;
     }
@@ -482,7 +510,7 @@
 
 .editor__txtarea{
     width: 100%;
-    background-color: v.$grisClaro;
+    background-color: v.$inputColor;
     border-radius: 1rem;
     height: 10rem;
     padding: 2rem;
@@ -496,35 +524,59 @@
 }
 
 .body__links{
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 2rem;
+    
+    
 
-    @include m.tablet{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+    
+    
 
     .links{
         display: flex;
         justify-content: center;
+        align-items: center;    
+        .links__texto{
+            width: 18rem;
+            @include m.tablet{
+                font-size:1.6rem !important;
+            }       
+        } 
+        
     }
+
 }
 
 .info__title{
     .btn__actividad{
-        display: block;
-        padding: 0.5rem 1rem;
+            
         background-color: v.$blanco;
         border: 1px solid v.$primario;
         color: v.$negro;
         border-radius: 2rem;
         cursor: pointer;
         margin-bottom: 1rem;
+        padding: 0.5rem 2rem;
+        text-align: center;
 
-        @include m.desktop{
-            display: inline-block;
-            padding: 0.5rem 5rem;
+        @include m.tablet {
+            padding: 0.5rem 3rem;
+        }
+
+        
+    }
+    .info__tipoActividad{
+        margin-top: 0.5rem;
+        display: flex;
+        column-gap: 0.5rem;
+        align-items: center;
+        font-size: 1.3rem;
+        span{
+            flex: 2;
+            
+
         }
     }
 }

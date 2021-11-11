@@ -666,6 +666,14 @@ input:checked + .slider:before {
         padding: 1rem 2rem;
     }
 }
+.custom__select--math{
+    display: flex;
+    align-items: center;
+    select{
+        flex: 2;
+    }
+
+}
 
 .custom-select--period select{
     padding: 1rem 6rem;

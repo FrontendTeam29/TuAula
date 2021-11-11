@@ -233,7 +233,7 @@
             <div class="main__nav">
                 <div class="nav__aside">
                     <button class="dropdown-btn">
-                        <i class="fas fa-book"></i>Mis Asignaturas
+                        <i class="fas fa-book"></i>Mis Asignaturas<i class="fas fa-chevron-down"></i>
                     </button>   
                     <div class="dropdown-container">
                         <a class="enlace" href="#" onclick="openTab(event, 'home2')">Matematica 1</a>
@@ -248,7 +248,7 @@
             <div class="main__nav">
                 <div class="nav__aside">
                     <button class="dropdown-btn">
-                        <i class="fas fa-apple-alt"></i>Mis Actividades
+                        <i class="fas fa-apple-alt"></i>Mis Actividades<i class="fas fa-chevron-down"></i>
                     </button>   
                     <div class="dropdown-container">
                         <a href="#">Semana 1</a>
@@ -263,7 +263,7 @@
             <div class="main__nav">
                 <div class="nav__aside">
                     <button class="dropdown-btn">
-                        <i class="fas fa-signal"></i>Calificar
+                        <i class="fas fa-signal"></i>Calificar<i class="fas fa-chevron-down"></i>
                     </button>   
                     <div class="dropdown-container">
                         <a href="#" onclick="openTab(event, 'home12')">Semana 1</a>
@@ -278,7 +278,7 @@
             <div class="main__nav">
                 <div class="nav__aside">
                     <button class="dropdown-btn">
-                        <i class="fab fa-adn"></i>Notas
+                        <i class="fab fa-adn"></i>Notas<i class="fas fa-chevron-down"></i>
                     </button>   
                     <div class="dropdown-container">
                         <a href="#">Semana 1</a>
@@ -293,7 +293,7 @@
             <div class="main__nav">
                 <div class="nav__aside">
                     <button class="dropdown-btn">
-                        <i class="fab fa-adn"></i>Notas
+                        <i class="fab fa-adn"></i>Notas<i class="fas fa-chevron-down"></i>
                     </button>   
                     <div class="dropdown-container">
                         <a href="#">Semana 1</a>
@@ -377,7 +377,7 @@
                 <div class="contain__body"> 
                     <div class="body__nav">
                         <div>
-                            <div class="custom-select">
+                            <div class="custom-select custom__select--math">
                                 <span class="text__select">Ordenador por:</span>
                                 <select id="selectMe" >
                                     <option value="option1">Más reciente</option>
@@ -620,7 +620,7 @@
                     </div>
 
                     <div class="body__info body__info--act">
-                        <div class="info__title">
+                        <div class="info__title info__title--mod">
                             <span class="editor__txt">Titulo:</span>
                             <input type="text" placeholder="Texto" class="input__body" id="input__body">
                         </div>
@@ -652,10 +652,12 @@
                         <div class="body__editor">
                             <div class="body__links">
                                 <div class="links">
+                                    <p class="text__bold links__texto">Link de la clase:</p>
                                     <input type="text" class="input__body input__body--links" placeholder="Link de la clase">
                                 </div>
 
                                 <div class="links">
+                                    <p class="text__bold links__texto">Link de grabación:</p>
                                     <input type="text" class="input__body input__body--links" placeholder="Link de la grabacion">
                                 </div>
                             </div>
@@ -663,9 +665,12 @@
 
                         <div class="info__title">
                             <span>Tipo de actividad:</span>
-                            <span class="btn__actividad js-click-class">En clase</span>
-                            <span class="btn__actividad js-click-didac">Didáctica</span>
-                            <span class="btn__actividad js-click-home">En casa</span>
+                            <div class="info__tipoActividad">
+                                <span class="btn__actividad js-click-class">En clase</span>
+                                <span class="btn__actividad js-click-didac">Didáctica</span>
+                                <span class="btn__actividad js-click-home">En casa</span>
+                            </div>
+                            
                         </div>
 
                         <div class="buttons">
@@ -699,10 +704,11 @@
                         <div class="body__editor">
                             <span class="editor__txt">Actividad en Clase:</span>
                             <div class="editor__borde">
-                                <div id="editor2" class="editor__box">
+                                <div id="editor3" class="editor__box">
                                     <p>Escribir...</p>
                                 </div>
                             </div>
+                            
                             
                         </div>
 
@@ -1017,7 +1023,7 @@
             <div class="contain">
                 <div class="contain__header contain__header--pub">
                     <p class="header__name" id="ct">Crear Tema </p>
-                    <a class="btn btn--action m-0" href="#"><i class="fas fa-arrow-left"></i>Regresar</a>
+                    <a class="btn btn--action m-0" id="btn__action--regresar" href="#"><i class="fas fa-arrow-left"></i>Regresar</a>
                 </div><!--Contenedor Columna Principal-->
 
                 <div class="contain__body">
@@ -1045,7 +1051,7 @@
                             
                         </div>
 
-                        <div class="info__title">
+                        <div class="info__title ">
                             <span>Titulo:</span>
                             <input type="text" placeholder="Texto" class="input__body" id="input__body">
                         </div>
@@ -1121,7 +1127,7 @@
                     </div>
 
                     <div class="body__info body__info--act">
-                        <div class="info__title">
+                        <div class="info__title info__title--mod">
                             <span>Titulo:</span>
                             <input type="text" placeholder="Texto" class="input__body" id="input__body">
                         </div>
@@ -1153,20 +1159,24 @@
                         <div class="body__editor">
                             <div class="body__links">
                                 <div class="links">
+                                    <p class="text__bold links__texto">Link de la clase:</p>
                                     <input type="text" class="input__body input__body--links" placeholder="Link de la clase">
                                 </div>
 
                                 <div class="links">
+                                    <p class="text__bold links__texto">Link de grabación:</p>
                                     <input type="text" class="input__body input__body--links" placeholder="Link de la grabacion">
                                 </div>
                             </div>
                         </div>
 
                         <div class="info__title">
-                            <span>Tipo de actividad:</span>
-                            <span class="btn__actividad js-click-class">En clase</span>
-                            <span class="btn__actividad js-click-didac">Didáctica</span>
-                            <span class="btn__actividad js-click-home">En casa</span>
+                            <span>Tipo de actividad:</span>                   
+                            <div class="info__tipoActividad">                              
+                                <span class="btn__actividad js-click-class">En clase</span>
+                                <span class="btn__actividad js-click-didac">Didáctica</span>
+                                <span class="btn__actividad js-click-home">En casa</span>
+                            </div>
                         </div>
 
                         <div class="buttons">
@@ -1372,6 +1382,10 @@
         });
 
         let quill2 = new Quill('#editor2', {
+        theme: 'snow'
+        });
+
+        let quill3 = new Quill('#editor3', {
         theme: 'snow'
         });
     </script>

@@ -23,6 +23,7 @@
 
 .m-0{
     margin: 0 !important;
+    font-size: 1rem;
 }
 
 .mb-5{
@@ -80,10 +81,10 @@
     color: v.$blanco;
     border-radius: 20px;
     margin: 2rem 0;
-    font-size: 2rem;
+    font-size: 1.7rem;
 
     @include m.tablet{
-        padding: 1rem 6rem;
+        //padding: 1rem 6rem;
         margin: 5rem 0;
     }
 
