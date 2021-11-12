@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="build/css/app.css">
     <title>TuAula - Registro</title>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <div class="header__grid">
             <div class="header__logo">
@@ -27,7 +27,7 @@
                 <a class="header__enlace" href="#">Servicios</a>
                 <a class="header__enlace header__enlace--btn" href="#">Iniciar Sesión</a>
                 <a class="header__enlace header__enlace--btn" href="#">Registrarse</a>
-                <a class="header__enlace header__enlace--btn" href="#"><i class="fas fa-ellipsis-h"></i></a>
+                <a class="header__enlace header__enlace--dots" href="#"><i class="fas fa-ellipsis-h"></i></a>
             </div>
         </div>
     </header>
@@ -36,7 +36,10 @@
         <div class="registro__contenedor">
             <h1 class="registro__titulo">Registrarse</h1>
 
+            <hr class="registro__line">
+
             <form action="" class="form-registro">
+
                 <div class="form-registro__inputs">
                     <label class="form-registro__label" for="name">Nombre:</label>
                     <input class="form-registro__input" id="name" type="text" placeholder="Digite su nombre..." required>
@@ -53,12 +56,12 @@
                 </div>
 
                 <div class="form-registro__inputs">
-                    <label class="form-registro__label" for="tel">Telefono:</label>
+                    <label class="form-registro__label" for="tel">Teléfono:</label>
                     <input class="form-registro__input" id="tel" type="tel" placeholder="Digite su telefono..." required>
                 </div>
 
                 <div class="form-registro__radios">
-                    <input class="form-registro__radio" id="terminos" type="radio"><label for="terminos">Acepto haber leido los <span><a href="#">Términos y Condiciones</a></span></label>
+                    <input class="form-registro__radio" id="terminos" type="radio"><label for="terminos">Acepto haber leido los <span><a class="form-registro__terminos" href="#">Términos y Condiciones</a></span></label>
                 </div>
 
                 <div class="form-registro__btns">
@@ -68,7 +71,7 @@
         </div>
     </section>
 
-    <footer class="site__footer">
+    <footer class="site__footer site__footer--register">
         <div class="footer__nav footer__nav--info">
             <a href="/">Inicio</a>
             <a href="#">Informacion 1</a>
