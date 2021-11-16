@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- CDN CSS-->
     <link rel="stylesheet" href="build/css/app.css">
-    <title>TuAula - Iniciar Sesion</title>
+    <title>TuAula - Recupera Contraseña</title>
 </head>
 <body class="body-autenticacion">
     <header class="header">
@@ -32,34 +32,22 @@
         </div>
     </header>
 
-    <section class="inicio">
-        <div class="inicio__contenedor">
-            <h1 class="inicio__titulo">Iniciar Sesión</h1>
+    <section class="recucontra">
+        <div class="recucontra__contenedor">
+            <h1 class="recucontra__titulo">Recuperar Contraseña</h1>
 
-            <hr class="inicio__line">
+            <hr class="recucontra__line">
 
-            <form action="" class="form-inicio form-inicio--flex">
-                <div class="form-inicio__inputs form-inicio__inputs--flexcol">
-                    <label class="form-inicio__label form-inicio__label--w90" for="email">Correo electrónico:</label>
-                    <input class="form-inicio__input form-inicio__label--w90" id="email" type="email" placeholder="Correo electronico" required>
+            <form action="" class="form-recucontra form-recucontra--flex">
+                <div class="form-recucontra__inputs form-recucontra__inputs--flexcol">
+                    <label class="form-recucontra__label form-recucontra__label--w90" for="email">Correo electrónico:</label>
+                    <input class="form-recucontra__input form-recucontra__label--w90" id="email" type="email" placeholder="Correo electronico" required>
                 </div>
 
-                <div class="form-inicio__inputs form-inicio__inputs--flexcol">
-                    <label class="form-inicio__label form-inicio__label--w90" for="contra">Contraseña:</label>
-                    <input class="form-inicio__input form-inicio__label--w90" id="contra" type="password" placeholder="Contraseña" required>
+                <div class="form-recucontra__btns">
+                    <input class="form-cregistro__btn" type="submit" value="Enviar">
                 </div>
-
-                <div class="form-inicio__btns">
-                    <input class="form-cregistro__btn" type="submit" value="Iniciar Sesión">
-                </div>
-                
-                <p class="form-inicio__text">¿Olvidó su contraseña?<a class="form-inicio__enlace" href="#">Recuperar contraseña</a></p>
             </form>
-        </div>
-
-        <div class="seccion-registro">
-            <p class="seccion-registro__text">Si aún no tiene cuenta</p>
-            <a class="seccion-registro__enlace" href="#">Registrese</a>
         </div>
     </section>
 

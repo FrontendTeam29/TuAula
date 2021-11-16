@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- CDN CSS-->
     <link rel="stylesheet" href="build/css/app.css">
-    <title>TuAula - Iniciar Sesion</title>
+    <title>TuAula - Nueva Contraseña</title>
 </head>
 <body class="body-autenticacion">
     <header class="header">
@@ -32,34 +32,27 @@
         </div>
     </header>
 
-    <section class="inicio">
-        <div class="inicio__contenedor">
-            <h1 class="inicio__titulo">Iniciar Sesión</h1>
+    <section class="nuevacontra">
+        <div class="nuevacontra__contenedor">
+            <h1 class="nuevacontra__titulo">Nueva Contraseña</h1>
 
-            <hr class="inicio__line">
+            <hr class="nuevacontra__line">
 
-            <form action="" class="form-inicio form-inicio--flex">
-                <div class="form-inicio__inputs form-inicio__inputs--flexcol">
-                    <label class="form-inicio__label form-inicio__label--w90" for="email">Correo electrónico:</label>
-                    <input class="form-inicio__input form-inicio__label--w90" id="email" type="email" placeholder="Correo electronico" required>
+            <form action="" class="form-nuevacontra form-nuevacontra--flex">
+                <div class="form-nuevacontra__inputs form-nuevacontra__inputs--flexcol">
+                    <label class="form-nuevacontra__label form-nuevacontra__label--w90" for="email">Nueva contraseña:</label>
+                    <input class="form-nuevacontra__input form-nuevacontra__label--w90" id="email" type="email" placeholder="Correo electronico" required>
                 </div>
 
-                <div class="form-inicio__inputs form-inicio__inputs--flexcol">
-                    <label class="form-inicio__label form-inicio__label--w90" for="contra">Contraseña:</label>
-                    <input class="form-inicio__input form-inicio__label--w90" id="contra" type="password" placeholder="Contraseña" required>
+                <div class="form-nuevacontra__inputs form-nuevacontra__inputs--flexcol">
+                    <label class="form-nuevacontra__label form-nuevacontra__label--w90" for="email">Confirmar contraseña:</label>
+                    <input class="form-nuevacontra__input form-nuevacontra__label--w90" id="email" type="email" placeholder="Correo electronico" required>
                 </div>
 
-                <div class="form-inicio__btns">
-                    <input class="form-cregistro__btn" type="submit" value="Iniciar Sesión">
+                <div class="form-nuevacontra__btns">
+                    <input class="form-cregistro__btn" type="submit" value="Confirmar">
                 </div>
-                
-                <p class="form-inicio__text">¿Olvidó su contraseña?<a class="form-inicio__enlace" href="#">Recuperar contraseña</a></p>
             </form>
-        </div>
-
-        <div class="seccion-registro">
-            <p class="seccion-registro__text">Si aún no tiene cuenta</p>
-            <a class="seccion-registro__enlace" href="#">Registrese</a>
         </div>
     </section>
 

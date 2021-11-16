@@ -1,0 +1,20 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.form-recucontra--flex{
+    display: flex;
+}
+
+.form-recucontra__inputs--flexcol{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+
+.form-recucontra__label--w90,
+.form-recucontra__input--w90{
+    width: 90%;
+    margin-bottom: 1rem;
+}
+

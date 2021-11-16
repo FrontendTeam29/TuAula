@@ -2482,7 +2482,9 @@ input[type=radio] {
 
 .inicio,
 .cregistro,
-.registro {
+.registro,
+.recucontra,
+.nuevacontra {
   margin-top: 1rem;
   padding-top: 2rem;
   height: 100%;
@@ -2490,15 +2492,33 @@ input[type=radio] {
 
 .inicio__contenedor,
 .registro__contenedor,
-.cregistro__contenedor {
+.cregistro__contenedor,
+.recucontra__contenedor,
+.nuevacontra__contenedor {
   margin: 0 auto;
   background-color: #FFFFFF;
 }
 @media (min-width: 1024px) {
   .inicio__contenedor,
 .registro__contenedor,
-.cregistro__contenedor {
+.cregistro__contenedor,
+.recucontra__contenedor,
+.nuevacontra__contenedor {
     max-width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .nuevacontra__contenedor,
+.recucontra__contenedor {
+    max-width: 65%;
+  }
+}
+@media (min-width: 1024px) {
+  .nuevacontra__contenedor,
+.recucontra__contenedor {
+    border-radius: 1rem;
+    max-width: 35%;
   }
 }
 
@@ -2530,7 +2550,9 @@ input[type=radio] {
 
 .inicio__titulo,
 .registro__titulo,
-.cregistro__titulo {
+.cregistro__titulo,
+.recucontra__titulo,
+.nuevacontra__titulo {
   color: #72d2e1;
   font-size: 2.5rem;
   text-align: center;
@@ -2540,14 +2562,18 @@ input[type=radio] {
 
 .inicio__line,
 .registro__line,
-.cregistro__line {
+.cregistro__line,
+.recucontra__line,
+.nuevacontra__line {
   width: 90%;
   border: 0.12rem solid #72d2e1;
 }
 
 .form-inicio,
 .form-registro,
-.form-cregistro {
+.form-cregistro,
+.form-recucontra,
+.form-nuevacontra {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2556,7 +2582,9 @@ input[type=radio] {
 @media (min-width: 1024px) {
   .form-inicio,
 .form-registro,
-.form-cregistro {
+.form-cregistro,
+.form-recucontra,
+.form-nuevacontra {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -2566,9 +2594,18 @@ input[type=radio] {
   }
 }
 
+@media (min-width: 1024px) {
+  .form-recucontra,
+.form-nuevacontra {
+    gap: 0;
+  }
+}
+
 .form-inicio__inputs,
 .form-registro__inputs,
-.form-cregistro__inputs {
+.form-cregistro__inputs,
+.form-recucontra__inputs,
+.form-nuevacontra__inputs {
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
@@ -2576,26 +2613,34 @@ input[type=radio] {
 @media (min-width: 1024px) {
   .form-inicio__inputs,
 .form-registro__inputs,
-.form-cregistro__inputs {
+.form-cregistro__inputs,
+.form-recucontra__inputs,
+.form-nuevacontra__inputs {
     flex-direction: column;
     align-items: center;
   }
   .form-inicio__inputs:nth-child(3),
 .form-registro__inputs:nth-child(3),
-.form-cregistro__inputs:nth-child(3) {
+.form-cregistro__inputs:nth-child(3),
+.form-recucontra__inputs:nth-child(3),
+.form-nuevacontra__inputs:nth-child(3) {
     grid-column: 1/3;
     align-items: flex-start;
   }
   .form-inicio__inputs:nth-child(4),
 .form-registro__inputs:nth-child(4),
-.form-cregistro__inputs:nth-child(4) {
+.form-cregistro__inputs:nth-child(4),
+.form-recucontra__inputs:nth-child(4),
+.form-nuevacontra__inputs:nth-child(4) {
     grid-row: 3/4;
   }
 }
 
 .form-inicio__input,
 .form-registro__input,
-.form-cregistro__input {
+.form-cregistro__input,
+.form-recucontra__input,
+.form-nuevacontra__input {
   background-color: #DFE8F5;
   border: 0;
   padding: 0.5rem 2rem;
@@ -2604,28 +2649,36 @@ input[type=radio] {
 }
 .form-inicio__input:focus,
 .form-registro__input:focus,
-.form-cregistro__input:focus {
+.form-cregistro__input:focus,
+.form-recucontra__input:focus,
+.form-nuevacontra__input:focus {
   border: 0;
   outline: none;
 }
 @media (min-width: 1024px) {
   .form-inicio__input,
 .form-registro__input,
-.form-cregistro__input {
+.form-cregistro__input,
+.form-recucontra__input,
+.form-nuevacontra__input {
     width: 100%;
   }
 }
 
 .form-inicio__label,
 .form-registro__label,
-.form-cregistro__label {
+.form-cregistro__label,
+.form-recucontra__label,
+.form-nuevacontra__label {
   width: 15rem;
   font-weight: bold;
 }
 @media (min-width: 1024px) {
   .form-inicio__label,
 .form-registro__label,
-.form-cregistro__label {
+.form-cregistro__label,
+.form-recucontra__label,
+.form-nuevacontra__label {
     width: 100%;
     margin-bottom: 1rem;
   }
@@ -2633,7 +2686,9 @@ input[type=radio] {
 
 .form-inicio__radios,
 .form-registro__radios,
-.form-cregistro__radios {
+.form-cregistro__radios,
+.form-recucontra__radios,
+.form-nuevacontra__radios {
   margin: 2rem 0;
   display: flex;
   align-items: center;
@@ -2641,7 +2696,9 @@ input[type=radio] {
 @media (min-width: 1024px) {
   .form-inicio__radios,
 .form-registro__radios,
-.form-cregistro__radios {
+.form-cregistro__radios,
+.form-recucontra__radios,
+.form-nuevacontra__radios {
     grid-column: 1/3;
     grid-row: 4/5;
     justify-content: flex-start;
@@ -2669,14 +2726,18 @@ input[type=radio] {
 
 .form-inicio__btns,
 .form-registro__btns,
-.form-cregistro__btns {
+.form-cregistro__btns,
+.form-recucontra__btns,
+.form-nuevacontra__btns {
   margin: 3rem 0;
   display: flex;
 }
 @media (min-width: 1024px) {
   .form-inicio__btns,
 .form-registro__btns,
-.form-cregistro__btns {
+.form-cregistro__btns,
+.form-recucontra__btns,
+.form-nuevacontra__btns {
     grid-row: 5/6;
     grid-column: 1/3;
     justify-content: center;
@@ -2686,6 +2747,8 @@ input[type=radio] {
 .form-inicio__btn,
 .form-registro__btn,
 .form-cregistro__btn,
+.form-recucontra__btn,
+.form-nuevacontra__btn,
 .seccion-registro__enlace {
   all: unset;
   color: #FFFFFF;
@@ -2697,6 +2760,8 @@ input[type=radio] {
 .form-inicio__btn:hover,
 .form-registro__btn:hover,
 .form-cregistro__btn:hover,
+.form-recucontra__btn:hover,
+.form-nuevacontra__btn:hover,
 .seccion-registro__enlace:hover {
   background-color: #04DBFC;
 }
@@ -2741,6 +2806,38 @@ input[type=radio] {
   .form-registro__input--cregistro {
     width: 100%;
   }
+}
+
+.form-recucontra--flex {
+  display: flex;
+}
+
+.form-recucontra__inputs--flexcol {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+
+.form-recucontra__label--w90,
+.form-recucontra__input--w90 {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.form-nuevacontra--flex {
+  display: flex;
+}
+
+.form-nuevacontra__inputs--flexcol {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+
+.form-nuevacontra__label--w90,
+.form-nuevacontra__input--w90 {
+  width: 90%;
+  margin-bottom: 1rem;
 }
 
 .form-inicio--flex {

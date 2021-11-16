@@ -1,0 +1,19 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.form-nuevacontra--flex{
+    display: flex;
+}
+
+.form-nuevacontra__inputs--flexcol{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+
+.form-nuevacontra__label--w90,
+.form-nuevacontra__input--w90{
+    width: 90%;
+    margin-bottom: 1rem;
+}

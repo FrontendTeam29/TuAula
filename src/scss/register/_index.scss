@@ -60,7 +60,9 @@
 
 .inicio,
 .cregistro,
-.registro{
+.registro,
+.recucontra,
+.nuevacontra{
     margin-top: 1rem;
     padding-top: 2rem;
     height: 100%;
@@ -68,12 +70,27 @@
 
 .inicio__contenedor,
 .registro__contenedor,
-.cregistro__contenedor{
+.cregistro__contenedor,
+.recucontra__contenedor,
+.nuevacontra__contenedor{
     margin: 0 auto;
     background-color: v.$blanco;
 
     @include m.desktop{
         max-width: 60%;
+    }
+}
+
+
+.nuevacontra__contenedor,
+.recucontra__contenedor{
+    @include m.tablet{
+        max-width: 65%;
+    }
+
+    @include m.desktop{
+        border-radius: 1rem;
+        max-width: 35%;
     }
 }
 
@@ -89,8 +106,7 @@
     }
 }
 
-.inicio__contenedor{
-    
+.inicio__contenedor{  
     @include m.tablet{
         max-width: 50%;
     }
@@ -103,7 +119,9 @@
 
 .inicio__titulo,
 .registro__titulo,
-.cregistro__titulo{
+.cregistro__titulo,
+.recucontra__titulo,
+.nuevacontra__titulo{
     color: lighten(v.$primario, 12%);
     font-size: 2.5rem;
     text-align: center;
@@ -113,14 +131,18 @@
 
 .inicio__line,
 .registro__line,
-.cregistro__line{
+.cregistro__line,
+.recucontra__line,
+.nuevacontra__line{
     width: 90%;
     border: 0.12rem solid lighten(v.$primario, 12%);
 }
 
 .form-inicio,
 .form-registro,
-.form-cregistro{
+.form-cregistro,
+.form-recucontra,
+.form-nuevacontra{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,9 +159,18 @@
 
 }
 
+.form-recucontra,
+.form-nuevacontra{
+    @include m.desktop{
+        gap: 0;
+    }
+}
+
 .form-inicio__inputs,
 .form-registro__inputs,
-.form-cregistro__inputs{
+.form-cregistro__inputs,
+.form-recucontra__inputs,
+.form-nuevacontra__inputs{
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
@@ -161,7 +192,9 @@
 
 .form-inicio__input,
 .form-registro__input,
-.form-cregistro__input{
+.form-cregistro__input,
+.form-recucontra__input,
+.form-nuevacontra__input{
     background-color: v.$inputColor;
     border: 0;
     padding: 0.5rem 2rem;
@@ -180,7 +213,9 @@
 
 .form-inicio__label,
 .form-registro__label,   
-.form-cregistro__label{
+.form-cregistro__label,
+.form-recucontra__label,
+.form-nuevacontra__label{
     width: 15rem;
     font-weight: bold;
 
@@ -192,7 +227,9 @@
 
 .form-inicio__radios,
 .form-registro__radios,
-.form-cregistro__radios{
+.form-cregistro__radios,
+.form-recucontra__radios,
+.form-nuevacontra__radios{
     margin: 2rem 0;
     display: flex;
     align-items: center;
@@ -224,7 +261,9 @@
 
 .form-inicio__btns,
 .form-registro__btns,
-.form-cregistro__btns{
+.form-cregistro__btns,
+.form-recucontra__btns,
+.form-nuevacontra__btns{
     margin: 3rem 0;
     display: flex;
 
@@ -238,6 +277,8 @@
 .form-inicio__btn,
 .form-registro__btn,
 .form-cregistro__btn,
+.form-recucontra__btn,
+.form-nuevacontra__btn,
 .seccion-registro__enlace{
     all: unset;
     color: v.$blanco;
