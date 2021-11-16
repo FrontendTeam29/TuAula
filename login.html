@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="build/css/app.css">
     <title>TuAula - Iniciar Sesion</title>
 </head>
-<body>
+<body class="body-autenticacion">
     <header class="header">
         <div class="header__grid">
             <div class="header__logo">
@@ -27,7 +27,7 @@
                 <a class="header__enlace" href="#">Servicios</a>
                 <a class="header__enlace header__enlace--btn" href="#">Iniciar Sesión</a>
                 <a class="header__enlace header__enlace--btn" href="#">Registrarse</a>
-                <a class="header__enlace header__enlace--btn" href="#"><i class="fas fa-ellipsis-h"></i></a>
+                <a class="header__enlace header__enlace--dots" href="#"><i class="fas fa-ellipsis-h"></i></a>
             </div>
         </div>
     </header>
@@ -36,38 +36,23 @@
         <div class="inicio__contenedor">
             <h1 class="inicio__titulo">Iniciar Sesión</h1>
 
-            <form action="" class="form-inicio">
-                <div class="form-inicio__inputs">
-                    <label class="form-inicio__label" for="email">Correo electrónico:</label>
-                    <input class="form-inicio__input" id="email" type="email" placeholder="Correo electronico" required>
+            <hr class="inicio__line">
+
+            <form action="" class="form-inicio form-inicio--flex">
+                <div class="form-inicio__inputs form-inicio__inputs--flexcol">
+                    <label class="form-inicio__label form-inicio__label--w90" for="email">Correo electrónico:</label>
+                    <input class="form-inicio__input form-inicio__label--w90" id="email" type="email" placeholder="Correo electronico" required>
                 </div>
 
-                <div class="form-inicio__inputs">
-                    <label class="form-inicio__label" for="contra">Contraseña:</label>
-                    <input class="form-inicio__input" id="contra" type="password" placeholder="Contraseña" required>
+                <div class="form-inicio__inputs form-inicio__inputs--flexcol">
+                    <label class="form-inicio__label form-inicio__label--w90" for="contra">Contraseña:</label>
+                    <input class="form-inicio__input form-inicio__label--w90" id="contra" type="password" placeholder="Contraseña" required>
                 </div>
 
-                <div class="form-inicio__inputs">
-                    <label class="form-inicio__label" for="municipio">Correo electrónico:</label>
-                    <select class="form-inicio__input" id="municipio">
-                        <option value="">Seleccionar Municipio</option>
-                    </select>
+                <div class="form-cregistro__btns">
+                    <input class="form-cregistro__btn" type="submit" value="Iniciar Sesión">
                 </div>
-
-                <div class="form-inicio__inputs">
-                    <label class="form-inicio__label" for="contra">Contraseña:</label>
-                    <input class="form-inicio__input" id="contra" type="password" placeholder="Digite su contraseña..." required>
-                </div>
-
-                <div class="form-inicio__inputs">
-                    <label class="form-inicio__label" for="rcontra">Confirmar contraseña:</label>
-                    <input class="form-inicio__input" id="rcontra" type="password" placeholder="Digite su contraseña..." required>
-                </div>
-
-                <div class="form-inicio__btns">
-                    <input class="form-inicio__btn" type="submit" value="Iniciar Sesión">
-                </div>
-
+                
                 <p class="form-inicio__text">¿Olvidó su contraseña?<a class="form-inicio__enlace" href="#">Recuperar contraseña</a></p>
             </form>
         </div>
@@ -78,7 +63,7 @@
         </div>
     </section>
 
-    <footer class="site__footer">
+    <footer class="site__footer site__footer--register">
         <div class="footer__nav footer__nav--info">
             <a href="/">Inicio</a>
             <a href="#">Informacion 1</a>

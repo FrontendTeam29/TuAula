@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="build/css/app.css">
     <title>TuAula - Registro</title>
 </head>
-<body>
+<body class="body-autenticacion">
     <header class="header">
         <div class="header__grid">
             <div class="header__logo">
@@ -27,59 +27,61 @@
                 <a class="header__enlace" href="#">Servicios</a>
                 <a class="header__enlace header__enlace--btn" href="#">Iniciar Sesión</a>
                 <a class="header__enlace header__enlace--btn" href="#">Registrarse</a>
-                <a class="header__enlace header__enlace--btn" href="#"><i class="fas fa-ellipsis-h"></i></a>
+                <a class="header__enlace header__enlace--dots" href="#"><i class="fas fa-ellipsis-h"></i></a>
             </div>
         </div>
     </header>
 
-    <section class="registro">
-        <div class="registro__contenedor">
-            <h1 class="registro__titulo">Confirmar registro</h1>
+    <section class="cregistro">
+        <div class="cregistro__contenedor">
+            <h1 class="cregistro__titulo">Confirmar registro</h1>
+
+            <hr class="cregistro__line">
 
             <form action="" class="form-cregistro">
-                <div class="form-registro__inputs">
-                    <label class="form-registro__label" for="pais">País:</label>
-                    <select class="form-registro__input" id="pais">
+                <div class="form-cregistro__inputs form-registro__inputs--cregistro">
+                    <label class="form-cregistro__label" for="pais">País:</label>
+                    <select class="form-cregistro__input form-registro__input--cregistro form-registro__input--select" id="pais">
                         <option value="">Seleccionar Pais</option>
                     </select>
                 </div>
 
-                <div class="form-registro__inputs">
-                    <label class="form-registro__label" for="departamento">Departamento:</label>
-                    <select class="form-registro__input" id="departamento">
+                <div class="form-cregistro__inputs form-registro__inputs--cregistro">
+                    <label class="form-cregistro__label" for="departamento">Departamento:</label>
+                    <select class="form-cregistro__input form-registro__input--cregistro form-registro__input--select" id="departamento">
                         <option value="">Seleccionar Departamento</option>
                     </select>
                 </div>
 
-                <div class="form-registro__inputs">
-                    <label class="form-registro__label" for="municipio">Correo electrónico:</label>
-                    <select class="form-registro__input" id="municipio">
+                <div class="form-cregistro__inputs form-registro__inputs--cregistro">
+                    <label class="form-cregistro__label" for="municipio">Municipio:</label>
+                    <select class="form-cregistro__input form-registro__input--cregistro form-registro__input--select" id="municipio">
                         <option value="">Seleccionar Municipio</option>
                     </select>
                 </div>
 
-                <div class="form-registro__inputs">
-                    <label class="form-registro__label" for="contra">Contraseña:</label>
-                    <input class="form-registro__input" id="contra" type="password" placeholder="Digite su contraseña..." required>
+                <div class="form-cregistro__inputs form-registro__inputs--cregistro">
+                    <label class="form-cregistro__label" for="contra">Contraseña:</label>
+                    <input class="form-cregistro__input form-registro__input--cregistro" id="contra" type="password" placeholder="Digite su contraseña..." required>
                 </div>
 
-                <div class="form-registro__inputs">
-                    <label class="form-registro__label" for="rcontra">Confirmar contraseña:</label>
-                    <input class="form-registro__input" id="rcontra" type="password" placeholder="Digite su contraseña..." required>
+                <div class="form-cregistro__inputs form-registro__inputs--cregistro">
+                    <label class="form-cregistro__label" for="rcontra">Confirmar contraseña:</label>
+                    <input class="form-cregistro__input form-registro__input--cregistro" id="rcontra" type="password" placeholder="Digite su contraseña..." required>
                 </div>
 
-                <div class="form-registro__radios">
-                    <input class="form-registro__radio" id="terminos" type="radio"><label for="terminos">Acepto haber leido los <span><a href="#">Términos y Condiciones</a></span></label>
+                <div class="form-cregistro__radios">
+                    <input class="form-cregistro__radio" id="terminos" type="radio"><label for="terminos">Acepto haber leido los <span><a href="#">Términos y Condiciones</a></span></label>
                 </div>
 
-                <div class="form-registro__btns">
-                    <input class="form-registro__btn" type="submit" value="Confirmar">
+                <div class="form-cregistro__btns">
+                    <input class="form-cregistro__btn" type="submit" value="Confirmar">
                 </div>
             </form>
         </div>
     </section>
 
-    <footer class="site__footer">
+    <footer class="site__footer site__footer--register">
         <div class="footer__nav footer__nav--info">
             <a href="/">Inicio</a>
             <a href="#">Informacion 1</a>

@@ -1,2 +1,44 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
+
+
+.form-registro__inputs--cregistro{
+    @include m.desktop{
+        &:nth-child(3){
+            grid-column: 1 / 2;
+            align-items: flex-start;
+        }
+
+        &:nth-child(4){
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+            align-items: flex-start;
+        }
+
+        &:nth-child(5){
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            align-items: flex-start;
+        }
+    }
+}
+
+.form-registro__input--select{
+    background-color: v.$primario;
+    color: v.$blanco;
+    border-radius: 0;
+}
+
+.form-registro__input--cregistro{
+    width: 25rem;
+
+    &:focus{
+        border: 0;
+        outline: none;
+    }
+
+    @include m.desktop{
+        width: 100%;
+    }
+}
+

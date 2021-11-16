@@ -1,2 +1,63 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
+
+
+.form-inicio--flex{
+    display: flex;
+}
+
+.form-inicio__inputs--flexcol{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+
+.form-inicio__label--w90,
+.form-inicio__input--w90{
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.form-inicio__text,
+.form-inicio__enlace{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.form-inicio__enlace{
+    margin-left: 1rem;
+    color: v.$primario;
+
+    &:hover{
+        color: v.$secundario;
+    }
+}
+
+.seccion-registro{
+    margin-top: 1rem;
+    padding: 1rem 0;
+    background-color: v.$blanco;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include m.tablet{
+        flex-direction: column;
+        margin: 2rem auto;
+        max-width: 50%;
+    }
+
+    @include m.desktop{
+        border-radius: 1rem;
+        flex-direction: row;
+        margin: 2rem auto;
+        max-width: 28%;
+        padding: 1rem 0;
+    }
+}
+
+.seccion-registro__text{
+    margin-right: 1rem;
+    font-weight: bold;
+}
