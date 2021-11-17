@@ -1,0 +1,125 @@
+:root{
+    --grisClaro: #eceeef;
+    --blanco: #ffffff;
+    --primario: #40C2D6;
+    --secundario: #04DBFC;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    --blancoOscuro: #f1f1f1;
+    --grisOscuro: #d3d3d3;
+    --grisClaro: #eceeef;
+    --grisClaro2: #fbfbfb;
+    --verdeAuxiliar: #009A22;
+    --inputColor: #DFE8F5;
+}
+
+/*Boton Flotante*/
+.btn__father{
+    position: relative;
+}
+
+.btn__float{
+    background-color: var(--grisClaro);
+    border-radius: 50%;
+    border: 0.1rem solid var(--grisOscuro);
+    padding: 2rem 2rem 1.5rem 1.8rem;
+    top: 50vh;
+    right: 1%;
+    z-index: 1;
+    cursor: pointer;
+    position: fixed;
+    -webkit-box-shadow: -1px 1px 16px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 16px -4px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 16px -4px rgba(0,0,0,0.75);
+}
+
+.sidenav--right{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: var(--blanco);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav--right a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: var(--blanco) !important;
+}
+
+.sidenav--right a:hover{
+    color: var(--grisClaro);
+}
+
+.main__aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-right: 0.1rem solid var(--grisClaro);
+    width: 100%;
+}
+
+.aside__actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.btn__actions{
+    border-radius: 0;
+    width: 100%;
+    margin: 1rem auto;
+    display: block;
+    text-align: left;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn__actions i{
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+/* Calendario */
+
+.aside__calender ol{
+    list-style: none;
+    padding: 0
+}
+
+.aside__calender .calender__title{
+    background-color: var(--primario);
+    color: var(--blanco);
+    text-transform: uppercase;
+    padding: 0 3rem;
+}
+
+.aside__calender .calender__items{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.aside__calender .day{
+    color: var(--primario);
+}
+
+.aside__calender.first-day{
+    grid-column-start: 3;
+}

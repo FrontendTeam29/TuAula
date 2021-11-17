@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/sidebarderadmin.css">
+    <!-- CDN Fuente Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- CDN Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Sidebar Derecha Admin</title>
+</head>
+<body>
+    <!--Componente Sidebar Derecha Administracion-->
+    <div class="btn__father">
+        <div class="menu btn__float" onclick="openNavRight()"><i class="fas fa-chevron-left"></i>
+    </div>
+
+    <div id="mySidenavRight" class="sidenav--right">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavRight()">&times;</a>
+        <aside class="main__aside">
+            
+            <div class="aside__actions">
+                
+                <div class="aside__button">
+                    <button class="btn btn__actions" onclick="openTab(event, 'home10')"><i class="fas fa-plus-circle"></i>Crear Institución</button>
+                    <button class="btn btn__actions" onclick="openTab(event, 'home11')"><i class="fas fa-plus-circle"></i>Parametrizar</button>
+                    <button class="btn btn__actions"><i class="fas fa-plus-circle"></i>Opción 3</button>
+                </div>
+
+                <div class="aside__calender">
+                    <div>
+                        <h3 class="calender__title">Septiembre</h3>
+                        <ol class="calender__items">
+                            <li class="day">D</li>
+                            <li class="day">L</li>
+                            <li class="day">M</li>
+                            <li class="day">X</li>
+                            <li class="day">J</li>
+                            <li class="day">V</li>
+                            <li class="day">S</li>
+                            <li class="first-day">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                            <li>30</li>   
+                        </ol>
+                    </div>
+                </div>
+                
+            </div>
+        </aside>
+    </div>
+    <!--.Componente Sidebar Derecha Administración-->
+
+    <script src="js/sidebarderadmin.js"></script>
+</body>
+</html>
