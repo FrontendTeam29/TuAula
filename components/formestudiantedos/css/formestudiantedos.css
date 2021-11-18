@@ -14,21 +14,21 @@
 }
 
 /* Estilos al contenedor */
-.form-admindocente{
+.form-estudiantedos{
     margin: 0 auto;
     width: 100%;
     padding: 1.5rem;
 }
 
 @media (min-width: 1024px) { 
-    .form-admindocente{
+    .form-estudiantedos{
         margin: 0 auto;
         width: 50%;
         padding: 1rem;
     }
 }
 
-.form-admindocente__form-body{
+.form-estudiantedos__form-body{
     margin-top: 2rem;
     background-color: var(--blanco);
     padding: 1rem;
@@ -36,7 +36,7 @@
 }
 
 
-.form-admindocente__titulo{
+.form-estudiantedos__titulo{
   color: var(--primario);
   font-size: 2.5rem;
   text-align: center;
@@ -44,45 +44,45 @@
   margin-bottom: 1rem;
 }
 
-.form-admindocente__line{
+.form-estudiantedos__line{
   width: 90%;
   border: 0.12rem solid var(--primario);
 }
 
 /** Estilos Contenido Formulario **/
 
-.form-admindocente__content{
+.form-estudiantedos__content{
     display: flex;
     flex-direction: column;
     padding: 1rem 3rem;
 }
 
 @media (min-width: 768px) { 
-    .form-admindocente__content{
+    .form-estudiantedos__content{
         padding: 1rem 5rem;
     }
 }
 
 @media (min-width: 768px) { 
-    .form-admindocente__content{
+    .form-estudiantedos__content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr 2fr;
         gap: 2rem;
     }
 
-    .form-admindocente__item:nth-child(4){
+    .form-estudiantedos__item:nth-child(4){
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
 
-    .form-admindocente__item:nth-child(5){
+    .form-estudiantedos__item:nth-child(5){
         grid-column: 1 / 3;
         grid-row: 3 / 4;
     }
 }
 
-.form-admindocente__item{
+.form-estudiantedos__item{
     display: flex;
     margin-bottom: 1rem;
     align-items: center;
@@ -90,19 +90,19 @@
 }
 
 @media (min-width: 768px) { 
-    .form-admindocente__item{
+    .form-estudiantedos__item{
         align-items: unset;
     }
 }
 
 
-.form-admindocente__label{
+.form-estudiantedos__label{
     flex: 1;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
-.form-admindocente__input{
+.form-estudiantedos__input{
     flex: 2;
     border-radius: 3rem;
     border: 0;
@@ -119,97 +119,97 @@
 
 
 @media (min-width: 768px) { 
-    .form-admindocente__input{
+    .form-estudiantedos__input{
         flex: 1;
         padding: 0.8rem 0 0.8rem 2rem;
     }
 
-    .form-admindocente__input--tel{
+    .form-estudiantedos__input--tel{
         background-color: var(--grisClaro);
         color: var(--negro);
     }
 
-    .form-admindocente__input--tel::placeholder{
+    .form-estudiantedos__input--tel::placeholder{
         color: var(--negro) !important;
     }
 }
 
-.form-admindocente__input::placeholder {
+.form-estudiantedos__input::placeholder {
     color: var(--negro);
 }
 
-.form-admindocente__input--gris{
+.form-estudiantedos__input--gris{
     background-color: var(--grisClaro);
     color: var(--negro);
 }
 
-.form-admindocente__input--gris::placeholder {
+.form-estudiantedos__input--gris::placeholder {
     color: var(--negro);
 }
 
-.form-admindocente__input:focus{
+.form-estudiantedos__input:focus{
     outline: none;
 }
 
-.form-admindocente__input--textarea{
+.form-estudiantedos__input--textarea{
     resize: none;
     border-radius: 1rem;
 }
 
 @media (min-width: 768px) { 
-    .form-admindocente__input--textarea{
+    .form-estudiantedos__input--textarea{
         flex: 2;
         width: 100%;
     }
 }
 
-.form-admindocente__item--desc{
+.form-estudiantedos__item--desc{
     align-items: center;
 }
 
 @media (min-width: 768px) { 
-    .form-admindocente__item--desc{
+    .form-estudiantedos__item--desc{
         align-items: flex-start;
     }
 }
 
-.form-admindocente__radios{
+.form-estudiantedos__radios{
     margin: 2rem 0;
     display: flex;
     justify-content: center;
 }
 
 @media (min-width: 768px) { 
-    .form-admindocente__radios{
+    .form-estudiantedos__radios{
         padding: 0 5rem;
     }
 }
 
 @media (min-width: 768px) { 
-    .form-admindocente__radios{
+    .form-estudiantedos__radios{
         justify-content: flex-start;
     }
 }
 
-.form-admindocente__radio{
+.form-estudiantedos__radio{
     margin-right: 1rem;
 }
 
-.form-admindocente__terminos{
+.form-estudiantedos__terminos{
     color: var(--primario);
 }
 
-.form-admindocente__terminos:hover{
+.form-estudiantedos__terminos:hover{
     color: var(--secundario);
 }
 
-.form-admindocente__btns{
+.form-estudiantedos__btns{
     display: flex;
     justify-content: center;
     margin: 2rem 0;
 }
 
-.form-admindocente__btn{
+.form-estudiantedos__btn{
     all: unset;
     color: var(--blanco);
     background-color: var(--primario);
@@ -218,6 +218,6 @@
     cursor: pointer;
 }
 
-.form-admindocente__btn:hover{
+.form-estudiantedos__btn:hover{
     background-color: var(--secundario);
 }
