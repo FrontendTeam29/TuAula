@@ -1,0 +1,148 @@
+:root{
+    --grisClaro: #eceeef;
+    --blanco: #ffffff;
+    --primario: #40C2D6;
+    --secundario: #04DBFC;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    --blancoOscuro: #f1f1f1;
+    --grisOscuro: #d3d3d3;
+    --grisClaro: #eceeef;
+    --grisClaro2: #fbfbfb;
+    --verdeAuxiliar: #009A22;
+    --inputColor: #DFE8F5;
+}
+
+/* Estilos al contenedor */
+.vincu-institucion{
+    margin: 0 auto;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+@media (min-width: 1024px) { 
+    .vincu-institucion{
+        margin: 0 auto;
+        width: 50%;
+        padding: 1rem;
+    }
+}
+
+.vincu-institucion__vincu-header{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/** vincu Institucion vincu Text **/
+
+.vincu-institucion__vincu-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--blanco);
+}
+
+@media (min-width: 480px) { 
+    .vincu-institucion__vincu-text{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) { 
+    .vincu-institucion__vincu-text{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+.vincu-institucion__vincu-body{
+    margin-top: 2rem;
+    background-color: var(--blanco);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) { 
+    .descripcion{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.descripcion__logo-img{
+    border-radius: 50%;
+}
+
+.descripcion__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+h3.descripcion__text-titulo{
+    font-size: 2rem;
+    margin: 0;
+}
+
+p.descripcion__text-p{
+    font-size: 1.5rem;
+}
+
+p.descripcion__text-p{
+    margin: 0;
+}
+
+/****/
+
+.inicio__titulo{
+  color: #72d2e1;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+.inicio__line{
+  width: 90%;
+  border: 0.12rem solid #72d2e1;
+}
+
+.content__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+@media (min-width: 768px) { 
+    .content__items{
+        grid-template-columns: repeat(2, 200px);
+    } 
+}
+
+.vincu-institucion__vincu-body{
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.item__photo{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.item__photo--body{
+    border: 0.25rem solid #40C2D6;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
