@@ -1,0 +1,220 @@
+:root{
+    --grisClaro: #eceeef;
+    --blanco: #ffffff;
+    --primario: #40C2D6;
+    --secundario: #04DBFC;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    --blancoOscuro: #f1f1f1;
+    --grisOscuro: #d3d3d3;
+    --grisClaro: #eceeef;
+    --grisClaro2: #fbfbfb;
+    --verdeAuxiliar: #009A22;
+    --inputColor: #DFE8F5;
+}
+
+/* Estilos al contenedor */
+.form-admindocente{
+    margin: 0 auto;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+@media (min-width: 1024px) { 
+    .form-admindocente{
+        margin: 0 auto;
+        width: 50%;
+        padding: 1rem;
+    }
+}
+
+.form-admindocente__form-body{
+    margin-top: 2rem;
+    background-color: var(--blanco);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+.form-admindocente__titulo{
+  color: var(--primario);
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-admindocente__line{
+  width: 90%;
+  border: 0.12rem solid var(--primario);
+}
+
+/** Estilos Contenido Formulario **/
+
+.form-admindocente__content{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+}
+
+@media (min-width: 768px) { 
+    .form-admindocente__content{
+        padding: 1rem 5rem;
+    }
+}
+
+@media (min-width: 768px) { 
+    .form-admindocente__content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .form-admindocente__item:nth-child(4){
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .form-admindocente__item:nth-child(5){
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .form-admindocente__item:nth-child(6){
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+
+    .form-admindocente__item:nth-child(6){
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+}
+
+.form-admindocente__item{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+@media (min-width: 768px) { 
+    .form-admindocente__item{
+        flex-direction: column;
+        align-items: unset;
+    }
+}
+
+
+.form-admindocente__label{
+    flex: 1;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.form-admindocente__input{
+    flex: 2;
+    border-radius: 3rem;
+    border: 0;
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 0.8rem;
+}
+
+@media (min-width: 768px) { 
+    .form-admindocente__input{
+        flex: 1;
+        padding: 0.3rem 0 0.3rem 2rem;
+    }
+
+    .form-admindocente__input--tel{
+        background-color: var(--grisClaro);
+        color: var(--negro);
+    }
+
+    .form-admindocente__input--tel::placeholder{
+        color: var(--negro) !important;
+    }
+}
+
+.form-admindocente__input::placeholder {
+    color: var(--blanco);
+}
+
+.form-admindocente__input--gris{
+    background-color: var(--grisClaro);
+    color: var(--negro);
+}
+
+.form-admindocente__input--gris::placeholder {
+    color: var(--negro);
+}
+
+.form-admindocente__input:focus{
+    outline: none;
+}
+
+.form-admindocente__input--textarea{
+    resize: none;
+    border-radius: 1rem;
+}
+
+@media (min-width: 768px) { 
+    .form-admindocente__input--textarea{
+        flex: 2;
+        width: 100%;
+    }
+}
+
+.form-admindocente__item--desc{
+    align-items: flex-start;
+}
+
+.form-admindocente__radios{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) { 
+    .form-admindocente__radios{
+        padding: 0 5rem;
+    }
+}
+
+@media (min-width: 768px) { 
+    .form-admindocente__radios{
+        justify-content: flex-start;
+    }
+}
+
+.form-admindocente__radio{
+    margin-right: 1rem;
+}
+
+.form-admindocente__terminos{
+    color: var(--primario);
+}
+
+.form-admindocente__terminos:hover{
+    color: var(--secundario);
+}
+
+.form-admindocente__btns{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.form-admindocente__btn{
+    all: unset;
+    color: var(--blanco);
+    background-color: var(--primario);
+    padding: 0.5rem 4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.form-admindocente__btn:hover{
+    background-color: var(--secundario);
+}
