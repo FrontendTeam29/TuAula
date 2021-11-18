@@ -60,6 +60,13 @@
     }
 }
 
+.vincu-institucion__vincu-body{
+    margin-top: 2rem;
+    background-color: var(--blanco);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
 .descripcion{
     display: flex;
     flex-direction: column;
@@ -98,11 +105,6 @@ p.descripcion__text-p{
     margin: 0;
 }
 
-.vincu-institucion__vincu-body{
-    padding: 1rem;
-    border-radius: 1rem;
-}
-
 /****/
 
 .inicio__titulo{
@@ -120,9 +122,16 @@ p.descripcion__text-p{
 .content__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     gap: 1rem;
     padding: 3rem;
-  }
+}
+
+@media (min-width: 768px) { 
+    .content__items{
+        grid-template-columns: repeat(2, 200px);
+    } 
+}
 
 .vincu-institucion__vincu-body{
     padding: 1rem;
