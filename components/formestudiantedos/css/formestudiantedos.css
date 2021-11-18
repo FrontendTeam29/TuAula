@@ -67,28 +67,18 @@
     .form-admindocente__content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr;
         gap: 2rem;
     }
 
     .form-admindocente__item:nth-child(4){
-        grid-column: 1 / 3;
+        grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
 
     .form-admindocente__item:nth-child(5){
-        grid-column: 2 / 3;
+        grid-column: 1 / 3;
         grid-row: 3 / 4;
-    }
-
-    .form-admindocente__item:nth-child(6){
-        grid-column: 1 / 3;
-        grid-row: 4 / 5;
-    }
-
-    .form-admindocente__item:nth-child(6){
-        grid-column: 1 / 3;
-        grid-row: 4 / 5;
     }
 }
 
@@ -96,11 +86,11 @@
     display: flex;
     margin-bottom: 1rem;
     align-items: center;
+    flex-direction: column;
 }
 
 @media (min-width: 768px) { 
     .form-admindocente__item{
-        flex-direction: column;
         align-items: unset;
     }
 }
@@ -116,15 +106,22 @@
     flex: 2;
     border-radius: 3rem;
     border: 0;
-    background-color: var(--primario);
-    color: var(--blanco);
+    background-color: var(--grisClaro);
+    color: var(--negro);
     padding: 0.8rem;
 }
+
+.form-estudiante__select{
+    border-radius: 0;
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+
 
 @media (min-width: 768px) { 
     .form-admindocente__input{
         flex: 1;
-        padding: 0.3rem 0 0.3rem 2rem;
+        padding: 0.8rem 0 0.8rem 2rem;
     }
 
     .form-admindocente__input--tel{
@@ -138,7 +135,7 @@
 }
 
 .form-admindocente__input::placeholder {
-    color: var(--blanco);
+    color: var(--negro);
 }
 
 .form-admindocente__input--gris{
@@ -167,7 +164,13 @@
 }
 
 .form-admindocente__item--desc{
-    align-items: flex-start;
+    align-items: center;
+}
+
+@media (min-width: 768px) { 
+    .form-admindocente__item--desc{
+        align-items: flex-start;
+    }
 }
 
 .form-admindocente__radios{
