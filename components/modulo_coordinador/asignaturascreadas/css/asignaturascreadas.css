@@ -1,0 +1,248 @@
+:root{
+    --grisClaro: #eceeef;
+    --blanco: #ffffff;
+    --primario: #40C2D6;
+    --secundario: #04DBFC;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    --blancoOscuro: #f1f1f1;
+    --grisOscuro: #d3d3d3;
+    --grisClaro: #eceeef;
+    --grisClaro2: #fbfbfb;
+    --verdeAuxiliar: #009A22;
+    --inputColor: #DFE8F5;
+    --separacion:5rem;
+}
+
+
+/***/
+.main__contenido{
+    background-color: var(--grisClaro);
+
+}
+    
+.contain{
+    /*max-width: 90%;*/
+    margin: 2rem;
+    background-color: var(--blanco);
+    border-radius: 1rem;
+}
+
+.contain__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+
+}
+@media (min-width: 768px) { 
+    .contain__header{
+        justify-content: space-between;          
+        padding: 0.5rem;   
+    }
+}
+.btn__verde{
+    background-color: var(--verdeAuxiliar);
+    border-radius: unset;
+    padding: 1.2rem 1.5rem;
+    border-top-right-radius: 1rem;
+}
+
+   
+.contain__header--center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+ 
+}
+@media (min-width: 768px) { 
+    .contain__header--center{
+    justify-content: space-between;          
+    padding: 0.1rem 2rem;      
+    }
+}
+.contain__header--pub{
+    border-bottom: 0.25rem solid var(--primario);
+}
+.contain__header--pub span{
+    display: none;
+}
+@media (min-width: 768px) { 
+    .contain__header--pub span{
+        display: block;  
+    }
+}
+.contain__body img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/*********************************************/
+
+/*Entrada Matematica 1*/
+
+.header__name{
+    color: var(--primario);
+    font-weight: bold;
+}
+
+.header__subname{
+    color: var(--grisOscuro);
+    font-weight: lighter;
+}
+
+.body__nav{
+    display: block;
+    margin: 0 auto;
+    padding: 3rem;
+
+}
+
+@media (min-width: 480px) { 
+    .body__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1rem 3rem;
+    }
+}
+
+.text__select{
+    font-weight: bold;
+}
+    
+.btn--action{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+@media (min-width: 480px) { 
+    .btn--action{
+        display: unset;
+        text-align: unset;
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+    }
+}
+
+.body__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 3rem;
+}
+@media (min-width: 768px) { 
+    .body__content{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+
+.item__photo--body{
+    width: 18rem;
+    border: 0.25rem solid var(--primario);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+@media (min-width: 480px){
+    .item__photo--body{
+    width: 20rem;
+    }
+
+}
+
+@media (min-width: 768px) { 
+    .item__photo--body{
+        width: 25rem;
+    }
+}    
+
+/*.contain__body{
+}*/
+
+
+
+
+      
+.adminus__flex{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 1rem;  
+}       
+   
+.adminus__pag{
+    grid-column: 1 / 4;
+    display: block;
+    margin: 0 auto;  
+}
+
+@media (min-width: 480px) { 
+    .adminus__pag{
+        grid-column: 2 / 3;
+    }
+}
+.adminus__pag a{
+    
+    color: var(--negro);
+    float: left;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    background-color: var(--grisOscuro);
+    transition: background-color .3s;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-right: 0.1rem;
+ 
+}
+.adminus__pag .active{
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+.adminus__pag a:active{
+    background-color: var(--primario);
+    color: var(--blanco);
+
+}
+.adminus__pag a:hover:not(.active){
+    background-color: var(--primario);
+    color: var(--blanco);
+
+}
+
+/*Select Custom*/
+.custom-select select{
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    color: var(--blanco);
+    background-color: var(--primario);
+    border: none;
+    max-width: 100%;
+}
+.custom-select select option{
+    background-color: var(--blanco);
+        color: var(--negro);
+
+}
+@media (min-width: 480px) { 
+    .custom-select select{
+        padding: 1rem 2rem;
+    }
+}
+    
+.custom__select--math{
+    display: flex;
+    align-items: center;
+}
+.custom__select--math select{
+    flex: 2;
+}
