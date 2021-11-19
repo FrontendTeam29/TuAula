@@ -6,16 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/crearasignaturacoord.css">
+    <link rel="stylesheet" href="css/crearnivelcoord.css">
     <!-- CDN Fuente Roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- CDN Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>Crear Asignatura Coodinador</title>
+    <title>Crear Asignatura Coordinador</title>
 </head>
 <body>
+    <div class="asignatura">
+        <div class="asignatura__header">
+            <h1 class="asignatura__title">Crear Asignatura</h1>
+            <hr class="asignatura__line">
+
+            <div class="asignatura__inputs">
+                <div class="asignatura__input">
+                    <label class="asignatura__label" for="nivel">Seleccionar Nivel:</label>
+                    <select class="asignatura__select" id="nivel">
+                        <option value="">--Selecionar Nivel--</option>
+                    </select> 
+                </div><!--Seleccionar Vigencia-->
+
+                <div class="asignatura__input">
+                    <label class="asignatura__label" for="proyecto">Seleccionar Proyecto Transversal:</label>
+                    <select class="asignatura__select" id="proyecto">
+                        <option value="">--Selecionar Proyecto--</option>
+                    </select> 
+                </div><!--Seleccionar Nivel-->
+
+                <div class="asignatura__input">
+                    <label class="asignatura__label" for="dimension">Seleccionar Dimensión:</label>
+                    <select class="asignatura__select" id="dimension">
+                        <option value="">--Selecionar Dimensión--</option>
+                    </select> 
+                </div><!--Seleccionar Dimension-->
+
+                <div class="asignatura__input">
+                    <label class="asignatura__label" for="grupo">Nombre de la Asignatura:</label>
+                    <input class="asignatura__input--text" id="grupo" placeholder="Nombre asignatura...">
+                    </input> 
+                </div><!--Asignatura-->
+
+                <div class="asignatura__input">
+                    <label class="asignatura__label" for="grupo">Nombre Corto:</label>
+                    <input class="asignatura__input--text" id="grupo" placeholder="Nombre corto...">
+                    </input> 
+                </div><!--Asignatura-->
+
+                <div class="asignatura__input asignatura__input--column">
+                    <label class="asignatura__label" for="grupo">Descripcion de la asignatura:</label>
+                    <textarea class=" asignatura__input--textarea" id="grupo" placeholder="Nombre corto...">
+                    </textarea> 
+                </div><!--Descripcion Asign-->
+
+                <div class="asignatura__input">
+                    <label class="asignatura__label" for="dimension">Nombre del Docente:</label>
+                    <select class="asignatura__select" id="dimension">
+                        <option value="">--Seleccionar Docente--</option>
+                    </select> 
+                </div><!--Seleccionar Dimension-->
+
+                <div class="checkboxes">
+                    <div class="checkbox-asign__input">
+                        <label class="switch switchG">
+                            <input type="checkbox" checked>
+                            <span class="slider round sliderG"></span>
+                        </label>
+                        <p class="checkbox__text">Visible</p>
+                    </div>
     
+                    <div class="checkbox-asign__input">
+                        <label class="switch switchG">
+                            <input type="checkbox" checked>
+                            <span class="slider round sliderG"></span>
+                        </label>
+                        <p class="checkbox__text">Mostrar calificaciones</p>
+                    </div>
+    
+                    <div class="checkbox-asign__input">
+                        <label class="switch switchG">
+                            <input type="checkbox" checked>
+                            <span class="slider round sliderG"></span>
+                        </label>
+                        <p class="checkbox__text">Reporte avance de actividades</p>
+                    </div>
+                </div>
+
+                <div class="asignatura__btns">
+                    <input type="submit" class="asignatura__btn" value="Guardar">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
