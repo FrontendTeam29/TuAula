@@ -4,33 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/crearnivelcoord.css">
+    <!-- CDN Fuente Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- CDN Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Crear Nivel Coord</title>
 </head>
 <body>
     <div class="nivel">
         <div class="nivel__header">
-            <h1>Crear Nivel</h1>
+            <h1 class="nivel__title">Crear Nivel</h1>
             <hr class="nivel__line">
 
             <div class="nivel__inputs">
                 <div class="nivel__input">
-                    <label for="vigencia">Seleccionar Vigencia:</label>
+                    <label class="nivel__label" for="vigencia">Seleccionar Vigencia:</label>
                     <select class="nivel__select" id="vigencia">
                         <option value="">--Selecionar Vigencia--</option>
                     </select> 
                 </div><!--Seleccionar Vigencia-->
 
                 <div class="nivel__input">
-                    <label for="nivel">Seleccionar Nivel:</label>
+                    <label class="nivel__label" for="nivel">Seleccionar Nivel:</label>
                     <select class="nivel__select" id="nivel">
                         <option value="">--Selecionar Nivel--</option>
                     </select> 
                 </div><!--Seleccionar Nivel-->
 
                 <div class="nivel__input">
-                    <label for="grupo">Seleccionar Grupo:</label>
+                    <label class="nivel__label" for="grupo">Seleccionar Grupo:</label>
                     <select class="nivel__select" id="grupo">
                         <option value="">--Selecionar Grupo--</option>
+                    </select> 
+                </div><!--Seleccionar Grupo-->
+
+                <div class="nivel__input">
+                    <label class="nivel__label" for="grupo">Seleccionar Docente / Coordinador:</label>
+                    <select class="nivel__select" id="grupo">
+                        <option value="">--Seleccionar Docente / Coordinador--</option>
                     </select> 
                 </div><!--Seleccionar Grupo-->
 
