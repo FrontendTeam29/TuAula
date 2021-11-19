@@ -1,0 +1,143 @@
+:root{
+    --grisClaro: #eceeef;
+    --blanco: #ffffff;
+    --primario: #40C2D6;
+    --secundario: #04DBFC;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    --blancoOscuro: #f1f1f1;
+    --grisOscuro: #d3d3d3;
+    --grisClaro: #eceeef;
+    --grisClaro2: #fbfbfb;
+    --verdeAuxiliar: #009A22;
+    --inputColor: #DFE8F5;
+}
+
+.nivel{
+    margin: 0 auto;
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--blanco);
+}
+
+@media (min-width: 768px) { 
+    .nivel{
+        margin: 1rem auto;
+        width: 100%;
+        border-radius: 1rem;
+    }
+}
+
+.nivel__header{
+    color: var(--primario);
+}
+
+h1.nivel__title{
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+@media (min-width: 768px) { 
+    h1.nivel__title{
+        text-align: left;
+        padding-left: 1rem;
+    } 
+}
+
+.nivel__line{
+    border-color: var(--secundario);
+    width: 90%;
+}
+
+@media (min-width: 768px) { 
+    .nivel__line{
+        width: 100%;
+    }
+}
+
+.nivel__inputs{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) { 
+    .nivel__inputs{
+        align-items: flex-start;
+    }
+}
+
+.nivel__input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 4rem;
+}
+
+@media (min-width: 768px) { 
+    .nivel__input{
+        flex-direction: row;
+        align-items: center;
+        width: unset;
+        justify-content: flex-start;
+        margin-bottom: 3rem;
+    }
+}
+
+.nivel__label{
+    margin-top: 1rem;
+    flex: 2 0 3rem;
+    color: var(--negro);
+    font-weight: bold;
+}
+
+@media (min-width: 768px) { 
+    .nivel__label{
+        margin: 0 2rem 0 0;
+    }
+}
+
+
+.nivel__select{
+    background-color: var(--primario);
+    color: var(--blanco);
+    text-align: center;
+    border: 0;
+    padding: 0.5rem;
+}
+
+@media (min-width: 768px) { 
+    .nivel__select{
+        width: 30rem;
+    }
+}
+
+@media (min-width: 768px) { 
+    .nivel__btns{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.nivel__btn{
+    all: unset;
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 0.8rem 3.5rem;
+    border-radius: 2rem;
+}
+
+@media (min-width: 768px) { 
+    .nivel__btn{
+        margin: 5rem 0;
+    }
+}
+
+.nivel__btn:hover{
+    background-color: var(--secundario);
+    cursor: pointer;
+}
