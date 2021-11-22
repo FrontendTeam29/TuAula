@@ -87,6 +87,11 @@ h1.asignatura__title{
         margin-bottom: 3rem;
     }
 }
+@media (min-width: 768px) { 
+    .asignatura__input--width{
+        width: 100%;
+    }
+}
 
 .asignatura__input--column{
     flex-direction: column;
@@ -105,6 +110,12 @@ h1.asignatura__title{
         margin: 0 2rem 0 0;
         text-align: left;
         width: 98%;
+    }
+}
+@media (min-width: 768px) { 
+    .asignatura__label--width{
+        flex: 1;
+        white-space: nowrap;
     }
 }
 
@@ -136,6 +147,11 @@ h1.asignatura__title{
 @media (min-width: 768px) { 
     .asignatura__input--text{
         padding: 0.8rem;
+    }  
+}
+@media (min-width: 768px) { 
+    .asignatura__input--text--width{
+        flex: 10;
     }  
 }
 
