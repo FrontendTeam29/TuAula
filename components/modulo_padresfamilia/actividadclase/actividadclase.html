@@ -13,13 +13,37 @@
     <!-- CDN CSS-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/actividadmoti.css">
+    <link rel="stylesheet" href="css/actividadclase.css">
 
     <title>Actividad Clase - Componente</title>
 </head>
 <body>
     <!--Componente Actividad Clase-->
-    
+    <div class="act-clase">
+        <h1 class="act-clase__title actividad">Nombre del tema</h1>
+        <hr class="act-clase__line">
+
+        <div class="actividad">
+            <p class="actividad__title">Actividad en clase:</p>
+            <div class="actividad__box">
+                <img class="actividad__img" src="https://via.placeholder.com/1000x300" alt="Imagen de muestra">
+            </div>
+        </div>
+
+        <div class="carpeta">
+            <p class="carpeta__title">Actividad para carpeta:</p>
+            <div class="carpeta__imgs">
+                <img class="carpeta__img" src="https://via.placeholder.com/300x200" alt="Carpeta">
+            </div>
+            <p class="carpeta__footer">Nombre de la actividad</p>
+        </div>
+
+        <div class="act-clase__actions actividad">
+            <a class="act-clase__action" href="#"><i class="fas fa-arrow-left"></i>Regresar</a>
+            <a class="act-clase__action" href="#"><i class="fas fa-arrow-right"></i>Siguiente</a>
+        </div>
+        
+    </div>
     <!--.Componente Actividad Clase-->
 </body>
 </html>
