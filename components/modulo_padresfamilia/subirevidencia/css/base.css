@@ -1,0 +1,305 @@
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+  
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+  
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+}
+  
+p {
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    p {
+      font-size: 2rem;
+    }
+}
+  
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+img {
+    max-width: 100%;
+    display: block;
+}
+  
+h1, h2, h3 {
+    margin: 0 0 5rem 0;
+}
+  
+h1 {
+    font-size: 4rem;
+}
+  
+h2 {
+    font-size: 3.6rem;
+}
+  
+h3 {
+    font-size: 3.2rem;
+}
+  
+.text-center {
+    text-align: center;
+}
+  
+.bg-primario {
+    background-color: #40C2D6;
+}
+  
+.py-2 {
+    padding: 2rem 0;
+}
+  
+.px-2 {
+    padding: 0 0;
+}
+
+@media (min-width: 1024px) {
+    .px-2 {
+      padding: 0 2rem;
+    }
+}
+  
+.m-0 {
+    margin: 0 !important;
+    font-size: 1rem;
+}
+  
+.mb-5 {
+    margin-bottom: 5rem;
+}
+  
+.w-25 {
+    width: 25%;
+}
+  
+.w__25-rwd {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w__25-rwd {
+      width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .w__25-rwd {
+      width: 30%;
+    }
+}
+  
+.w-35 {
+    width: 35%;
+}
+
+@media (min-width: 1024px) {
+    .w-35 {
+      width: 25%;
+    }
+}
+  
+.w-70 {
+    width: 70%;
+}
+  
+.w-5 {
+    width: 5%;
+}
+  
+.w-10 {
+    width: 18%;
+}
+
+@media (min-width: 768px) {
+    .w-10 {
+      width: 10%;
+    }
+}
+  
+.centrar {
+    display: block;
+    margin: 0 auto;
+}
+  
+.btn {
+    padding: 1rem 3rem;
+    border: none;
+    background-color: #40C2D6;
+    color: #FFFFFF;
+    border-radius: 20px;
+    margin: 2rem 0;
+    font-size: 1.7rem;
+}
+
+@media (min-width: 768px) {
+    .btn {
+      margin: 5rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .btn {
+      font-size: 1.5rem;
+    }
+}
+  
+.btn__actualizar {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 0.5rem 5rem;
+}
+
+.btn__actualizar:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #40C2D6;
+}
+
+@media (min-width: 1024px) {
+    .btn__actualizar {
+      padding: 1rem 3rem;
+    }
+}
+  
+.btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 0rem 0.8rem;
+}
+  
+.flexbox__radios {
+    flex-direction: column;
+    gap: 0;
+}
+
+@media (min-width: 768px) {
+    .flexbox__radios {
+      flex-direction: row;
+      gap: 1rem;
+    }
+}
+  
+.sinborde {
+    border-bottom: 0;
+}
+  
+.unset-input {
+    background-color: #eceeef;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+    width: 4rem;
+    height: 3rem;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .unset-input {
+      font-size: 1.7rem;
+      height: 2.5rem;
+      width: 10rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .unset-input {
+      font-size: 1.8rem;
+    }
+}
+  
+.unset-inputv2 {
+    background-color: #eceeef;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+    width: 2.8rem;
+    height: 3rem;
+    font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+    .unset-inputv2 {
+      font-size: 1.7rem;
+      height: 2.5rem;
+      width: 6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .unset-inputv2 {
+      font-size: 1.8rem;
+    }
+}
+  
+.text__bold {
+    font-weight: bold;
+}
+  
+.icon-blue {
+    color: #40C2D6;
+}
+  
+.primary-nohollow {
+    background-color: #40C2D6 !important;
+    border: 1px solid #FFFFFF !important;
+    color: #FFFFFF !important;
+}
+  
+.openNav {
+    width: 330px !important;
+}
+  
+.active__nohollow {
+    background-color: #40C2D6 !important;
+    color: #FFFFFF !important;
+}
+  
+.flex__center {
+    justify-content: center;
+    align-items: center;
+}
+  
+.z-index {
+    z-index: 1;
+}
+  
+.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: grid;
+    place-items: center;
+}
+  
+header {
+    box-shadow: 0 5px 10px -2px gray;
+}
