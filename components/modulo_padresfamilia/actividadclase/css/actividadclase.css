@@ -84,7 +84,7 @@ h1.act-clase__title{
 
 .carpeta__imgs{
     padding: 3rem;
-    background-color: var(--grisClaro);
+    background-color: var(--inputColor);
 }
 
 .carpeta__img{
