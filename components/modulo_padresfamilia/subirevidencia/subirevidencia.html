@@ -19,32 +19,37 @@
 </head>
 <body>
     <!--Componente Subir Evidencia-->
-    <div class="subir-evid contenedor">
-        <h1 class="subir-evid__title actividad">Nombre del tema</h1>
+    <div class="subir-evid">
+        <h1 class="subir-evid__title">Nombre del tema</h1>
         <hr class="subir-evid__line">
 
-        <p class="subir-evid__text">Subir evidencias a <span class="subir-evid__text subir-evid__text--act">Nombre de Actividad</span></p>
+        <div class="contenedor">
+            <p class="subir-evid__text">Subir evidencias a <span class="subir-evid__text subir-evid__text--act">Nombre de Actividad</span></p>
 
-        <div class="evidencias">
-            <p class="evidencias__text">Seleccione el archivo:</p>
-            <input type="file" class="evidencias__btn" value="Subir archivo">
-            <div class="evidencias__container">
-                <!--Contenedor Gris-->
+            <div class="evidencias">
+                <div class="evidencias__main">
+                    <p class="evidencias__text">Seleccione el archivo:</p>
+                    <input type="file" multiple="multiple" class="evidencias__btn" value="Subir archivo">
+                </div>
+                
+                <div class="evidencias__container">
+                    <!--Contenedor Gris-->
+                </div>
             </div>
-        </div>
 
-        <div class="autorizacion">
-            <p class="autorizacion__text">¿Autoriza compartir en la plataforma?</p>
-            <div class="autorizacion__radios">
-                <input type="radio"><p class="autorizacion__text autorizacion__text--light">Autorizo</p>
-                <input type="radio"><p class="autorizacion__text autorizacion__text--light">No autorizo</p>
+            <div class="autorizacion">
+                <p class="autorizacion__text">¿Autoriza compartir en la plataforma?</p>
+                <div class="autorizacion__radios">
+                    <input type="radio"><p class="autorizacion__text autorizacion__text--light">Autorizo</p>
+                    <input type="radio"><p class="autorizacion__text autorizacion__text--light">No autorizo</p>
+                </div>
             </div>
-        </div>
 
 
-        <div class="subir-evid__actions actividad">
-            <a class="subir-evid__action" href="#"><i class="fas fa-arrow-left"></i>Regresar</a>
-            <input class="subir-evid__action" type="submit" value="Enviar">
+            <div class="subir-evid__actions actividad">
+                <a class="subir-evid__action" href="#"><i class="fas fa-arrow-left"></i>Regresar</a>
+                <input class="subir-evid__action" type="submit" value="Enviar">
+            </div>
         </div>
         
     </div>
