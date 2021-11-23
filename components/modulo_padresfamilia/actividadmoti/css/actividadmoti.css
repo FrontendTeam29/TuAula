@@ -60,6 +60,17 @@ h1.act-motivacional__title{
     margin-top: 5rem;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 480px) { 
+    .act-motivacional__btns{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
 
 .act-motivacional__btn{
@@ -78,8 +89,15 @@ h1.act-motivacional__title{
 .act-motivacional__actions{
     margin-top: 15rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 5rem;
+}
+
+@media (min-width: 480px) { 
+    .act-motivacional__actions{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .act-motivacional__action{
