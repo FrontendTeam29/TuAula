@@ -20,47 +20,80 @@
     <div class="crearform">
         <div class="crearform__card-header">
             <div class="crearform__card-portada">
-                <img class="crearform__imagen" src="https://via.placeholder.com/1000x300" alt="imagen portada">
+                <img class="crearform__imagen" src="https://via.placeholder.com/1500x300" alt="imagen portada">
                 <div class="crearform__dropdown">
-                    <input class="dropbtn" type="file">Subir foto</input>
+                    <input class="dropbtn" type="file"></input>
                 </div>
             </div><!--.Portada-->
 
             <div class="crearform__card-text">
                 <div class="descripcion">
                     <div class="descripcion__logo">
-                        <img class="descripcion__logo-img" src="https://via.placeholder.com/100x100" alt="logo institucion">
+                        <img class="descripcion__logo-img" src="https://via.placeholder.com/150x150" alt="logo institucion">
+                        <div class="descripcion__dropdown">
+                            <input class="dropbtn--logo" type="file"></input>
+                        </div>
                     </div><!--.Logo institucion-->
 
-                    <div class="descripcion__text">
-                        <h3 class="descripcion__text-titulo">Nombre de la Institucion</h3>
-                        <p class="descripcion__text-p">Nombre en corto</p>
-                        <div class="descripcion__ubicacion">
-                            <p class="descripcion__ubicacion-item"><i class="fas fa-map-marker-alt"></i>Dirección</p>
-                            <p class="descripcion__ubicacion-item">Municipio</p>
-                            <p class="descripcion__ubicacion-item">Departamento</p>
-                            <p class="descripcion__ubicacion-item">País</p>
-                        </div>
-                    </div>
-                </div><!--Descripcion de la Institucion-->
+                    <div class="descripcion__form">
+                            <div class="descripcion__inputs">
+                                <input class="descripcion__input" type="text" placeholder="Nombre de la institución">
+                            </div>
 
-                <div class="contacto">
-                    <h3 class="contacto__titulo">Contacto</h3>
-                    <p class="contacto__tel"><i class="fas fa-mobile-alt"></i>987 654 321</p>
-                    <p class="contacto__tel"><i class="fas fa-phone-alt"></i>123 456 789</p>
-                </div>
+                            <div class="descripcion__inputs">
+                                <input class="descripcion__input" type="text" placeholder="Nombre corto">
+                            </div>
+
+                            <div class="descripcion__inputs">
+                                <input class="descripcion__input" type="text" placeholder="Nombre de la institución">
+                            </div>
+
+                            <div class="descripcion__inputs descripcion__inputs--select">
+                                <select class="descripcion__input">
+                                    <option value="">Pais</option>
+                                </select>
+                            </div>
+
+                            <div class="descripcion__inputs descripcion__inputs--select">
+                                <select class="descripcion__input">
+                                    <option value="">Departamento</option>
+                                </select>
+                            </div>
+
+                            <div class="descripcion__inputs descripcion__inputs--select">
+                                <select class="descripcion__input">
+                                    <option value="">Municipio</option>
+                                </select>
+                            </div>
+
+                            <div class="descripcion__inputs">
+                                <input class="descripcion__input" type="tel" placeholder="Celular">
+                            </div>
+
+                            <div class="descripcion__inputs">
+                                <input class="descripcion__input" type="text" placeholder="Teléfono">
+                            </div>
+                    </div>
+
+                </div><!--Descripcion de la Institucion-->
             </div><!--Card Text-->
         </div><!--.Header-->
 
         <div class="crearform__card-acerca">
             <p class="crearform__acerca-title">Descripción</p>
-            <p class="crearform__acerca-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, obcaecati in odit ullam incidunt accusamus. Alias sint perferendis nulla doloremque provident laborum consectetur, nostrum, repellat debitis sapiente ex reprehenderit! Aliquam.</p>
+            <textarea type="text" class="crearform__textarea">
+            </textarea>
         </div><!--.Descripcion-->
 
         <div class="crearform__card-informacion">
             <p class="crearform__informacion-title">Otra información</p>
-            <p class="crearform__informacion-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, obcaecati in odit ullam incidunt accusamus. Alias sint perferendis nulla doloremque provident laborum consectetur, nostrum, repellat debitis sapiente ex reprehenderit! Aliquam.</p>
+            <textarea type="text" class="crearform__textarea">
+            </textarea>
         </div><!--.Descripcion-->
+
+        <div class="crearform__btns">
+            <input class="crearform__btn" type="submit" value="Guardar">
+        </div>
     </div>
     <!--.Componente Card Institucion-->
 

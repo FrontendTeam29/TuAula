@@ -91,11 +91,13 @@ html {
   .w__25-rwd {
     width: 100%;
   }
+
   @media (min-width: 768px) {
     .w__25-rwd {
       width: 60%;
     }
   }
+
   @media (min-width: 1024px) {
     .w__25-rwd {
       width: 30%;
@@ -105,6 +107,7 @@ html {
   .w-35 {
     width: 35%;
   }
+
   @media (min-width: 1024px) {
     .w-35 {
       width: 25%;
@@ -188,6 +191,7 @@ html {
     flex-direction: column;
     gap: 0;
   }
+
   @media (min-width: 768px) {
     .flexbox__radios {
       flex-direction: row;
@@ -199,7 +203,7 @@ html {
     border-bottom: 0;
   }
   
-  .unset-input {
+  .unset-input{
     background-color: #eceeef;
     border: none;
     border-radius: 1rem;
@@ -208,6 +212,7 @@ html {
     height: 3rem;
     font-size: 1.2rem;
   }
+
   @media (min-width: 768px) {
     .unset-input {
       font-size: 1.7rem;
@@ -215,6 +220,7 @@ html {
       width: 10rem;
     }
   }
+
   @media (min-width: 1024px) {
     .unset-input {
       font-size: 1.8rem;
@@ -230,6 +236,7 @@ html {
     height: 3rem;
     font-size: 1.3rem;
   }
+
   @media (min-width: 768px) {
     .unset-inputv2 {
       font-size: 1.7rem;
@@ -237,6 +244,7 @@ html {
       width: 6rem;
     }
   }
+  
   @media (min-width: 1024px) {
     .unset-inputv2 {
       font-size: 1.8rem;
