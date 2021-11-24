@@ -90,7 +90,7 @@ h1.subir-evid__title{
     border:none;
     border-radius: 2rem;
     outline: none;
-    -webkit-user-select: none;
+    /*-webkit-user-select: none;*/
     cursor: pointer;
     font-weight: bold;
     font-size: 11pt;
